@@ -1,0 +1,33 @@
+{
+  "circuit_kind": "single-demand-dicke-stateprep",
+  "classiq_sdk_version": "1.29.0",
+  "created_at_utc": "2026-09-08T21:23:32.303186+00:00",
+  "expected_probability_per_state": 0.3333333333333333,
+  "expected_states": [
+    "001",
+    "010",
+    "100"
+  ],
+  "qprog_sha256": "ff0ab6e063f2d337971dd8f7b5de77204d4082a3c2b65646141a649e463d2ff1",
+  "sampled": {
+    "invalid_shots": 0,
+    "one_hot_probability": 1.0,
+    "shots": 4096
+  },
+  "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\stateprep\\single_demand_samples_raw.csv",
+  "samples_sha256": "3617a8392741a7ab8b85de023d3bc4d849b933cce5534e49d69f1a11a1c63be0",
+  "schema_version": "stage6b-1.0",
+  "statevector": {
+    "invalid_hamming_weight_probability": 0,
+    "nonzero_probabilities": {
+      "001": 0.3333333333333348,
+      "010": 0.33333333333333254,
+      "100": 0.33333333333333265
+    },
+    "one_hot_probability": 1.0,
+    "probability_sum": 1.0
+  },
+  "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\stateprep\\single_demand_statevector.csv",
+  "statevector_sha256": "6ede4452da03aef06ce9685d372e15696353b232bf6269810ae8ce42ef0209e1",
+  "status": "PASS"
+}

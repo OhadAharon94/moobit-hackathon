@@ -1,0 +1,52 @@
+{
+  "created_at_utc": "2026-09-08T21:53:45.2634760Z",
+  "interpreter": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Scripts\\python.exe",
+  "schema_version": "stage6b-1.0",
+  "status": "PASS",
+  "suites": [
+    {
+      "errors": 0,
+      "failures": 0,
+      "junit_file": "v11.xml",
+      "junit_sha256": "90faa7e975d34b89f0a04e88da6e008a6f7d055f80e2cecc610ede898e25ac24",
+      "name": "frozen-v1.1",
+      "skipped": 0,
+      "tests": 62,
+      "time_seconds": 10.066
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "junit_file": "stage6a.xml",
+      "junit_sha256": "d1ad5dda0ec6889873fd0fb5b9cb8755e5aff94dc7f5ecdbef5b296c0039cbb4",
+      "name": "frozen-stage6a",
+      "skipped": 0,
+      "tests": 31,
+      "time_seconds": 60.215
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "junit_file": "post6a.xml",
+      "junit_sha256": "e5532e106ee2ae431963cd37dbaf768f89a42d8ea0c0263eb70f3a37b822db2a",
+      "name": "frozen-post6a",
+      "skipped": 0,
+      "tests": 9,
+      "time_seconds": 12.45
+    },
+    {
+      "errors": 0,
+      "failures": 0,
+      "junit_file": "stage6b.xml",
+      "junit_sha256": "3c1491858433156c9cae361e03790f2ee8f68e298950d65b3c6318ba842644d5",
+      "name": "stage6b-track-a",
+      "skipped": 0,
+      "tests": 20,
+      "time_seconds": 4.415
+    }
+  ],
+  "total_errors": 0,
+  "total_failures": 0,
+  "total_skipped": 0,
+  "total_tests": 122
+}

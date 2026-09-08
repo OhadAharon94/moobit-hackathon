@@ -1,0 +1,1752 @@
+{
+  "source_ref": null,
+  "back_ref": null,
+  "interface_version": "22",
+  "kind": "user",
+  "functions": [
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "apply_to_all_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "target",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "1"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": true,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 29,
+            "start_column": 3,
+            "end_line": 29,
+            "end_column": 64,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\utility_functions.py"
+          },
+          "back_ref": null,
+          "kind": "Repeat",
+          "uuid": "48b761e3-90df-4512-bb28-3a50434a8bf7",
+          "iter_var": "index",
+          "count": {
+            "source_ref": null,
+            "back_ref": null,
+            "expr": "1"
+          },
+          "body": [
+            {
+              "source_ref": {
+                "start_line": 29,
+                "start_column": 36,
+                "end_line": 29,
+                "end_column": 63,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\utility_functions.py"
+              },
+              "back_ref": "71742f6c-494c-4f98-a2ac-ec5886ab386b",
+              "kind": "QuantumFunctionCall",
+              "uuid": "36dcd189-df49-4c05-99d5-3b005477b98a",
+              "function": "X",
+              "positional_args": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "target"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "index"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "_dicke_split_cycle_shift_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "qvar",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "3"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 405,
+            "start_column": 7,
+            "end_line": 418,
+            "end_column": 8,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": null,
+          "kind": "WithinApply",
+          "uuid": "ce0d9ff1-9a7e-4969-ae83-fd756c621313",
+          "compute": [
+            {
+              "source_ref": {
+                "start_line": 406,
+                "start_column": 23,
+                "end_line": 406,
+                "end_column": 47,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+              },
+              "back_ref": "5ee11ca3-6baa-4d86-a85c-372234061887",
+              "kind": "QuantumFunctionCall",
+              "uuid": "2b7badc5-846c-4215-a2ec-ac42e5b726b3",
+              "function": "CX",
+              "positional_args": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "qvar"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "1"
+                  }
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "qvar"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "0"
+                  }
+                }
+              ]
+            }
+          ],
+          "action": [
+            {
+              "source_ref": {
+                "start_line": 408,
+                "start_column": 15,
+                "end_line": 411,
+                "end_column": 16,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+              },
+              "back_ref": "af624056-eead-4dd3-ac1e-ce94d5f27541",
+              "kind": "Control",
+              "uuid": "9ef86bd3-2f48-4943-af75-55ca8094429a",
+              "expression": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "qvar[0]"
+              },
+              "body": [
+                {
+                  "source_ref": {
+                    "start_line": 410,
+                    "start_column": 31,
+                    "end_line": 410,
+                    "end_column": 82,
+                    "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+                  },
+                  "back_ref": "938e8719-b7b2-475b-b242-6d37eab6b0af",
+                  "kind": "QuantumFunctionCall",
+                  "uuid": "55e7e884-964e-4640-800b-058dea263a30",
+                  "function": "RY",
+                  "positional_args": [
+                    {
+                      "source_ref": null,
+                      "back_ref": null,
+                      "expr": "1.91063323624902"
+                    },
+                    {
+                      "source_ref": null,
+                      "back_ref": null,
+                      "kind": "Subscript",
+                      "value": {
+                        "source_ref": null,
+                        "back_ref": null,
+                        "kind": "Name",
+                        "name": "qvar"
+                      },
+                      "index": {
+                        "source_ref": null,
+                        "back_ref": null,
+                        "expr": "1"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "else_block": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "_dicke_split_cycle_shift_expanded___1",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "qvar",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 405,
+            "start_column": 7,
+            "end_line": 418,
+            "end_column": 8,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": null,
+          "kind": "WithinApply",
+          "uuid": "77828239-ff07-4548-8710-a339fed6a250",
+          "compute": [
+            {
+              "source_ref": {
+                "start_line": 406,
+                "start_column": 23,
+                "end_line": 406,
+                "end_column": 47,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+              },
+              "back_ref": "460e3ed4-e892-421d-9c4d-89c19c40d404",
+              "kind": "QuantumFunctionCall",
+              "uuid": "db4cc262-ea24-428d-a429-9e49d6d34302",
+              "function": "CX",
+              "positional_args": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "qvar"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "1"
+                  }
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "qvar"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "0"
+                  }
+                }
+              ]
+            }
+          ],
+          "action": [
+            {
+              "source_ref": {
+                "start_line": 408,
+                "start_column": 15,
+                "end_line": 411,
+                "end_column": 16,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+              },
+              "back_ref": "a79b9159-6665-4c5b-8aad-38cbdca4c3ac",
+              "kind": "Control",
+              "uuid": "033c3db6-922b-474a-8188-6f2bf56cd3d8",
+              "expression": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "qvar[0]"
+              },
+              "body": [
+                {
+                  "source_ref": {
+                    "start_line": 410,
+                    "start_column": 31,
+                    "end_line": 410,
+                    "end_column": 82,
+                    "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+                  },
+                  "back_ref": "872f78c9-cf3d-4398-ad74-86932e468d06",
+                  "kind": "QuantumFunctionCall",
+                  "uuid": "1c3f02c2-0502-4bd0-927c-60a6e248309f",
+                  "function": "RY",
+                  "positional_args": [
+                    {
+                      "source_ref": null,
+                      "back_ref": null,
+                      "expr": "1.5707963267949"
+                    },
+                    {
+                      "source_ref": null,
+                      "back_ref": null,
+                      "kind": "Subscript",
+                      "value": {
+                        "source_ref": null,
+                        "back_ref": null,
+                        "kind": "Name",
+                        "name": "qvar"
+                      },
+                      "index": {
+                        "source_ref": null,
+                        "back_ref": null,
+                        "expr": "1"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "else_block": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "prepare_dicke_state_unary_input_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "qvar",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 442,
+            "start_column": 7,
+            "end_line": 442,
+            "end_column": 44,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": "e8b6a750-ef42-469e-98f0-b8081fb332c7",
+          "kind": "QuantumFunctionCall",
+          "uuid": "1ef80cf8-ef98-48ba-b76d-7842088b31ac",
+          "function": "_dicke_split_cycle_shift_expanded___1",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Name",
+              "name": "qvar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "prepare_dicke_state_unary_input_expanded___1",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "qvar",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "3"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 442,
+            "start_column": 7,
+            "end_line": 442,
+            "end_column": 44,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": "a4bfd4f5-b508-4947-b6d3-50e871dd4d50",
+          "kind": "QuantumFunctionCall",
+          "uuid": "1e4c81a6-ef15-49a4-9281-47df79affb91",
+          "function": "_dicke_split_cycle_shift_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Name",
+              "name": "qvar"
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 444,
+            "start_column": 11,
+            "end_line": 446,
+            "end_column": 12,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": "63439055-2a15-469a-89c0-e82722562da9",
+          "kind": "QuantumFunctionCall",
+          "uuid": "e6b83c54-e49d-4ae8-90e4-f7c19927d34c",
+          "function": "prepare_dicke_state_unary_input_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "qvar"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "1"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "prepare_dicke_state_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "qvar",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "3"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 469,
+            "start_column": 7,
+            "end_line": 469,
+            "end_column": 33,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": "1eb2e72f-7a12-4e11-994a-1d6bb0707f91",
+          "kind": "QuantumFunctionCall",
+          "uuid": "659fad6a-4237-4c2f-8df6-9113cc60f927",
+          "function": "apply_to_all_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "qvar"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "0"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "1"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 470,
+            "start_column": 7,
+            "end_line": 470,
+            "end_column": 47,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": "b26a7ccc-da42-4989-b9ab-f47116d2a337",
+          "kind": "QuantumFunctionCall",
+          "uuid": "0846724f-5e1b-4fd4-8242-a9a89ed7a070",
+          "function": "prepare_dicke_state_unary_input_expanded___1",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Name",
+              "name": "qvar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "cost_layer_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "gamma",
+          "kind": "ClassicalParameterDeclaration",
+          "classical_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "kind": "real"
+          }
+        },
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "routes",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "12"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "const"
+        }
+      ],
+      "permutation": true,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 99,
+            "start_column": 7,
+            "end_line": 99,
+            "end_column": 39,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "b126c45f-4d6d-4be0-b980-78adace8d3a9",
+          "kind": "PhaseOperation",
+          "uuid": "ee5caab4-18e5-420d-974c-fdb4c3861038",
+          "expression": {
+            "source_ref": null,
+            "back_ref": null,
+            "expr": "0.03826857468908962 * (routes[0] + routes[3]) + 0.03863442971570744 * (routes[10] + routes[7]) + 0.03621938779839215 * (routes[1] + routes[4]) + 0.04035415392046939 * (routes[6] + routes[9]) + -(0.10158432816345082 * routes[0] * routes[1] + 0.10290352018847958 * routes[0] * routes[2] + 0.0061566435103486365 * routes[0] * routes[3] + 0.005219789850975039 * routes[0] * routes[6] + 0.0010712013504886864 * routes[0] * routes[8] + 0.004148588500486354 * routes[0] * routes[9] + 0.10249020239757947 * routes[10] * routes[11] + 0.0029755593069130185 * routes[10] * routes[1] + 0.004046760657401704 * routes[10] * routes[4] + 0.00342219155115264 * routes[10] * routes[7] + 0.0009058742341286401 * routes[10] * routes[8] + 0.10158432816345082 * routes[10] * routes[9] + 0.004284805401954746 * routes[11] * routes[2] + 0.0010712013504886864 * routes[11] * routes[4] + 0.0009058742341286401 * routes[11] * routes[6] + 0.10249020239757947 * routes[11] * routes[9] + 0.10290352018847958 * routes[1] * routes[2] + 0.004983614316775301 * routes[1] * routes[4] + 0.0013191920250287563 * routes[1] * routes[5] + 0.004046760657401704 * routes[1] * routes[7] + 0.0013191920250287563 * routes[2] * routes[3] + 0.0010712013504886864 * routes[2] * routes[7] + 0.10158432816345082 * routes[3] * routes[4] + 0.10290352018847958 * routes[3] * routes[5] + 0.004148588500486354 * routes[3] * routes[6] + 0.005219789850975039 * routes[3] * routes[9] + 0.10290352018847958 * routes[4] * routes[5] + 0.0029755593069130185 * routes[4] * routes[7] + 0.004284805401954746 * routes[5] * routes[8] + 0.0010712013504886864 * routes[5] * routes[9] + 0.10158432816345082 * routes[6] * routes[7] + 0.10249020239757947 * routes[6] * routes[8] + 0.004595220744725975 * routes[6] * routes[9] + 0.10249020239757947 * routes[7] * routes[8] + 0.14635239831625924) + 0.03603084986014118 * routes[11] + 0.03307036912755535 * routes[2] + 0.03219180196506064 * routes[5] + 0.035262103592958303 * routes[8]"
+          },
+          "theta": {
+            "source_ref": null,
+            "back_ref": null,
+            "expr": "gamma"
+          }
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "demand_mixer_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "beta",
+          "kind": "ClassicalParameterDeclaration",
+          "classical_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "kind": "real"
+          }
+        },
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "demand_routes",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "3"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 106,
+            "start_column": 7,
+            "end_line": 106,
+            "end_column": 60,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "4b3d3f63-73ab-42a9-97a1-b876f5bd644b",
+          "kind": "QuantumFunctionCall",
+          "uuid": "343e13ab-b554-4d39-8728-d639b644d3b0",
+          "function": "RXX",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2.0 * beta"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Array",
+              "elements": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "0"
+                  }
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 107,
+            "start_column": 7,
+            "end_line": 107,
+            "end_column": 60,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "5768951d-0183-44ea-adf5-1112f1284721",
+          "kind": "QuantumFunctionCall",
+          "uuid": "a6776d1b-9856-427d-8f3d-b19a07a0cd51",
+          "function": "RYY",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2.0 * beta"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Array",
+              "elements": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "0"
+                  }
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 108,
+            "start_column": 7,
+            "end_line": 108,
+            "end_column": 60,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "ba656242-2f5e-48c4-a409-9185e59dc038",
+          "kind": "QuantumFunctionCall",
+          "uuid": "6999be6f-80bc-4b30-a5a6-835ce90a3049",
+          "function": "RXX",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2.0 * beta"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Array",
+              "elements": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "1"
+                  }
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "2"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 109,
+            "start_column": 7,
+            "end_line": 109,
+            "end_column": 60,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "ae8e9fd5-0108-414f-995b-fecfec91436d",
+          "kind": "QuantumFunctionCall",
+          "uuid": "892b0dbb-4dc6-4b5b-87c4-c8ef03304205",
+          "function": "RYY",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2.0 * beta"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Array",
+              "elements": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "1"
+                  }
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "2"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 110,
+            "start_column": 7,
+            "end_line": 110,
+            "end_column": 60,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "7dedec1e-1405-4702-a3cb-01b5863c0487",
+          "kind": "QuantumFunctionCall",
+          "uuid": "d7de1cf5-bff4-4bfd-849d-dd0fa66593dc",
+          "function": "RXX",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2.0 * beta"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Array",
+              "elements": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "0"
+                  }
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "2"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 111,
+            "start_column": 7,
+            "end_line": 111,
+            "end_column": 60,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "a734c55f-74ef-4c2b-a818-6d6198e69a46",
+          "kind": "QuantumFunctionCall",
+          "uuid": "27cf2a5c-5dd0-4ac2-92bf-4e54eff291ad",
+          "function": "RYY",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2.0 * beta"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Array",
+              "elements": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "0"
+                  }
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "demand_routes"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "2"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "mixer_layer_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "beta",
+          "kind": "ClassicalParameterDeclaration",
+          "classical_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "kind": "real"
+          }
+        },
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "routes",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "12"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 120,
+            "start_column": 11,
+            "end_line": 120,
+            "end_column": 71,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "7b392ffd-7ace-462f-9f11-b568a0e23ded",
+          "kind": "QuantumFunctionCall",
+          "uuid": "46507e64-c08b-4a9a-927a-0bf1df2ff5bb",
+          "function": "demand_mixer_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "beta"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "0"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "3"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 120,
+            "start_column": 11,
+            "end_line": 120,
+            "end_column": 71,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "65472ca0-130b-448f-a8b0-5d6928ba9c8b",
+          "kind": "QuantumFunctionCall",
+          "uuid": "985619ff-06af-4061-828e-41485b0c62dc",
+          "function": "demand_mixer_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "beta"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "3"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "6"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 120,
+            "start_column": 11,
+            "end_line": 120,
+            "end_column": 71,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "24038e4f-7e13-4d50-a157-051d38b05b83",
+          "kind": "QuantumFunctionCall",
+          "uuid": "3823840b-b53c-423a-8c5c-bd7902d0b226",
+          "function": "demand_mixer_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "beta"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "6"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "9"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 120,
+            "start_column": 11,
+            "end_line": 120,
+            "end_column": 71,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "aaa1813e-b0f1-407a-a5f8-f4c171382956",
+          "kind": "QuantumFunctionCall",
+          "uuid": "9cd8cd13-8d6b-414d-baa8-99f277a46a3c",
+          "function": "demand_mixer_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "beta"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "9"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "12"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "qaoa_ansatz_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "params",
+          "kind": "ClassicalParameterDeclaration",
+          "classical_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "kind": "array",
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "real"
+            },
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2"
+            }
+          }
+        },
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "routes",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "12"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 127,
+            "start_column": 7,
+            "end_line": 133,
+            "end_column": 8,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": null,
+          "kind": "Repeat",
+          "uuid": "9fe9d44b-5b83-472a-8505-f863ae9fb339",
+          "iter_var": "layer",
+          "count": {
+            "source_ref": null,
+            "back_ref": null,
+            "expr": "1"
+          },
+          "body": [
+            {
+              "source_ref": {
+                "start_line": 130,
+                "start_column": 15,
+                "end_line": 130,
+                "end_column": 48,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+              },
+              "back_ref": "638e1ffa-5105-4765-9873-0a6de9e5a8d6",
+              "kind": "QuantumFunctionCall",
+              "uuid": "5b753d6a-6260-485f-9540-cf2d5e09218b",
+              "function": "cost_layer_expanded___0",
+              "positional_args": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "expr": "params[layer]"
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Name",
+                  "name": "routes"
+                }
+              ]
+            },
+            {
+              "source_ref": {
+                "start_line": 131,
+                "start_column": 15,
+                "end_line": 131,
+                "end_column": 57,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+              },
+              "back_ref": "14c244cc-0835-42ee-844c-73ee332de1c9",
+              "kind": "QuantumFunctionCall",
+              "uuid": "9e49d988-4dc6-4daa-8609-6a4520f6ac1a",
+              "function": "mixer_layer_expanded___0",
+              "positional_args": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "expr": "params[1 + layer]"
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Name",
+                  "name": "routes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "main",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "params",
+          "kind": "ClassicalParameterDeclaration",
+          "classical_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "kind": "array",
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "real"
+            },
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2"
+            }
+          }
+        },
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "routes",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "12"
+            }
+          },
+          "direction": "output",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 140,
+            "start_column": 7,
+            "end_line": 140,
+            "end_column": 23,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": null,
+          "kind": "Allocate",
+          "uuid": "8dedc59b-f72d-4e92-ba3e-7fef3c088675",
+          "size": {
+            "source_ref": null,
+            "back_ref": null,
+            "expr": "12"
+          },
+          "is_signed": null,
+          "fraction_digits": null,
+          "target": {
+            "source_ref": null,
+            "back_ref": null,
+            "kind": "Name",
+            "name": "routes"
+          }
+        },
+        {
+          "source_ref": {
+            "start_line": 143,
+            "start_column": 11,
+            "end_line": 143,
+            "end_column": 75,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "1115e071-6c52-40e4-b520-f8cd01531ed0",
+          "kind": "QuantumFunctionCall",
+          "uuid": "d4ea5e7a-8503-40b6-8480-5ac93cdd9a5f",
+          "function": "prepare_dicke_state_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "0"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "3"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 143,
+            "start_column": 11,
+            "end_line": 143,
+            "end_column": 75,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "fc09c4ce-83ca-4a74-97c2-68c820448ce3",
+          "kind": "QuantumFunctionCall",
+          "uuid": "c07d1171-61cc-4216-ab8a-e4fdabf3f283",
+          "function": "prepare_dicke_state_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "3"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "6"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 143,
+            "start_column": 11,
+            "end_line": 143,
+            "end_column": 75,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "87de2260-d266-4bde-b97d-e7bf7a7ccf03",
+          "kind": "QuantumFunctionCall",
+          "uuid": "c8fb2bbc-3cf3-41f4-8a1a-d926aece62dd",
+          "function": "prepare_dicke_state_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "6"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "9"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 143,
+            "start_column": 11,
+            "end_line": 143,
+            "end_column": 75,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "406e5e46-5bf1-4cc2-80b2-990dca162548",
+          "kind": "QuantumFunctionCall",
+          "uuid": "d77673f9-a4c1-4c9c-acdd-1360db870460",
+          "function": "prepare_dicke_state_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "9"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "12"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 144,
+            "start_column": 7,
+            "end_line": 144,
+            "end_column": 34,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "0e0df580-3fe0-44cc-ad5c-48c060bec2f8",
+          "kind": "QuantumFunctionCall",
+          "uuid": "376cbbde-d852-481a-af12-c1506a557106",
+          "function": "qaoa_ansatz_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "params"
+            },
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Name",
+              "name": "routes"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "types": [],
+  "qstructs": [],
+  "classical_execution_code": "",
+  "constants": [],
+  "constraints": {
+    "max_width": null,
+    "optimization_parameter": "no_opt"
+  },
+  "execution_preferences": {
+    "noise_properties": null,
+    "random_seed": 2886659530,
+    "backend_preferences": {
+      "backend_service_provider": "Classiq",
+      "backend_name": "simulator",
+      "use_double_precision": false,
+      "noise_model": null,
+      "simulator_noise_spec": null
+    },
+    "num_shots": null,
+    "transpile_to_hardware": "decompose",
+    "job_name": null,
+    "include_zero_amplitude_outputs": false,
+    "amplitude_threshold": 0.0
+  },
+  "preferences": {
+    "machine_precision": 8,
+    "backend_service_provider": null,
+    "backend_name": null,
+    "custom_hardware_settings": {
+      "basis_gates": [
+        "y",
+        "rz",
+        "r",
+        "sdg",
+        "ry",
+        "s",
+        "u2",
+        "u3",
+        "tdg",
+        "h",
+        "u1",
+        "cx",
+        "cz",
+        "t",
+        "x",
+        "sxdg",
+        "u",
+        "p",
+        "id",
+        "sx",
+        "cy",
+        "rx",
+        "z"
+      ],
+      "connectivity_map": null,
+      "is_symmetric_connectivity": true
+    },
+    "debug_mode": true,
+    "optimization_level": 1,
+    "output_format": [
+      "qasm"
+    ],
+    "qasm3": null,
+    "transpilation_option": "auto optimize",
+    "solovay_kitaev_max_iterations": null,
+    "timeout_seconds": 300,
+    "optimization_timeout_seconds": null,
+    "random_seed": 99689638,
+    "symbolic_loops": false,
+    "compatibility_mode": false,
+    "standalone": false
+  },
+  "compressed_debug_info": "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",
+  "functions_compilation_metadata": {}
+}

@@ -1,0 +1,28 @@
+{
+  "D": 1,
+  "K": 3,
+  "circuit_kind": "single-demand-dicke-stateprep",
+  "classiq_sdk_version": "1.29.0",
+  "count_ops": {
+    "cx": 8,
+    "ry": 4,
+    "x": 1
+  },
+  "created_at_utc": "2026-09-08T21:20:40.946436+00:00",
+  "depth": 13,
+  "failure_message": null,
+  "failure_type": null,
+  "gate_count": 13,
+  "model_sha256": "7813136360d47f461d05b893e430c9899100a38660d897949c456d75e219cce4",
+  "qaoa_depth": 0,
+  "qmod_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\stateprep\\single_demand.qmod.json",
+  "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\stateprep\\single_demand.qprog",
+  "qprog_sha256": "ff0ab6e063f2d337971dd8f7b5de77204d4082a3c2b65646141a649e463d2ff1",
+  "scenario_weights": null,
+  "schema_version": "stage6b-1.0",
+  "source_sha256": "df79bc3bb9f1f39a8b540bd53d8c942d9c9bf4f958cc0e308de09a96d47e7bf6",
+  "synthesis_runtime_seconds": 4.794222399999853,
+  "synthesis_status": "SUCCESS",
+  "synthesized_qubits": 3,
+  "two_qubit_gate_count": 8
+}

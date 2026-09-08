@@ -1,0 +1,60 @@
+{
+  "D": 4,
+  "K": 3,
+  "M": 1.0,
+  "circuit_kind": "d4-constrained-qaoa-p1",
+  "classiq_sdk_version": "1.29.0",
+  "count_ops": {
+    "cx": 164,
+    "h": 12,
+    "rx": 12,
+    "ry": 16,
+    "rz": 70,
+    "u2": 36,
+    "x": 4
+  },
+  "created_at_utc": "2026-09-08T21:24:45.845480+00:00",
+  "depth": 101,
+  "energy_mode": "base",
+  "failure_message": null,
+  "failure_type": null,
+  "gate_count": 314,
+  "instance_id": "qera-d4-frozen",
+  "instance_seed": 1701,
+  "mixer_pair_order": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "model_sha256": "6a74a04ce1f9289b37b56b3d6b9210287ae0a1ab21f21515c8a98db605c070c1",
+  "objective_mode": "cost",
+  "one_hot_penalty_retained": true,
+  "pair_unitary": "RXX(2*beta) then RYY(2*beta)",
+  "phase_offset": 0.23388915610648003,
+  "phase_scale": 19.688076262924806,
+  "qaoa_depth": 1,
+  "qmod_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\d4\\constrained_p1.qmod.json",
+  "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\d4\\constrained_p1.qprog",
+  "qprog_sha256": "a9d2c128f7a0753c1d000d1a166736b72a12789b95eb89c0f7de36c484e66f32",
+  "scenario_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "schema_version": "stage6b-1.0",
+  "source_sha256": "df79bc3bb9f1f39a8b540bd53d8c942d9c9bf4f958cc0e308de09a96d47e7bf6",
+  "synthesis_runtime_seconds": 10.887757499993313,
+  "synthesis_spec_sha256": "fcf34372510e9d5a3b3cc559e1883a1047cabae4f4e8dd9d2b172e81ca61b933",
+  "synthesis_status": "SUCCESS",
+  "synthesized_qubits": 12,
+  "two_qubit_gate_count": 164
+}

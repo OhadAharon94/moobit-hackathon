@@ -1,0 +1,56 @@
+{
+  "cost_compatibility": {
+    "assignments_checked": 81,
+    "maximum_affine_energy_error": 2.2551405187698492e-17,
+    "maximum_qmod_cost_error": 1.9081958235744878e-17,
+    "one_hot_penalty_retained": true,
+    "pairwise_ordering_mismatches": 0,
+    "positive_affine_scale": 19.688076262924806,
+    "status": "PASS",
+    "table_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\tables\\d4_cost_compatibility.csv",
+    "table_sha256": "66e4f56d2799b0df2e52c06b395bfaab94e3833dce3b84b98758ad3ad173623a"
+  },
+  "created_at_utc": "2026-09-08T21:28:16.960185+00:00",
+  "fixed_scenario_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "initial_distribution": {
+    "bit_ordering_verified": true,
+    "fairness_alpha": 0.001,
+    "qprog_sha256": "3591f281823f8d8b6c1a5b9320591d1a70a6b837b3d1d5f071303bef63d4913b",
+    "sample_chi_square": 56.013916015625014,
+    "sample_chi_square_p_value": 0.980947664559476,
+    "sample_invalid_shots": 0,
+    "sample_shots": 16384,
+    "sample_total_variation_from_uniform": 0.02210301528742284,
+    "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\stateprep\\d4_initial_samples_raw.csv",
+    "samples_sha256": "63542684b841df8b72ec3ae0fd1c4a2597d0ca27f85a647e2d936c710826fa1c",
+    "statevector_invalid_probability": 0,
+    "statevector_max_abs_error_from_uniform": 2.3071822230491534e-16,
+    "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\stateprep\\d4_initial_statevector.csv",
+    "statevector_sha256": "a1c336a2dfe366eca152e042ac538d320e111e2e9b565a2503cef5004c7ab2a7",
+    "statevector_valid_support": 81,
+    "status": "PASS"
+  },
+  "schema_version": "stage6b-1.0",
+  "status": "PASS",
+  "unoptimized_full_ansatz": {
+    "parameters": {
+      "params": [
+        0.731,
+        0.419
+      ]
+    },
+    "qprog_sha256": "a9d2c128f7a0753c1d000d1a166736b72a12789b95eb89c0f7de36c484e66f32",
+    "sample_invalid_shots": 0,
+    "sample_shots": 4096,
+    "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\d4\\unoptimized_samples_raw.csv",
+    "samples_sha256": "26ad7c2407fe2f19bd117bc9440df7e30429efdaddc3b1e53a4ff706be13354a",
+    "statevector_invalid_probability": 4.920972000847344e-33,
+    "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\d4\\unoptimized_statevector.csv",
+    "statevector_sha256": "28c9836f8bebac48fdc71433e021774c21c82dedd91180c06b78121ecf5374f4",
+    "status": "PASS"
+  }
+}

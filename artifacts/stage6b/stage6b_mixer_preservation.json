@@ -1,0 +1,340 @@
+{
+  "angles": [
+    0.173,
+    0.417,
+    0.911,
+    1.337
+  ],
+  "basis_states_tested": [
+    0,
+    1,
+    2
+  ],
+  "classiq_sdk_version": "1.29.0",
+  "created_at_utc": "2026-09-08T21:24:06.584091+00:00",
+  "execution_runtime_seconds": 47.11705760000041,
+  "mathematical_pair_unitary": "exp[-i beta (XX + YY)]",
+  "pair_decomposition": "RXX(2*beta) then RYY(2*beta)",
+  "pair_order": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "schema_version": "stage6b-1.0",
+  "shots_per_trial": 4096,
+  "status": "PASS",
+  "tolerance": 1e-10,
+  "total_sampled_shots": 49152,
+  "trial_count": 12,
+  "trials": [
+    {
+      "beta": 0.173,
+      "initial_route": 0,
+      "qprog_sha256": "165f103fb760aeb26003280e85704fe69f0e2a7d0f8c8964af30889081e1b8dc",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-0-angle-0-samples_raw.csv",
+      "samples_sha256": "94d0ace5b57d9890f65745fd6f3bcb4cb22434ccb836f69b1448383ab775c6be",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.11349285806197296,
+          "010": 0.10178601118439831,
+          "100": 0.7847211307536287
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 1.0
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-0-angle-0-statevector.csv",
+      "statevector_sha256": "d55ac7b051ef534c8eab8df8be95792ada2a555ddbcd337b5d50446c1c981a9b",
+      "status": "PASS"
+    },
+    {
+      "beta": 0.417,
+      "initial_route": 0,
+      "qprog_sha256": "165f103fb760aeb26003280e85704fe69f0e2a7d0f8c8964af30889081e1b8dc",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-0-angle-1-samples_raw.csv",
+      "samples_sha256": "6aeb3ef6a70c489edd05aafacdcad144b6362aa09d23b582d06b9533e54bfd26",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.3834850086965819,
+          "010": 0.24764529171057997,
+          "100": 0.36886969959283783
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 0.9999999999999998
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-0-angle-1-statevector.csv",
+      "statevector_sha256": "b643e00f477aaf4a2cbbd1d8d6136d947d38d8a5fe3bbc900137ea0cbf67ddc8",
+      "status": "PASS"
+    },
+    {
+      "beta": 0.911,
+      "initial_route": 0,
+      "qprog_sha256": "165f103fb760aeb26003280e85704fe69f0e2a7d0f8c8964af30889081e1b8dc",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-0-angle-2-samples_raw.csv",
+      "samples_sha256": "d75cd19f193a46ac4c2a494813079f302ab49b2cb7c3b559fee5dbeff781b7e7",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.11235708113848271,
+          "010": 0.05796942065275721,
+          "100": 0.8296734982087602
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 1.0000000000000002
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-0-angle-2-statevector.csv",
+      "statevector_sha256": "31a3f5512b5837e91b5a565e37bf9e397b1ff4a6f5f60861c45aeae388d35700",
+      "status": "PASS"
+    },
+    {
+      "beta": 1.337,
+      "initial_route": 0,
+      "qprog_sha256": "165f103fb760aeb26003280e85704fe69f0e2a7d0f8c8964af30889081e1b8dc",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-0-angle-3-samples_raw.csv",
+      "samples_sha256": "2559620e297133d9b200c0a1bc68e3980203e6d843fb6dc05adc3513fcea630b",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.19477945665024918,
+          "010": 0.16188918515889747,
+          "100": 0.6433313581908529
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 0.9999999999999996
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-0-angle-3-statevector.csv",
+      "statevector_sha256": "84b5182b34e42fd7c31e108ce5382452c6270124af23bae17a139123d0b86e7d",
+      "status": "PASS"
+    },
+    {
+      "beta": 0.173,
+      "initial_route": 1,
+      "qprog_sha256": "8ec3513de6ab8e996c08a591032c25c11f0071baaa9bad437d91b46db4e19257",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-1-angle-0-samples_raw.csv",
+      "samples_sha256": "5650a224b76c149b6c3df21c3392f7f84c9631f88981e905b5fa15dbf8ce0320",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.10330745362749387,
+          "010": 0.7831996883105333,
+          "100": 0.11349285806197291
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 1.0
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-1-angle-0-statevector.csv",
+      "statevector_sha256": "c63d163d06215ccdb8ea95e1157b1710819d6806912431a05ed8f10fe04537cb",
+      "status": "PASS"
+    },
+    {
+      "beta": 0.417,
+      "initial_route": 1,
+      "qprog_sha256": "8ec3513de6ab8e996c08a591032c25c11f0071baaa9bad437d91b46db4e19257",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-1-angle-1-samples_raw.csv",
+      "samples_sha256": "a64813a41c06db17c066ba7af1b073eaa3211aed45cd4955bb04761bfaf443f9",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.41268561958593714,
+          "010": 0.20382937171748083,
+          "100": 0.3834850086965819
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 0.9999999999999999
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-1-angle-1-statevector.csv",
+      "statevector_sha256": "77ca68a4edd563d0b94f51a92518cc6386c6b43e09ce067105ae25ada126fe56",
+      "status": "PASS"
+    },
+    {
+      "beta": 0.911,
+      "initial_route": 1,
+      "qprog_sha256": "8ec3513de6ab8e996c08a591032c25c11f0071baaa9bad437d91b46db4e19257",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-1-angle-2-samples_raw.csv",
+      "samples_sha256": "44e966e6e9ab7ce9b8ea4ea82b3a001a2fee5bf48aa5bf93901dc90b4f6d1dec",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.8838252778755722,
+          "010": 0.00381764098594476,
+          "100": 0.11235708113848271
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 0.9999999999999997
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-1-angle-2-statevector.csv",
+      "statevector_sha256": "c8b1f80011cc46c81f1781d58b9297149e8bdc0be4316fcddbb1689dffa517a8",
+      "status": "PASS"
+    },
+    {
+      "beta": 1.337,
+      "initial_route": 1,
+      "qprog_sha256": "8ec3513de6ab8e996c08a591032c25c11f0071baaa9bad437d91b46db4e19257",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-1-angle-3-samples_raw.csv",
+      "samples_sha256": "565cedfccea0e786b18a38b787fb871b515cd48c3cceb9976d074af9f774a107",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.1702750694118668,
+          "010": 0.6349454739378834,
+          "100": 0.19477945665024918
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 0.9999999999999993
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-1-angle-3-statevector.csv",
+      "statevector_sha256": "fafad1b0914c898c3f768c87f357a304d6f1b96efdc1bbdffbced59e90c4ed18",
+      "status": "PASS"
+    },
+    {
+      "beta": 0.173,
+      "initial_route": 2,
+      "qprog_sha256": "f1a44bcfb15e08c02d22e020d3fade6fb6bb60b6cc00a34cb487db5df1b49fc9",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-2-angle-0-samples_raw.csv",
+      "samples_sha256": "eb9101fbaa79c17e6af1cc070b143223f22ca7f1324271680fadc2f3392bd577",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.7831996883105331,
+          "010": 0.11501430050506849,
+          "100": 0.10178601118439831
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 0.9999999999999999
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-2-angle-0-statevector.csv",
+      "statevector_sha256": "8438e8047e78d3fe87d01c6ece08f56689de24d7b51b8701d6dcc0a99089cba3",
+      "status": "PASS"
+    },
+    {
+      "beta": 0.417,
+      "initial_route": 2,
+      "qprog_sha256": "f1a44bcfb15e08c02d22e020d3fade6fb6bb60b6cc00a34cb487db5df1b49fc9",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-2-angle-1-samples_raw.csv",
+      "samples_sha256": "54f31b70cde5782791ec8511d96445f58cb12711414b109cd82b25600c8584b0",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.20382937171748083,
+          "010": 0.5485253365719387,
+          "100": 0.24764529171057992
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 0.9999999999999994
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-2-angle-1-statevector.csv",
+      "statevector_sha256": "330a080a1f3ad290f5ded1812bc1d10197cac1169685d50e9b06a74d0c9c6ad6",
+      "status": "PASS"
+    },
+    {
+      "beta": 0.911,
+      "initial_route": 2,
+      "qprog_sha256": "f1a44bcfb15e08c02d22e020d3fade6fb6bb60b6cc00a34cb487db5df1b49fc9",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-2-angle-2-samples_raw.csv",
+      "samples_sha256": "20afe7e16a6e0ac59df74c25ac7ff305b6ad2f536c78a542c086ce04e3e6d6d2",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.00381764098594476,
+          "010": 0.9382129383612978,
+          "100": 0.057969420652757245
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 0.9999999999999998
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-2-angle-2-statevector.csv",
+      "statevector_sha256": "6be5707927d509e8fd3082d9e7d2e363aedf5dcab5ae9158a7dc75ab831f1b73",
+      "status": "PASS"
+    },
+    {
+      "beta": 1.337,
+      "initial_route": 2,
+      "qprog_sha256": "f1a44bcfb15e08c02d22e020d3fade6fb6bb60b6cc00a34cb487db5df1b49fc9",
+      "sampled": {
+        "invalid_shots": 0,
+        "one_hot_probability": 1.0,
+        "shots": 4096
+      },
+      "samples_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-2-angle-3-samples_raw.csv",
+      "samples_sha256": "77b1712cb4c49e57a65f356a02220127820d9342ed6b1f5b5bfab449027209de",
+      "statevector": {
+        "invalid_hamming_weight_probability": 0,
+        "nonzero_probabilities": {
+          "001": 0.6349454739378834,
+          "010": 0.20316534090321847,
+          "100": 0.16188918515889747
+        },
+        "one_hot_probability": 1.0,
+        "probability_sum": 0.9999999999999993
+      },
+      "statevector_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-2-angle-3-statevector.csv",
+      "statevector_sha256": "98302730822dcb7cb90e58c598dfc2cec480ccfc777e61e5831525227692bc06",
+      "status": "PASS"
+    }
+  ]
+}

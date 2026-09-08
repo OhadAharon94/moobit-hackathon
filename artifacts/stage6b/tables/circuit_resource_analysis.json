@@ -1,0 +1,86 @@
+{
+  "comparison_scope": "same frozen D=4 uniform-cost objective and p=1",
+  "constraint_preserving_xy": {
+    "count_ops": {
+      "cx": 164,
+      "h": 12,
+      "rx": 12,
+      "ry": 16,
+      "rz": 70,
+      "u2": 36,
+      "x": 4
+    },
+    "depth": 101,
+    "gate_count": 314,
+    "qprog_sha256": "a9d2c128f7a0753c1d000d1a166736b72a12789b95eb89c0f7de36c484e66f32",
+    "two_qubit_gate_count": 164,
+    "two_qubit_gate_fraction": 0.5222929936305732,
+    "width": 12
+  },
+  "created_at_utc": "2026-09-08T21:40:16.775789+00:00",
+  "engineering_interpretation": {
+    "hardware_scope": "Hardware-agnostic synthesis only; no backend-specific fidelity or execution-cost claim is made.",
+    "limiting_factor": "164 two-qubit gates and synthesized depth 101",
+    "nisq_assessment": "marginal",
+    "simulator_feasible": true
+  },
+  "optimizer_runtime_seconds": {
+    "constraint_preserving_xy_max": 13.433946700009983,
+    "constraint_preserving_xy_mean": 12.901234599994496,
+    "constraint_preserving_xy_min": 12.158036299981177,
+    "note": "The frozen X-mixer artifact did not record optimizer runtime.",
+    "x_mixer": null
+  },
+  "overhead": {
+    "depth": {
+      "absolute_change": 36.0,
+      "constrained_mixer": 101,
+      "ratio": 1.5538461538461539,
+      "relative_change": 0.5538461538461539,
+      "x_mixer": 65
+    },
+    "gate_count": {
+      "absolute_change": 160.0,
+      "constrained_mixer": 314,
+      "ratio": 2.038961038961039,
+      "relative_change": 1.0389610389610389,
+      "x_mixer": 154
+    },
+    "two_qubit_gate_count": {
+      "absolute_change": 80.0,
+      "constrained_mixer": 164,
+      "ratio": 1.9523809523809523,
+      "relative_change": 0.9523809523809523,
+      "x_mixer": 84
+    },
+    "width": {
+      "absolute_change": 0.0,
+      "constrained_mixer": 12,
+      "ratio": 1.0,
+      "relative_change": 0.0,
+      "x_mixer": 12
+    }
+  },
+  "schema_version": "stage6b-1.0",
+  "synthesis_runtime_seconds": {
+    "constraint_preserving_xy": 10.887757499993313,
+    "note": "The frozen X-mixer artifact did not record synthesis runtime.",
+    "x_mixer": null
+  },
+  "table_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\tables\\circuit_resource_comparison.csv",
+  "table_sha256": "c360c2ac713447e5000814507eb733b299ea2f1b37b9401a31ba4969e286dae9",
+  "x_mixer": {
+    "count_ops": {
+      "cx": 84,
+      "h": 12,
+      "rx": 12,
+      "rz": 46
+    },
+    "depth": 65,
+    "gate_count": 154,
+    "qprog_sha256": "9d6b2fd05b1757a070c756c407d64a06e877030ba4397303c6bae9310bbcfd7e",
+    "two_qubit_gate_count": 84,
+    "two_qubit_gate_fraction": 0.5454545454545454,
+    "width": 12
+  }
+}

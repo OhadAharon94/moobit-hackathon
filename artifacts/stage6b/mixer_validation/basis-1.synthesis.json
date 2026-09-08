@@ -1,0 +1,46 @@
+{
+  "D": 1,
+  "K": 3,
+  "circuit_kind": "single-demand-xy-mixer-basis-1",
+  "classiq_sdk_version": "1.29.0",
+  "count_ops": {
+    "cx": 12,
+    "h": 2,
+    "rx": 3,
+    "rz": 6,
+    "u2": 10
+  },
+  "created_at_utc": "2026-09-08T21:20:52.580637+00:00",
+  "depth": 25,
+  "failure_message": null,
+  "failure_type": null,
+  "gate_count": 33,
+  "initial_route": 1,
+  "mixer_pair_order": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "model_sha256": "e2f4625c8ebdc22b9d1be90e09b69a383b2e634cc11a60d15b80ac57bebd8cac",
+  "pair_unitary": "RXX(2*beta) then RYY(2*beta)",
+  "qaoa_depth": 0,
+  "qmod_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-1.qmod.json",
+  "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\mixer_validation\\basis-1.qprog",
+  "qprog_sha256": "8ec3513de6ab8e996c08a591032c25c11f0071baaa9bad437d91b46db4e19257",
+  "scenario_weights": null,
+  "schema_version": "stage6b-1.0",
+  "source_sha256": "df79bc3bb9f1f39a8b540bd53d8c942d9c9bf4f958cc0e308de09a96d47e7bf6",
+  "synthesis_runtime_seconds": 2.7776023000478745,
+  "synthesis_status": "SUCCESS",
+  "synthesized_qubits": 3,
+  "two_qubit_gate_count": 12
+}

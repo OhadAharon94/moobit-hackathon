@@ -1,0 +1,58 @@
+{
+  "D": 4,
+  "K": 3,
+  "M": 1.0,
+  "S": 3,
+  "backend": "simulator",
+  "best_cost": 0.0055783203124999976,
+  "best_parameters": {
+    "params": [
+      1.545004431607042,
+      1.478214657778059
+    ]
+  },
+  "classiq_sdk_version": "1.29.0",
+  "created_at_utc": "2026-09-08T21:30:57.336555+00:00",
+  "energy_mode": "base",
+  "execution_config_sha256": "8be19457e88729e97f14d97fed801a666de6b0607b4641bac25f976a6098ef50",
+  "execution_runtime_seconds": 13.111720799992327,
+  "execution_source_sha256": "df79bc3bb9f1f39a8b540bd53d8c942d9c9bf4f958cc0e308de09a96d47e7bf6",
+  "failure_message": null,
+  "failure_type": null,
+  "final_shots": 4096,
+  "initial_parameters": {
+    "params": [
+      0.5,
+      0.5
+    ]
+  },
+  "instance_id": "qera-d4-frozen",
+  "logical_bits": 12,
+  "mixer": "three-pair-xy-per-demand",
+  "objective_mode": "cost",
+  "optimizer_iteration_cap": 10,
+  "optimizer_quantile": 1.0,
+  "optimizer_seed": 6603,
+  "optimizer_sha256": "6fe43d162b9d6837f563c83dd4f52bba5260be0bf92e5b311f6e4261122c1047",
+  "optimizer_shots": 512,
+  "optimizer_trace_length": 10,
+  "phase_offset": 0.23388915610648003,
+  "phase_scale": 19.688076262924806,
+  "qaoa_depth": 1,
+  "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\d4\\constrained_p1.qprog",
+  "qprog_sha256": "a9d2c128f7a0753c1d000d1a166736b72a12789b95eb89c0f7de36c484e66f32",
+  "sample_count_sum": 4096,
+  "sample_rows": 81,
+  "samples_raw_sha256": "5e358d38de002e990b3a1400f13cbf5e0021f791823bf72cd454bb8354546cf5",
+  "scenario_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "schema_version": "stage6b-1.0",
+  "status": "RAW_SAMPLE_SAVED",
+  "synthesis_manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\d4\\constrained_p1.synthesis.json",
+  "synthesis_manifest_sha256": "4ddd6e1fc01f9c7ac5811f084eb8115a87ec13963f1d85f4390771c1b4b9526b",
+  "synthesis_source_sha256": "df79bc3bb9f1f39a8b540bd53d8c942d9c9bf4f958cc0e308de09a96d47e7bf6",
+  "synthesis_spec_sha256": "fcf34372510e9d5a3b3cc559e1883a1047cabae4f4e8dd9d2b172e81ca61b933"
+}

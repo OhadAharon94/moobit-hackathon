@@ -1,0 +1,29 @@
+{
+  "D": 4,
+  "absolute_mean_objective_improvement": 0.0028161865353243942,
+  "created_at_utc": "2026-09-08T21:43:44.457010+00:00",
+  "exploratory_one_sample_t_test": {
+    "alternative": "QAOA seed mean objective is lower than uniform-valid population mean",
+    "caution": "Only three optimizer seeds; this test is descriptive, not secure evidence.",
+    "degrees_of_freedom": 2,
+    "p_value": 0.15322935246223554,
+    "statistic": -1.361455486761703
+  },
+  "interpretation": "Two seeds shifted the overall mean cost downward, but one did not; near-optimal, exact-optimum, and feasible mass were below uniform-valid sampling in all three seeds. Optimization superiority is not reproducible.",
+  "matched_seed_mean_objective_p_values": [
+    0.0009990009990009,
+    0.8451548451548452,
+    0.0009990009990009
+  ],
+  "matched_seed_near_optimal_p_values": [
+    0.9050949050949052,
+    0.996003996003996,
+    0.9170829170829172
+  ],
+  "mean_qaoa_valid_objective": 0.3533371262059381,
+  "relative_mean_objective_improvement": 0.007907231056335257,
+  "schema_version": "stage6b-1.0",
+  "seed_count": 3,
+  "std_qaoa_valid_objective_across_seeds": 0.0035827672738499004,
+  "uniform_valid_population_mean_objective": 0.3561533127412625
+}
