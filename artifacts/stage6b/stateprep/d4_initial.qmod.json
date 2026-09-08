@@ -1,0 +1,907 @@
+{
+  "source_ref": null,
+  "back_ref": null,
+  "interface_version": "22",
+  "kind": "user",
+  "functions": [
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "apply_to_all_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "target",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "1"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": true,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 29,
+            "start_column": 3,
+            "end_line": 29,
+            "end_column": 64,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\utility_functions.py"
+          },
+          "back_ref": null,
+          "kind": "Repeat",
+          "uuid": "9c6db43e-2d25-4eee-ad0b-1397e754ea68",
+          "iter_var": "index",
+          "count": {
+            "source_ref": null,
+            "back_ref": null,
+            "expr": "1"
+          },
+          "body": [
+            {
+              "source_ref": {
+                "start_line": 29,
+                "start_column": 36,
+                "end_line": 29,
+                "end_column": 63,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\utility_functions.py"
+              },
+              "back_ref": "597c005c-7179-4cd8-8db8-07a1670bf9f3",
+              "kind": "QuantumFunctionCall",
+              "uuid": "55ec6eb4-9002-4780-b6b8-ca510c5a53d3",
+              "function": "X",
+              "positional_args": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "target"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "index"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "_dicke_split_cycle_shift_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "qvar",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "3"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 405,
+            "start_column": 7,
+            "end_line": 418,
+            "end_column": 8,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": null,
+          "kind": "WithinApply",
+          "uuid": "9e8ca50b-ce9d-49ad-8cfa-9768a3985ea7",
+          "compute": [
+            {
+              "source_ref": {
+                "start_line": 406,
+                "start_column": 23,
+                "end_line": 406,
+                "end_column": 47,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+              },
+              "back_ref": "071e21a0-a0a1-4fd1-9590-5796eb96b532",
+              "kind": "QuantumFunctionCall",
+              "uuid": "87ec53bf-91d7-4ae6-a5e8-4cab3b3dc48d",
+              "function": "CX",
+              "positional_args": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "qvar"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "1"
+                  }
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "qvar"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "0"
+                  }
+                }
+              ]
+            }
+          ],
+          "action": [
+            {
+              "source_ref": {
+                "start_line": 408,
+                "start_column": 15,
+                "end_line": 411,
+                "end_column": 16,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+              },
+              "back_ref": "1b4b616b-11b6-463d-b9ee-d24ccb183069",
+              "kind": "Control",
+              "uuid": "b787eeea-114e-43ad-b637-5c1f19026dcf",
+              "expression": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "qvar[0]"
+              },
+              "body": [
+                {
+                  "source_ref": {
+                    "start_line": 410,
+                    "start_column": 31,
+                    "end_line": 410,
+                    "end_column": 82,
+                    "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+                  },
+                  "back_ref": "012aa69e-c248-47da-8ee9-5e495bf596f3",
+                  "kind": "QuantumFunctionCall",
+                  "uuid": "b490f885-746e-49db-b9ac-0a7ad3315dd5",
+                  "function": "RY",
+                  "positional_args": [
+                    {
+                      "source_ref": null,
+                      "back_ref": null,
+                      "expr": "1.91063323624902"
+                    },
+                    {
+                      "source_ref": null,
+                      "back_ref": null,
+                      "kind": "Subscript",
+                      "value": {
+                        "source_ref": null,
+                        "back_ref": null,
+                        "kind": "Name",
+                        "name": "qvar"
+                      },
+                      "index": {
+                        "source_ref": null,
+                        "back_ref": null,
+                        "expr": "1"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "else_block": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "_dicke_split_cycle_shift_expanded___1",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "qvar",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 405,
+            "start_column": 7,
+            "end_line": 418,
+            "end_column": 8,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": null,
+          "kind": "WithinApply",
+          "uuid": "a86ace04-80c7-4f8d-afa1-2c76ad19ecc5",
+          "compute": [
+            {
+              "source_ref": {
+                "start_line": 406,
+                "start_column": 23,
+                "end_line": 406,
+                "end_column": 47,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+              },
+              "back_ref": "28261336-ba1e-4ffc-83af-4c219197dca8",
+              "kind": "QuantumFunctionCall",
+              "uuid": "905f6677-37ed-42f5-bc56-5c9bd899be9a",
+              "function": "CX",
+              "positional_args": [
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "qvar"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "1"
+                  }
+                },
+                {
+                  "source_ref": null,
+                  "back_ref": null,
+                  "kind": "Subscript",
+                  "value": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "qvar"
+                  },
+                  "index": {
+                    "source_ref": null,
+                    "back_ref": null,
+                    "expr": "0"
+                  }
+                }
+              ]
+            }
+          ],
+          "action": [
+            {
+              "source_ref": {
+                "start_line": 408,
+                "start_column": 15,
+                "end_line": 411,
+                "end_column": 16,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+              },
+              "back_ref": "e6ceb79b-597a-406c-8f1f-8e57663bc00a",
+              "kind": "Control",
+              "uuid": "241902d6-0b9a-4fb3-b7f5-f58e09f7cc3d",
+              "expression": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "qvar[0]"
+              },
+              "body": [
+                {
+                  "source_ref": {
+                    "start_line": 410,
+                    "start_column": 31,
+                    "end_line": 410,
+                    "end_column": 82,
+                    "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+                  },
+                  "back_ref": "160bce57-9d61-461f-b0a9-cd5fa7d21359",
+                  "kind": "QuantumFunctionCall",
+                  "uuid": "6447e673-e083-4691-b46d-8b812b3da247",
+                  "function": "RY",
+                  "positional_args": [
+                    {
+                      "source_ref": null,
+                      "back_ref": null,
+                      "expr": "1.5707963267949"
+                    },
+                    {
+                      "source_ref": null,
+                      "back_ref": null,
+                      "kind": "Subscript",
+                      "value": {
+                        "source_ref": null,
+                        "back_ref": null,
+                        "kind": "Name",
+                        "name": "qvar"
+                      },
+                      "index": {
+                        "source_ref": null,
+                        "back_ref": null,
+                        "expr": "1"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "else_block": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "prepare_dicke_state_unary_input_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "qvar",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "2"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 442,
+            "start_column": 7,
+            "end_line": 442,
+            "end_column": 44,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": "509a231a-3eca-44b9-808b-1fa9c046a361",
+          "kind": "QuantumFunctionCall",
+          "uuid": "fe9d6446-482a-435c-86b9-50fa83df0059",
+          "function": "_dicke_split_cycle_shift_expanded___1",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Name",
+              "name": "qvar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "prepare_dicke_state_unary_input_expanded___1",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "qvar",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "3"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 442,
+            "start_column": 7,
+            "end_line": 442,
+            "end_column": 44,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": "dbfe4501-0e93-4456-ae6c-8ddd498031fe",
+          "kind": "QuantumFunctionCall",
+          "uuid": "6146ffd7-300c-4cee-a91c-5aa16bbbff6d",
+          "function": "_dicke_split_cycle_shift_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Name",
+              "name": "qvar"
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 444,
+            "start_column": 11,
+            "end_line": 446,
+            "end_column": 12,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": "4b3f8bd3-3699-490f-aa3a-97d0db37515f",
+          "kind": "QuantumFunctionCall",
+          "uuid": "ac8b41c1-f811-4813-a0c1-989cb27fc843",
+          "function": "prepare_dicke_state_unary_input_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "qvar"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "1"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "prepare_dicke_state_expanded___0",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "qvar",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "3"
+            }
+          },
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 469,
+            "start_column": 7,
+            "end_line": 469,
+            "end_column": 33,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": "4eaed7cd-4552-4253-a71e-c46bd4eeec77",
+          "kind": "QuantumFunctionCall",
+          "uuid": "a1d52470-b21c-4e49-ac47-123d04b42916",
+          "function": "apply_to_all_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "qvar"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "0"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "1"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 470,
+            "start_column": 7,
+            "end_line": 470,
+            "end_column": 47,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\state_preparation.py"
+          },
+          "back_ref": "5426a886-9e6e-445b-b323-36247b91e527",
+          "kind": "QuantumFunctionCall",
+          "uuid": "065d7f4c-fcfa-44d1-bfb1-1eba1f0ad5c8",
+          "function": "prepare_dicke_state_unary_input_expanded___1",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Name",
+              "name": "qvar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_ref": null,
+      "back_ref": null,
+      "name": "main",
+      "positional_arg_declarations": [
+        {
+          "source_ref": null,
+          "back_ref": null,
+          "name": "routes",
+          "quantum_type": {
+            "source_ref": null,
+            "back_ref": null,
+            "element_type": {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "qbit"
+            },
+            "kind": "qvec",
+            "length": {
+              "source_ref": null,
+              "back_ref": null,
+              "expr": "12"
+            }
+          },
+          "direction": "output",
+          "kind": "PortDeclaration",
+          "type_modifier": "mutable"
+        }
+      ],
+      "permutation": false,
+      "body": [
+        {
+          "source_ref": {
+            "start_line": 69,
+            "start_column": 7,
+            "end_line": 69,
+            "end_column": 23,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": null,
+          "kind": "Allocate",
+          "uuid": "b3d88618-db1c-4d4a-966c-da1688517e4b",
+          "size": {
+            "source_ref": null,
+            "back_ref": null,
+            "expr": "12"
+          },
+          "is_signed": null,
+          "fraction_digits": null,
+          "target": {
+            "source_ref": null,
+            "back_ref": null,
+            "kind": "Name",
+            "name": "routes"
+          }
+        },
+        {
+          "source_ref": {
+            "start_line": 72,
+            "start_column": 11,
+            "end_line": 72,
+            "end_column": 75,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "d6974374-3648-4ee8-b3a0-c8f9efae4fb7",
+          "kind": "QuantumFunctionCall",
+          "uuid": "f2ff7bfb-f5bf-4563-9f47-b822e210a4fd",
+          "function": "prepare_dicke_state_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "0"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "3"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 72,
+            "start_column": 11,
+            "end_line": 72,
+            "end_column": 75,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "6a02a442-3539-4a62-9bb5-d6340a91e3fd",
+          "kind": "QuantumFunctionCall",
+          "uuid": "ed8b9970-2dd2-4cfe-99a7-3ad6b607577e",
+          "function": "prepare_dicke_state_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "3"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "6"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 72,
+            "start_column": 11,
+            "end_line": 72,
+            "end_column": 75,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "6ed7fe4b-4aa7-46bb-862c-5b46adc42ec6",
+          "kind": "QuantumFunctionCall",
+          "uuid": "9bf6ae74-83a9-43eb-98b8-a7afe3a0a6dd",
+          "function": "prepare_dicke_state_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "6"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "9"
+              }
+            }
+          ]
+        },
+        {
+          "source_ref": {
+            "start_line": 72,
+            "start_column": 11,
+            "end_line": 72,
+            "end_column": 75,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\qera_stage6b\\model.py"
+          },
+          "back_ref": "f03bb3d6-b934-4538-8922-acba8fad07a3",
+          "kind": "QuantumFunctionCall",
+          "uuid": "59281aad-e1c2-472f-9cdf-34f65d3edf05",
+          "function": "prepare_dicke_state_expanded___0",
+          "positional_args": [
+            {
+              "source_ref": null,
+              "back_ref": null,
+              "kind": "Slice",
+              "value": {
+                "source_ref": null,
+                "back_ref": null,
+                "kind": "Name",
+                "name": "routes"
+              },
+              "start": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "9"
+              },
+              "stop": {
+                "source_ref": null,
+                "back_ref": null,
+                "expr": "12"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "types": [],
+  "qstructs": [],
+  "classical_execution_code": "",
+  "constants": [],
+  "constraints": {
+    "max_width": null,
+    "optimization_parameter": "no_opt"
+  },
+  "execution_preferences": {
+    "noise_properties": null,
+    "random_seed": 796021501,
+    "backend_preferences": {
+      "backend_service_provider": "Classiq",
+      "backend_name": "simulator",
+      "use_double_precision": false,
+      "noise_model": null,
+      "simulator_noise_spec": null
+    },
+    "num_shots": null,
+    "transpile_to_hardware": "decompose",
+    "job_name": null,
+    "include_zero_amplitude_outputs": false,
+    "amplitude_threshold": 0.0
+  },
+  "preferences": {
+    "machine_precision": 8,
+    "backend_service_provider": null,
+    "backend_name": null,
+    "custom_hardware_settings": {
+      "basis_gates": [
+        "y",
+        "rz",
+        "r",
+        "sdg",
+        "ry",
+        "s",
+        "u2",
+        "u3",
+        "tdg",
+        "h",
+        "u1",
+        "cx",
+        "cz",
+        "t",
+        "x",
+        "sxdg",
+        "u",
+        "p",
+        "id",
+        "sx",
+        "cy",
+        "rx",
+        "z"
+      ],
+      "connectivity_map": null,
+      "is_symmetric_connectivity": true
+    },
+    "debug_mode": true,
+    "optimization_level": 1,
+    "output_format": [
+      "qasm"
+    ],
+    "qasm3": null,
+    "transpilation_option": "auto optimize",
+    "solovay_kitaev_max_iterations": null,
+    "timeout_seconds": 300,
+    "optimization_timeout_seconds": null,
+    "random_seed": 1011562820,
+    "symbolic_loops": false,
+    "compatibility_mode": false,
+    "standalone": false
+  },
+  "compressed_debug_info": "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",
+  "functions_compilation_metadata": {}
+}

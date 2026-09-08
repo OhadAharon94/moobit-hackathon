@@ -1,0 +1,92 @@
+{
+  "D": 4,
+  "created_at_utc": "2026-09-08T21:36:32.625974+00:00",
+  "distribution_metrics": {
+    "best_feasible_objective_gap": 0.0,
+    "best_feasible_regret_gap": 0.0,
+    "best_feasible_relative_gap": 0.0,
+    "best_feasible_worst_case_regret": 0.12322936529555982,
+    "exact_optimum_count": 35,
+    "exact_optimum_fraction_valid": 0.008544921875,
+    "exact_optimum_fraction_valid_wilson_high": 0.011860229681779438,
+    "exact_optimum_fraction_valid_wilson_low": 0.006150578678096599,
+    "exact_optimum_probability": 0.008544921875,
+    "feasible_fraction_valid": 0.2861328125,
+    "feasible_fraction_valid_wilson_high": 0.3001689496636194,
+    "feasible_fraction_valid_wilson_low": 0.27249745278210913,
+    "joint_feasible_count": 1172,
+    "joint_feasible_probability": 0.2861328125,
+    "mean_valid_objective": 0.357466403868904,
+    "median_valid_objective": 0.3346867333821466,
+    "near_optimal_absolute_gap_threshold": 0.01,
+    "near_optimal_count": 35,
+    "near_optimal_fraction_valid": 0.008544921875,
+    "near_optimal_fraction_valid_wilson_high": 0.011860229681779438,
+    "near_optimal_fraction_valid_wilson_low": 0.006150578678096599,
+    "near_optimal_probability": 0.008544921875,
+    "one_hot_count": 4096,
+    "one_hot_probability": 1.0,
+    "q25_valid_objective": 0.27573073948038135,
+    "q75_valid_objective": 0.4280360571430527,
+    "total_shots": 4096
+  },
+  "raw_summary": {
+    "approximation_threshold": 0.01,
+    "best_sampled_regret_assignment": [
+      0,
+      1,
+      1,
+      2
+    ],
+    "best_sampled_regret_gap": 0.0,
+    "best_sampled_worst_case_regret": 0.12322936529555982,
+    "exact_joint_assignments": [
+      [
+        1,
+        0,
+        2,
+        2
+      ]
+    ],
+    "exact_joint_objective": 0.24514054470174573,
+    "exact_joint_optimum_probability": 0.008544921875,
+    "exact_minimax_assignments": [
+      [
+        0,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        1,
+        2
+      ]
+    ],
+    "exact_minimax_probability": 0.017333984375,
+    "exact_minimax_regret": 0.12322936529555982,
+    "joint_feasible_probability": 0.2861328125,
+    "near_optimal_joint_probability_gap_0_01": 0.008544921875,
+    "observed_state_count": 81,
+    "one_hot_probability": 1.0,
+    "selected_assignment": [
+      1,
+      0,
+      2,
+      2
+    ],
+    "selected_exact_gap": 0.0,
+    "selected_objective": 0.24514054470174573,
+    "selected_relative_gap": 0.0,
+    "status": "SUCCESS",
+    "theoretical_uniform_one_hot_probability": 0.019775390625,
+    "total_shots": 4096,
+    "unrestricted_ground_probability": 0.0302734375
+  },
+  "samples_processed_sha256": "5fe50242ab85132e28cc173cd15ac4f60e3d2acdda75c90b083a7abc776716f5",
+  "samples_raw_sha256": "bd9ad0a106885a3b31748854f9624da91a391111bbc0aeca1f72c97ee3bdb243",
+  "schema_version": "stage6b-1.0",
+  "seed": 6602,
+  "status": "PROCESSED"
+}

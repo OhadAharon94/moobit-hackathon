@@ -1,0 +1,3 @@
+D,p,mixer,width,depth,gate_count,two_qubit_gate_count,two_qubit_gate_fraction,qprog_sha256,synthesis_runtime_seconds,optimizer_runtime_seconds_mean,optimizer_runtime_seconds_min,optimizer_runtime_seconds_max,runtime_note
+4,1,transverse_x_frozen,12,65,154,84,0.5454545454545454,9d6b2fd05b1757a070c756c407d64a06e877030ba4397303c6bae9310bbcfd7e,,,,,Historical synthesis and optimizer runtimes were not recorded.
+4,1,constraint_preserving_xy,12,101,314,164,0.5222929936305732,a9d2c128f7a0753c1d000d1a166736b72a12789b95eb89c0f7de36c484e66f32,10.887757499993313,12.901234599994496,12.158036299981177,13.433946700009983,Three independent Stage 6B seeds.

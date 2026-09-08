@@ -1,0 +1,31 @@
+{
+  "created_at_utc": "2026-09-08T21:43:45.361482+00:00",
+  "figures": [
+    {
+      "path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\figures\\01_d4_cost_ecdf.png",
+      "sha256": "48732b5011a31e69ab81e3aef7c4620d99b703ed35b5471344f7e74ca28edbf5"
+    },
+    {
+      "path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\figures\\02_d4_matched_valid_means.png",
+      "sha256": "fcd1ef8a5ce8f6f1b99402a886064d5a993e1bc8c07d6262a98d062a0eb3eedc"
+    },
+    {
+      "path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\figures\\03_d4_quality_probabilities.png",
+      "sha256": "3593942d34c814c5fccfd48b298158fa2d1b4094137dc404c9e9d0e5577a05c8"
+    },
+    {
+      "path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\figures\\04_d4_resource_overhead.png",
+      "sha256": "99ce154bcf24de3ef5854768311b3eade6e8debdd6f7c3af6069d240fff5ed81"
+    },
+    {
+      "path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\worktrees\\stage6b-constraint-mixer\\artifacts\\stage6b\\figures\\05_d4_optimizer_traces.png",
+      "sha256": "27d3556e674c68cd407c87a8dfaae4ea33f08166871db8d04708eaf9df112f91"
+    }
+  ],
+  "schema_version": "stage6b-1.0",
+  "source_tables": {
+    "d4_results_sha256": "f82a5726c6aa1a0e91422b14f819192e4240625d28ed6621bce2e69b566b6530",
+    "d4_seed_summary_sha256": "a8c51c817066939fbe6c1d86da4a84f3ee8a33823c1678eac269fe31bf38b6b9",
+    "resource_comparison_sha256": "c360c2ac713447e5000814507eb733b299ea2f1b37b9401a31ba4969e286dae9"
+  }
+}

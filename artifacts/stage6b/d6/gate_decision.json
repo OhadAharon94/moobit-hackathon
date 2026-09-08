@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-09-08T21:43:44.457010+00:00",
+  "d4_aggregate_sha256": "eb0794720469d2f687bd56bf128669caf0ef4fba2565f3119ad7e2af4b06eed1",
+  "d4_statistics_sha256": "b4539f283000e0cc848b1350eb4977d844d92415c8325772afe0f14e2e29e1db",
+  "decision": "STOP_AT_D4",
+  "gate_passed": false,
+  "gate_rule": "all three executions succeed with 4096 one-hot shots and every seed beats at least 95% of matched uniform-valid batches on either mean objective or near-optimal fraction",
+  "prohibited_actions_respected": [
+    "no D=6 synthesis",
+    "no D=6 quantum execution",
+    "no adaptive scenario reweighting",
+    "no combined adaptive-constrained algorithm"
+  ],
+  "reason": "Correctness and execution stability passed, but every-seed matched-valid quality reproducibility did not. Seed 6602 failed the mean-objective criterion and all seeds had worse near-optimal mass than uniform-valid.",
+  "schema_version": "stage6b-1.0",
+  "status": "NOT_ATTEMPTED"
+}

@@ -1,0 +1,87 @@
+{
+  "D": 4,
+  "aggregate_metrics": {
+    "best_feasible_objective_gap": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0,
+      "std_across_seeds": 0.0
+    },
+    "best_feasible_worst_case_regret": {
+      "max": 0.12322936529555982,
+      "mean": 0.12322936529555982,
+      "min": 0.12322936529555982,
+      "std_across_seeds": 0.0
+    },
+    "exact_optimum_probability": {
+      "max": 0.01025390625,
+      "mean": 0.009602864583333334,
+      "min": 0.008544921875,
+      "std_across_seeds": 0.0009243014885742634
+    },
+    "joint_feasible_probability": {
+      "max": 0.422607421875,
+      "mean": 0.3692220052083333,
+      "min": 0.2861328125,
+      "std_across_seeds": 0.07292506759931613
+    },
+    "mean_valid_objective": {
+      "max": 0.357466403868904,
+      "mean": 0.3533371262059381,
+      "min": 0.3510533508298809,
+      "std_across_seeds": 0.0035827672738499004
+    },
+    "median_valid_objective": {
+      "max": 0.3346867333821466,
+      "mean": 0.3346867333821466,
+      "min": 0.3346867333821466,
+      "std_across_seeds": 0.0
+    },
+    "near_optimal_probability": {
+      "max": 0.01025390625,
+      "mean": 0.009602864583333334,
+      "min": 0.008544921875,
+      "std_across_seeds": 0.0009243014885742634
+    },
+    "one_hot_probability": {
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0,
+      "std_across_seeds": 0.0
+    }
+  },
+  "created_at_utc": "2026-09-08T21:36:58.555025+00:00",
+  "d6_gate_applicable": true,
+  "d6_gate_passed": false,
+  "d6_gate_rule": "all three executions succeed with 4096 one-hot shots and every seed beats at least 95% of matched uniform-valid batches on either mean objective or near-optimal fraction",
+  "failed_seeds": [],
+  "predeclared_seeds": [
+    6601,
+    6602,
+    6603
+  ],
+  "results_sha256": "f82a5726c6aa1a0e91422b14f819192e4240625d28ed6621bce2e69b566b6530",
+  "schema_version": "stage6b-1.0",
+  "seed_summary_sha256": "a8c51c817066939fbe6c1d86da4a84f3ee8a33823c1678eac269fe31bf38b6b9",
+  "successful_seeds": [
+    6601,
+    6602,
+    6603
+  ],
+  "uniform_valid_population": {
+    "best_feasible_objective_gap": 0.0,
+    "best_feasible_worst_case_regret": 0.12322936529555982,
+    "exact_joint_objective": 0.24514054470174573,
+    "exact_optimum_count": 1,
+    "exact_optimum_fraction_valid": 0.012345679012345678,
+    "feasible_fraction_valid": 0.48148148148148145,
+    "joint_feasible_count": 39,
+    "mean_valid_objective": 0.35615331274126255,
+    "median_valid_objective": 0.3346867333821466,
+    "near_optimal_count": 1,
+    "near_optimal_fraction_valid": 0.012345679012345678,
+    "q25_valid_objective": 0.27573073948038135,
+    "q75_valid_objective": 0.422657206321164,
+    "valid_state_count": 81
+  }
+}
