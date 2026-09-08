@@ -1,0 +1,36 @@
+{
+  "M": 1.0,
+  "backend": "simulator",
+  "best_cost": 0.14426445312500003,
+  "best_parameters": {
+    "params": [
+      -2.9217869530016065,
+      0.9263912038274521
+    ]
+  },
+  "energy_mode": "base",
+  "final_shots": 4096,
+  "initial_parameters": {
+    "params": [
+      -2.771639938390691,
+      0.925014193823755
+    ]
+  },
+  "objective_mode": "cost",
+  "optimizer_iteration_cap": 10,
+  "optimizer_shots": 512,
+  "optimizer_trace_length": 10,
+  "phase_offset": 0.23397266352128523,
+  "phase_scale": 19.40809812740831,
+  "plan_version": "1.1",
+  "sample_rows": 2208,
+  "scenario_weights": [
+    0.267067979980078,
+    0.247084777957411,
+    0.48584724206251
+  ],
+  "schema_version": "1.0",
+  "seed": 1701,
+  "status": "SUCCESS",
+  "summary_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\runs\\adaptive_cost_t2\\summary.json"
+}

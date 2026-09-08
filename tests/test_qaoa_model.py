@@ -1,7 +1,11 @@
 from qera.config import INITIAL_SCENARIO_WEIGHTS
 from qera.energy import build_energy_spec
 from qera.evaluate import Evaluator
-from qera.qaoa_model import create_qmod, make_classical_cost, make_qmod_cost
+from qera.qaoa_model import (
+    create_qmod,
+    make_classical_cost,
+    make_qmod_cost,
+)
 from qera.qubo import all_bitstates
 
 
@@ -25,4 +29,3 @@ def test_base_qaoa_model_serializes_without_platform_access() -> None:
     assert '"name":"main"' in qmod.replace(" ", "")
     assert "routes" in qmod
     assert "params" in qmod
-

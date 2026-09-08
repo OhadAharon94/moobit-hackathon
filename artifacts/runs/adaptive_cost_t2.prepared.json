@@ -1,0 +1,30 @@
+{
+  "next_name": "adaptive_cost_t2",
+  "next_phase_scale": 19.408098127408312,
+  "previous_parameters": [
+    -2.7922051662604463,
+    0.9250141938237549
+  ],
+  "previous_phase_scale": 19.552103831388923,
+  "previous_run": "adaptive_cost_t1",
+  "regrets": [
+    0.03888586216289861,
+    0.0,
+    0.33808137470709426
+  ],
+  "selected_assignment": [
+    1,
+    0,
+    2,
+    2
+  ],
+  "warm_start_parameters": [
+    -2.771639938390691,
+    0.9250141938237549
+  ],
+  "weights": [
+    0.2670679799800784,
+    0.24708477795741132,
+    0.4858472420625102
+  ]
+}

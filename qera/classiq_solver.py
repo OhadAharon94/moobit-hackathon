@@ -16,6 +16,7 @@ from qera.exact import weighted_optima
 from qera.instance import SCENARIOS
 from qera.qubo import all_bitstates, assignment_from_bits, bits_from_assignment
 from qera.types import Assignment, BitState
+from qera.types import SolveRequest, SolveResult, SolveStatus
 
 
 def parse_routes_cell(value: Any) -> BitState:
@@ -187,3 +188,54 @@ def process_sample_frame(
         "selected_exact_gap": exact_gap,
     }
     return processed.drop(columns=[], errors="ignore"), summary
+
+
+class SavedQuantumInnerSolver:
+    """Replay saved quantum runs through the shared adaptive-loop contract."""
+
+    def __init__(self, run_root, run_names: Sequence[str]) -> None:
+        from pathlib import Path
+
+        self.run_root = Path(run_root)
+        self.run_names = tuple(run_names)
+        self.index = 0
+
+    def solve(self, request: SolveRequest) -> SolveResult:
+        if self.index >= len(self.run_names):
+            return SolveResult(
+                status=SolveStatus.EXECUTION_FAILED,
+                assignment=None,
+                objective_value=None,
+                warnings=["no saved quantum run remains"],
+            )
+        run_name = self.run_names[self.index]
+        self.index += 1
+        run_dir = self.run_root / run_name
+        manifest = json.loads((run_dir / "manifest.json").read_text(encoding="utf-8"))
+        summary = json.loads((run_dir / "summary.json").read_text(encoding="utf-8"))
+        if manifest["objective_mode"] != request.objective_mode:
+            raise ValueError(f"objective mismatch in saved run {run_name}")
+        if any(
+            abs(float(actual) - expected) > 1e-8
+            for actual, expected in zip(
+                manifest["scenario_weights"], request.scenario_weights, strict=True
+            )
+        ):
+            raise ValueError(f"adaptive weight mismatch in saved run {run_name}")
+        assignment = (
+            tuple(summary["selected_assignment"])
+            if summary["selected_assignment"] is not None
+            else None
+        )
+        status = SolveStatus(summary["status"])
+        return SolveResult(
+            status=status,
+            assignment=assignment,  # type: ignore[arg-type]
+            objective_value=summary["selected_objective"],
+            metadata={
+                "run_name": run_name,
+                "one_hot_probability": summary["one_hot_probability"],
+                "joint_feasible_probability": summary["joint_feasible_probability"],
+                "selected_exact_gap": summary["selected_exact_gap"],
+            },
+        )

@@ -1,0 +1,26 @@
+{
+  "M": 1.0,
+  "energy_mode": "base",
+  "metrics": {
+    "count_ops": {
+      "cx": 84,
+      "h": 12,
+      "rx": 12,
+      "rz": 46
+    },
+    "depth": 65,
+    "width": 12
+  },
+  "objective_mode": "cost",
+  "phase_offset": 0.23397266352128523,
+  "phase_scale": 19.40809812740831,
+  "plan_version": "1.1",
+  "qaoa_depth": 1,
+  "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\circuits\\adaptive_cost_t2.qprog",
+  "scenario_weights": [
+    0.267067979980078,
+    0.247084777957411,
+    0.48584724206251
+  ],
+  "schema_version": "1.0"
+}

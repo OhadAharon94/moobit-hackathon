@@ -1,0 +1,145 @@
+{
+  "best_assignment": [
+    0,
+    1,
+    1,
+    2
+  ],
+  "source_runs": [
+    "uniform_cost_p1_smoke",
+    "adaptive_cost_t1",
+    "adaptive_cost_t2"
+  ],
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "best_so_far": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "iteration": 0,
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "request": {
+        "energy_mode": "base",
+        "objective_mode": "cost",
+        "scenario_weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "seed": 1701
+      },
+      "result": {
+        "assignment": [
+          1,
+          0,
+          2,
+          2
+        ],
+        "metadata": {
+          "joint_feasible_probability": 0.0234375,
+          "one_hot_probability": 0.05224609375,
+          "run_name": "uniform_cost_p1_smoke",
+          "selected_exact_gap": 0.0
+        },
+        "objective_value": 0.24514054470174573,
+        "raw_candidates": [],
+        "status": "SUCCESS",
+        "warnings": []
+      },
+      "worst_regret": 0.33808137470709426
+    },
+    {
+      "best_so_far": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "iteration": 1,
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "request": {
+        "energy_mode": "base",
+        "objective_mode": "cost",
+        "scenario_weights": [
+          0.30205696680203536,
+          0.29053666135818085,
+          0.40740637183978373
+        ],
+        "seed": 1702
+      },
+      "result": {
+        "assignment": [
+          1,
+          0,
+          2,
+          2
+        ],
+        "metadata": {
+          "joint_feasible_probability": 0.028076171875,
+          "one_hot_probability": 0.06298828125,
+          "run_name": "adaptive_cost_t1",
+          "selected_exact_gap": 0.0
+        },
+        "objective_value": 0.24789865466820138,
+        "raw_candidates": [],
+        "status": "SUCCESS",
+        "warnings": []
+      },
+      "worst_regret": 0.33808137470709426
+    },
+    {
+      "best_so_far": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "iteration": 2,
+      "regrets": [
+        0.12322936529555982,
+        0.10893773945762117,
+        0.11244053113683199
+      ],
+      "request": {
+        "energy_mode": "base",
+        "objective_mode": "cost",
+        "scenario_weights": [
+          0.2670679799800788,
+          0.24708477795741124,
+          0.48584724206251
+        ],
+        "seed": 1703
+      },
+      "result": {
+        "assignment": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "metadata": {
+          "joint_feasible_probability": 0.02978515625,
+          "one_hot_probability": 0.060791015625,
+          "run_name": "adaptive_cost_t2",
+          "selected_exact_gap": 0.0
+        },
+        "objective_value": 0.24953051997060838,
+        "raw_candidates": [],
+        "status": "SUCCESS",
+        "warnings": []
+      },
+      "worst_regret": 0.12322936529555982
+    }
+  ]
+}
