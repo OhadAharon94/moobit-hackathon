@@ -33,6 +33,7 @@ from qera.types import (
     ScenarioEvaluation,
     ScenarioNormalization,
 )
+from qera.validation import validated_integer
 
 
 def all_assignments() -> tuple[Assignment, ...]:
@@ -44,7 +45,10 @@ def all_assignments() -> tuple[Assignment, ...]:
 def validate_assignment(assignment: Sequence[int]) -> Assignment:
     if len(assignment) != DEMAND_COUNT:
         raise ValueError(f"expected {DEMAND_COUNT} path choices, got {len(assignment)}")
-    result = tuple(int(value) for value in assignment)
+    result = tuple(
+        validated_integer(value, f"path choice {index}")
+        for index, value in enumerate(assignment)
+    )
     if any(value < 0 or value >= PATHS_PER_DEMAND for value in result):
         raise ValueError(f"path choices must be in [0, {PATHS_PER_DEMAND - 1}]")
     return result  # type: ignore[return-value]

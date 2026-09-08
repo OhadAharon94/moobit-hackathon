@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qera"
-version = "0.1.0"
+version = "0.1.1"
 description = "Q-ERA adaptive multi-scenario routing experiment"
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.11,<3.14"
 dependencies = [
   "classiq==1.29.0",
   "matplotlib==3.11.1",
@@ -25,4 +25,3 @@ include = ["qera*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
-

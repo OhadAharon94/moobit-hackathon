@@ -1,0 +1,477 @@
+[
+  {
+    "D": 4,
+    "accepted": true,
+    "checks": {
+      "all_scenarios_have_feasible_routes": true,
+      "congestion_is_nonconstant": true,
+      "degradation_changes_capacity": true,
+      "joint_feasible_routes_exist": true,
+      "scenarios_create_conflicting_pressure": true,
+      "shared_resources_exist": true,
+      "surge_changes_volumes": true,
+      "three_paths_per_demand": true
+    },
+    "congestion_ranges": {
+      "degradation": {
+        "maximum": 16.64,
+        "minimum": 1.2444444444444445
+      },
+      "nominal": {
+        "maximum": 2.417777777777778,
+        "minimum": 0.8622222222222223
+      },
+      "surge": {
+        "maximum": 3.797777777777778,
+        "minimum": 1.34
+      }
+    },
+    "feasible_by_scenario": {
+      "degradation": 47,
+      "nominal": 79,
+      "surge": 63
+    },
+    "instance_id": "qera-d4-frozen",
+    "joint_feasible_count": 39,
+    "joint_feasible_fraction": 0.48148148148148145,
+    "maximum_candidate_edge_demand_usage": 4,
+    "scenario_optima": {
+      "degradation": [
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "nominal": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "surge": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ]
+    },
+    "valid_assignment_count": 81
+  },
+  {
+    "D": 5,
+    "accepted": true,
+    "checks": {
+      "all_scenarios_have_feasible_routes": true,
+      "congestion_is_nonconstant": true,
+      "degradation_changes_capacity": true,
+      "joint_feasible_routes_exist": true,
+      "scenarios_create_conflicting_pressure": true,
+      "shared_resources_exist": true,
+      "surge_changes_volumes": true,
+      "three_paths_per_demand": true
+    },
+    "congestion_ranges": {
+      "degradation": {
+        "maximum": 16.6656,
+        "minimum": 1.2060444444444445
+      },
+      "nominal": {
+        "maximum": 2.4433777777777776,
+        "minimum": 0.9187555555555555
+      },
+      "surge": {
+        "maximum": 4.143644444444445,
+        "minimum": 1.5068444444444444
+      }
+    },
+    "feasible_by_scenario": {
+      "degradation": 101,
+      "nominal": 221,
+      "surge": 156
+    },
+    "instance_id": "qera-d5-seed6105",
+    "joint_feasible_count": 72,
+    "joint_feasible_fraction": 0.2962962962962963,
+    "maximum_candidate_edge_demand_usage": 5,
+    "scenario_optima": {
+      "degradation": [
+        [
+          1,
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          1
+        ]
+      ],
+      "nominal": [
+        [
+          1,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "surge": [
+        [
+          1,
+          0,
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    "valid_assignment_count": 243
+  },
+  {
+    "D": 6,
+    "accepted": true,
+    "checks": {
+      "all_scenarios_have_feasible_routes": true,
+      "congestion_is_nonconstant": true,
+      "degradation_changes_capacity": true,
+      "joint_feasible_routes_exist": true,
+      "scenarios_create_conflicting_pressure": true,
+      "shared_resources_exist": true,
+      "surge_changes_volumes": true,
+      "three_paths_per_demand": true
+    },
+    "congestion_ranges": {
+      "degradation": {
+        "maximum": 16.675555555555555,
+        "minimum": 1.1575308641975308
+      },
+      "nominal": {
+        "maximum": 2.453333333333333,
+        "minimum": 0.8928395061728395
+      },
+      "surge": {
+        "maximum": 3.835555555555556,
+        "minimum": 1.368395061728395
+      }
+    },
+    "feasible_by_scenario": {
+      "degradation": 243,
+      "nominal": 703,
+      "surge": 580
+    },
+    "instance_id": "qera-d6-seed6106",
+    "joint_feasible_count": 187,
+    "joint_feasible_fraction": 0.25651577503429357,
+    "maximum_candidate_edge_demand_usage": 6,
+    "scenario_optima": {
+      "degradation": [
+        [
+          1,
+          1,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "nominal": [
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "surge": [
+        [
+          1,
+          0,
+          0,
+          1,
+          2,
+          2
+        ]
+      ]
+    },
+    "valid_assignment_count": 729
+  },
+  {
+    "D": 8,
+    "accepted": true,
+    "checks": {
+      "all_scenarios_have_feasible_routes": true,
+      "congestion_is_nonconstant": true,
+      "degradation_changes_capacity": true,
+      "joint_feasible_routes_exist": true,
+      "scenarios_create_conflicting_pressure": true,
+      "shared_resources_exist": true,
+      "surge_changes_volumes": true,
+      "three_paths_per_demand": true
+    },
+    "congestion_ranges": {
+      "degradation": {
+        "maximum": 16.64,
+        "minimum": 1.1500000000000001
+      },
+      "nominal": {
+        "maximum": 2.417777777777778,
+        "minimum": 0.8622222222222223
+      },
+      "surge": {
+        "maximum": 3.777777777777778,
+        "minimum": 1.32
+      }
+    },
+    "feasible_by_scenario": {
+      "degradation": 3055,
+      "nominal": 6527,
+      "surge": 5855
+    },
+    "instance_id": "qera-d8-seed6108",
+    "joint_feasible_count": 2747,
+    "joint_feasible_fraction": 0.418686175887822,
+    "maximum_candidate_edge_demand_usage": 8,
+    "scenario_optima": {
+      "degradation": [
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "nominal": [
+        [
+          0,
+          2,
+          0,
+          0,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "surge": [
+        [
+          0,
+          1,
+          0,
+          0,
+          2,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    "valid_assignment_count": 6561
+  }
+]

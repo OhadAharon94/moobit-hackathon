@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qera-scaling"
+version = "0.1.0"
+description = "Separate Stage 6A scalability extension for frozen Q-ERA v1.1"
+requires-python = ">=3.12"
+dependencies = [
+  "classiq==1.29.0",
+  "matplotlib",
+  "numpy",
+  "pandas",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["qera_scaling*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

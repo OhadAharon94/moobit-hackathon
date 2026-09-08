@@ -3,21 +3,28 @@
 from __future__ import annotations
 
 import json
-from dataclasses import asdict, is_dataclass
+from collections.abc import Mapping
+from dataclasses import fields, is_dataclass
+from enum import Enum
 from pathlib import Path
-from types import MappingProxyType
 from typing import Any
 
 
 def _jsonable(value: Any) -> Any:
-    if is_dataclass(value):
-        return _jsonable(asdict(value))
-    if isinstance(value, MappingProxyType):
-        return _jsonable(dict(value))
-    if isinstance(value, dict):
+    if is_dataclass(value) and not isinstance(value, type):
+        return {
+            field.name: _jsonable(getattr(value, field.name)) for field in fields(value)
+        }
+    if isinstance(value, Mapping):
         return {str(key): _jsonable(item) for key, item in value.items()}
     if isinstance(value, (tuple, list)):
         return [_jsonable(item) for item in value]
+    if isinstance(value, (set, frozenset)):
+        return [_jsonable(item) for item in sorted(value, key=repr)]
+    if isinstance(value, Enum):
+        return _jsonable(value.value)
+    if isinstance(value, Path):
+        return str(value)
     return value
 
 
@@ -30,4 +37,3 @@ def write_json(path: Path, payload: Any) -> Path:
         encoding="utf-8",
     )
     return path.resolve()
-

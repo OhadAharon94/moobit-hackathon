@@ -3,8 +3,11 @@
 from __future__ import annotations
 
 import argparse
+from datetime import UTC, datetime
+from importlib.metadata import version
 import json
 from pathlib import Path
+from time import perf_counter
 from typing import Any
 
 from classiq import get_transpiled_circuit_metrics, synthesize
@@ -13,6 +16,7 @@ from qera.config import INITIAL_SCENARIO_WEIGHTS, PLAN_VERSION, SCHEMA_VERSION
 from qera.energy import build_energy_spec
 from qera.evaluate import Evaluator
 from qera.qaoa_model import build_qaoa_main
+from qera.provenance import circuit_binding
 
 
 def parse_args() -> argparse.Namespace:
@@ -45,7 +49,9 @@ def main() -> None:
         Evaluator(), weights, args.objective_mode, energy_mode="base"
     )
     main_model = build_qaoa_main(spec, depth=1)
+    synthesis_start = perf_counter()
     qprog = synthesize(main_model)
+    synthesis_runtime = perf_counter() - synthesis_start
     stem = args.artifact_name or f"uniform_{args.objective_mode}_p1"
     qprog_path = circuit_dir / f"{stem}.qprog"
     qprog_path.write_text(qprog.model_dump_json(indent=2), encoding="utf-8")
@@ -62,7 +68,18 @@ def main() -> None:
         "phase_offset": spec.phase_offset,
         "phase_scale": spec.phase_scale,
         "qprog_path": str(qprog_path.resolve()),
+        "created_at_utc": datetime.now(UTC).isoformat(),
+        "classiq_sdk_version": version("classiq"),
+        "synthesis_runtime_seconds": synthesis_runtime,
         "metrics": _metrics_payload(metrics),
+        **circuit_binding(
+            qprog_path,
+            implementation_root,
+            spec,
+            args.objective_mode,
+            weights,
+            1,
+        ),
     }
     manifest_path = circuit_dir / f"{stem}.synthesis.json"
     manifest_path.write_text(

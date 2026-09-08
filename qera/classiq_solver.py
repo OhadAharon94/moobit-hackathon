@@ -17,6 +17,7 @@ from qera.instance import SCENARIOS
 from qera.qubo import all_bitstates, assignment_from_bits, bits_from_assignment
 from qera.types import Assignment, BitState
 from qera.types import SolveRequest, SolveResult, SolveStatus
+from qera.validation import validated_integer
 
 
 def parse_routes_cell(value: Any) -> BitState:
@@ -25,8 +26,13 @@ def parse_routes_cell(value: Any) -> BitState:
     parsed = ast.literal_eval(value) if isinstance(value, str) else value
     if not isinstance(parsed, Sequence) or isinstance(parsed, (str, bytes)):
         raise ValueError(f"routes output is not a bit sequence: {value!r}")
-    bits = tuple(int(bit) for bit in parsed)
-    if len(bits) != 12 or any(bit not in (0, 1) for bit in bits):
+    if len(parsed) != 12:
+        raise ValueError(f"routes output must contain 12 binary values: {value!r}")
+    bits = tuple(
+        validated_integer(bit, f"route bit {index}")
+        for index, bit in enumerate(parsed)
+    )
+    if any(bit not in (0, 1) for bit in bits):
         raise ValueError(f"routes output must contain 12 binary values: {value!r}")
     return bits
 
@@ -54,7 +60,7 @@ def process_sample_frame(
     aggregated: dict[BitState, dict[str, Any]] = {}
     for _, row in frame.iterrows():
         bits = parse_routes_cell(row["routes"])
-        count = int(row["counts"])
+        count = validated_integer(row["counts"], "sample count")
         if count < 0:
             raise ValueError("sample counts cannot be negative")
         record = aggregated.setdefault(

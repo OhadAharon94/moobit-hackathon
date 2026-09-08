@@ -1,0 +1,439 @@
+{
+  "D": 6,
+  "K": 3,
+  "S": 3,
+  "candidate_paths": {
+    "d0": [
+      [
+        "S0",
+        "U",
+        "M1",
+        "T0"
+      ],
+      [
+        "S0",
+        "L",
+        "M2",
+        "T0"
+      ],
+      [
+        "S0",
+        "U",
+        "M2",
+        "T0"
+      ]
+    ],
+    "d1": [
+      [
+        "S0",
+        "U",
+        "M1",
+        "T1"
+      ],
+      [
+        "S0",
+        "L",
+        "M2",
+        "T1"
+      ],
+      [
+        "S0",
+        "L",
+        "M1",
+        "T1"
+      ]
+    ],
+    "d2": [
+      [
+        "S1",
+        "U",
+        "M1",
+        "T0"
+      ],
+      [
+        "S1",
+        "L",
+        "M2",
+        "T0"
+      ],
+      [
+        "S1",
+        "L",
+        "M1",
+        "T0"
+      ]
+    ],
+    "d3": [
+      [
+        "S1",
+        "U",
+        "M1",
+        "T1"
+      ],
+      [
+        "S1",
+        "L",
+        "M2",
+        "T1"
+      ],
+      [
+        "S1",
+        "U",
+        "M2",
+        "T1"
+      ]
+    ],
+    "d4": [
+      [
+        "S0",
+        "U",
+        "M1",
+        "T0"
+      ],
+      [
+        "S0",
+        "L",
+        "M2",
+        "T0"
+      ],
+      [
+        "S0",
+        "U",
+        "M2",
+        "T0"
+      ]
+    ],
+    "d5": [
+      [
+        "S0",
+        "U",
+        "M1",
+        "T1"
+      ],
+      [
+        "S0",
+        "L",
+        "M2",
+        "T1"
+      ],
+      [
+        "S0",
+        "L",
+        "M1",
+        "T1"
+      ]
+    ]
+  },
+  "capacities": {
+    "L->M1": 7.5,
+    "L->M2": 9.0,
+    "M1->T0": 15.0,
+    "M1->T1": 15.0,
+    "M2->T0": 15.0,
+    "M2->T1": 15.0,
+    "S0->L": 15.0,
+    "S0->U": 15.0,
+    "S1->L": 15.0,
+    "S1->U": 15.0,
+    "U->M1": 9.0,
+    "U->M2": 7.5
+  },
+  "demands": [
+    {
+      "candidate_paths": [
+        [
+          "S0",
+          "U",
+          "M1",
+          "T0"
+        ],
+        [
+          "S0",
+          "L",
+          "M2",
+          "T0"
+        ],
+        [
+          "S0",
+          "U",
+          "M2",
+          "T0"
+        ]
+      ],
+      "name": "d0",
+      "priority": 0.92,
+      "source": "S0",
+      "target": "T0"
+    },
+    {
+      "candidate_paths": [
+        [
+          "S0",
+          "U",
+          "M1",
+          "T1"
+        ],
+        [
+          "S0",
+          "L",
+          "M2",
+          "T1"
+        ],
+        [
+          "S0",
+          "L",
+          "M1",
+          "T1"
+        ]
+      ],
+      "name": "d1",
+      "priority": 0.92,
+      "source": "S0",
+      "target": "T1"
+    },
+    {
+      "candidate_paths": [
+        [
+          "S1",
+          "U",
+          "M1",
+          "T0"
+        ],
+        [
+          "S1",
+          "L",
+          "M2",
+          "T0"
+        ],
+        [
+          "S1",
+          "L",
+          "M1",
+          "T0"
+        ]
+      ],
+      "name": "d2",
+      "priority": 0.92,
+      "source": "S1",
+      "target": "T0"
+    },
+    {
+      "candidate_paths": [
+        [
+          "S1",
+          "U",
+          "M1",
+          "T1"
+        ],
+        [
+          "S1",
+          "L",
+          "M2",
+          "T1"
+        ],
+        [
+          "S1",
+          "U",
+          "M2",
+          "T1"
+        ]
+      ],
+      "name": "d3",
+      "priority": 0.92,
+      "source": "S1",
+      "target": "T1"
+    },
+    {
+      "candidate_paths": [
+        [
+          "S0",
+          "U",
+          "M1",
+          "T0"
+        ],
+        [
+          "S0",
+          "L",
+          "M2",
+          "T0"
+        ],
+        [
+          "S0",
+          "U",
+          "M2",
+          "T0"
+        ]
+      ],
+      "name": "d4",
+      "priority": 0.92,
+      "source": "S0",
+      "target": "T0"
+    },
+    {
+      "candidate_paths": [
+        [
+          "S0",
+          "U",
+          "M1",
+          "T1"
+        ],
+        [
+          "S0",
+          "L",
+          "M2",
+          "T1"
+        ],
+        [
+          "S0",
+          "L",
+          "M1",
+          "T1"
+        ]
+      ],
+      "name": "d5",
+      "priority": 1.08,
+      "source": "S0",
+      "target": "T1"
+    }
+  ],
+  "edges": [
+    {
+      "latency": 1.0,
+      "nominal_capacity": 15.0,
+      "source": "S0",
+      "target": "U"
+    },
+    {
+      "latency": 1.5,
+      "nominal_capacity": 15.0,
+      "source": "S0",
+      "target": "L"
+    },
+    {
+      "latency": 1.0,
+      "nominal_capacity": 15.0,
+      "source": "S1",
+      "target": "U"
+    },
+    {
+      "latency": 1.5,
+      "nominal_capacity": 15.0,
+      "source": "S1",
+      "target": "L"
+    },
+    {
+      "latency": 1.0,
+      "nominal_capacity": 9.0,
+      "source": "U",
+      "target": "M1"
+    },
+    {
+      "latency": 2.5,
+      "nominal_capacity": 7.5,
+      "source": "U",
+      "target": "M2"
+    },
+    {
+      "latency": 2.5,
+      "nominal_capacity": 7.5,
+      "source": "L",
+      "target": "M1"
+    },
+    {
+      "latency": 1.2,
+      "nominal_capacity": 9.0,
+      "source": "L",
+      "target": "M2"
+    },
+    {
+      "latency": 1.0,
+      "nominal_capacity": 15.0,
+      "source": "M1",
+      "target": "T0"
+    },
+    {
+      "latency": 1.0,
+      "nominal_capacity": 15.0,
+      "source": "M1",
+      "target": "T1"
+    },
+    {
+      "latency": 1.2,
+      "nominal_capacity": 15.0,
+      "source": "M2",
+      "target": "T0"
+    },
+    {
+      "latency": 1.2,
+      "nominal_capacity": 15.0,
+      "source": "M2",
+      "target": "T1"
+    }
+  ],
+  "instance_id": "qera-d6-seed6106",
+  "latencies": {
+    "L->M1": 2.5,
+    "L->M2": 1.2,
+    "M1->T0": 1.0,
+    "M1->T1": 1.0,
+    "M2->T0": 1.2,
+    "M2->T1": 1.2,
+    "S0->L": 1.5,
+    "S0->U": 1.0,
+    "S1->L": 1.5,
+    "S1->U": 1.0,
+    "U->M1": 1.0,
+    "U->M2": 2.5
+  },
+  "nodes": [
+    "L",
+    "M1",
+    "M2",
+    "S0",
+    "S1",
+    "T0",
+    "T1",
+    "U"
+  ],
+  "scenario_parameters": [
+    {
+      "capacity_overrides": {},
+      "name": "nominal",
+      "volumes": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "capacity_overrides": {},
+      "name": "surge",
+      "volumes": [
+        3.0,
+        3.0,
+        3.0,
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "capacity_overrides": {
+        "U->M1": 3.0
+      },
+      "name": "degradation",
+      "volumes": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ]
+    }
+  ],
+  "seed": 6106
+}
