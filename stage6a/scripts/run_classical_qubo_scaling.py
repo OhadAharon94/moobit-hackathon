@@ -54,6 +54,7 @@ def main() -> None:
                     "exact_runtime_seconds",
                     "exact_weighted_cost",
                     "exact_worst_case_regret",
+                    "minimax_runtime_seconds",
                     "joint_feasible_count",
                     "joint_feasible_fraction_valid",
                     "greedy_runtime_seconds",
@@ -61,6 +62,15 @@ def main() -> None:
                     "simulated_annealing_runtime_seconds",
                     "random_valid_feasible_fraction",
                 )
+            } | {
+                "greedy_weighted_cost": classical["greedy"]["weighted_cost"],
+                "greedy_worst_case_regret": classical["greedy"]["worst_case_regret"],
+                "local_search_weighted_cost": classical["local_search"]["weighted_cost"],
+                "local_search_worst_case_regret": classical["local_search"]["worst_case_regret"],
+                "simulated_annealing_weighted_cost": classical["simulated_annealing"]["weighted_cost"],
+                "simulated_annealing_worst_case_regret": classical["simulated_annealing"]["worst_case_regret"],
+                "random_valid_best_weighted_cost": classical["random_valid_best"]["weighted_cost"],
+                "random_valid_best_worst_case_regret": classical["random_valid_best"]["worst_case_regret"],
             }
         )
         start = perf_counter()

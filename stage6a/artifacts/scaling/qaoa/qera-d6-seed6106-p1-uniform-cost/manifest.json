@@ -1,0 +1,62 @@
+{
+  "D": 6,
+  "K": 3,
+  "M": 1.0,
+  "S": 3,
+  "backend": "simulator",
+  "best_cost": 0.2042041015625,
+  "best_parameters": {
+    "params": [
+      -1.9074447608359553,
+      1.0326642267208819
+    ]
+  },
+  "classiq_sdk_version": "1.29.0",
+  "created_at_utc": "2026-09-08T16:29:38.349796+00:00",
+  "energy_mode": "base",
+  "energy_range_mode": "exhaustive",
+  "execution_config_sha256": "002cdca8379ed3ed4032b487a27b4455e8a5c33a8854ba0588a6a76a4d40f87d",
+  "execution_runtime_seconds": 16.973741699999664,
+  "execution_source_sha256": "aa85519d7386c26686aa68f1a2b4bc1525bf02c865ef6770d766db67ab3c281e",
+  "final_shots": 4096,
+  "initial_parameters": {
+    "params": [
+      0.5,
+      0.5
+    ]
+  },
+  "instance_id": "qera-d6-seed6106",
+  "logical_bits": 18,
+  "matched_control_seed": 6106,
+  "matched_controls": [
+    "uniform_random_bitstrings",
+    "uniform_random_valid_routes"
+  ],
+  "objective_mode": "cost",
+  "optimizer_iteration_cap": 10,
+  "optimizer_quantile": 1.0,
+  "optimizer_sha256": "3270c2122e88db9a22213eaf386cbc0c5ec32568efb72b36162832c78c794a25",
+  "optimizer_shots": 512,
+  "optimizer_trace_length": 10,
+  "phase_offset": 0.21312698838541766,
+  "phase_scale": 27.73098225789694,
+  "qaoa_depth": 1,
+  "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\circuits\\qera-d6-seed6106-p1.qprog",
+  "qprog_sha256": "d8724911c2010e6fb372cbf0b4d1a899227f7e9d57eba62770f81116b2f85dff",
+  "sample_rows": 4062,
+  "samples_raw_sha256": "528daf9ff76c2f45763f46a41e9c522ed32f32d05bbf7b8275853c60b6345a26",
+  "samples_sha256": "0c0023544ad3afb061051fcc2dc7d8d8955c354967734cd3d5d21b72d888ab43",
+  "scenario_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "schema_version": "stage6a-1.0",
+  "seed": 6106,
+  "status": "PROCESSED",
+  "summary_sha256": "b4cc02a73592e0dbc016e8b3b7e5c8352630e2aaa64e5bb9148d1bc463652119",
+  "synthesis_manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\circuits\\qera-d6-seed6106-p1.synthesis.json",
+  "synthesis_manifest_sha256": "9606cc96d6e58c1682f7b322535156ec9334069f94b246a2ebb8a10111dce8ab",
+  "synthesis_source_sha256": "fce0c56d2a28eb913caf319ba1aea7b67ea7a05307f24fda79a85fb4973deecc",
+  "synthesis_spec_sha256": "a3600d263bdcfe5732c84d5c7d0810c21235e2052a6c43e3abd695a1bdb15776"
+}

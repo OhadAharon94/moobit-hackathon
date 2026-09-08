@@ -1,0 +1,263 @@
+{
+  "D": 8,
+  "K": 3,
+  "S": 3,
+  "edges": 12,
+  "exact_assignments": [
+    [
+      0,
+      2,
+      0,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      2,
+      1,
+      1,
+      2
+    ]
+  ],
+  "exact_minimax_assignments": [
+    [
+      0,
+      2,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      0,
+      1,
+      2,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      0,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      1,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      2,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      0,
+      0,
+      2,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      0,
+      2,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      2,
+      2,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1
+    ]
+  ],
+  "exact_runtime_seconds": 0.9301641000201926,
+  "exact_status": "OPTIMAL_ENUMERATION",
+  "exact_weighted_cost": 0.2282790920297142,
+  "exact_worst_case_regret": 0.12889509295605125,
+  "greedy": {
+    "assignment": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      0
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.2519518833232919,
+      0.2913307541965865,
+      0.35851088393962993
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.3052022096434682,
+    "worst_case_regret": 0.35851088393962993
+  },
+  "greedy_runtime_seconds": 0.0006053000106476247,
+  "instance_id": "qera-d8-seed6108",
+  "joint_feasible_count": 2747,
+  "joint_feasible_fraction_valid": 0.418686175887822,
+  "local_search": {
+    "assignment": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      0,
+      2,
+      0
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.10452496208422513,
+      0.17070593822851096,
+      0.23151229634783096
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.2508920459241982,
+    "worst_case_regret": 0.23151229634783096
+  },
+  "local_search_evaluations": 32,
+  "local_search_runtime_seconds": 0.00037589995190501213,
+  "logical_bits": 24,
+  "minimax_runtime_seconds": 0.1504404000006616,
+  "nodes": 8,
+  "random_valid_best": {
+    "assignment": [
+      0,
+      2,
+      0,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.09621465522614424,
+      0.051936361678146886,
+      0.21293208145786954
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.2282790920297142,
+    "worst_case_regret": 0.21293208145786954
+  },
+  "random_valid_feasible_fraction": 0.42333984375,
+  "random_valid_shots": 4096,
+  "seed": 6108,
+  "simulated_annealing": {
+    "assignment": [
+      0,
+      2,
+      0,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.09621465522614424,
+      0.051936361678146886,
+      0.21293208145786954
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.2282790920297142,
+    "worst_case_regret": 0.21293208145786954
+  },
+  "simulated_annealing_evaluations": 10000,
+  "simulated_annealing_runtime_seconds": 0.2755192000186071,
+  "valid_assignments": 6561
+}

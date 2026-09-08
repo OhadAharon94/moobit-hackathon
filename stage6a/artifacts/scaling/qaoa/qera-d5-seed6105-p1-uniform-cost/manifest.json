@@ -1,0 +1,62 @@
+{
+  "D": 5,
+  "K": 3,
+  "M": 1.0,
+  "S": 3,
+  "backend": "simulator",
+  "best_cost": 0.25939921875,
+  "best_parameters": {
+    "params": [
+      0.5,
+      0.5
+    ]
+  },
+  "classiq_sdk_version": "1.29.0",
+  "created_at_utc": "2026-09-08T16:24:02.633081+00:00",
+  "energy_mode": "base",
+  "energy_range_mode": "exhaustive",
+  "execution_config_sha256": "50a46c204f5b52b317038d4149ce4445e50fcbd3205457e6d99d8993f04fa179",
+  "execution_runtime_seconds": 27.566394500026945,
+  "execution_source_sha256": "aa18f94cfbae140d66db8a13435ef17232a9c81b06477f41b5225f3dda0f8d07",
+  "final_shots": 4096,
+  "initial_parameters": {
+    "params": [
+      0.5,
+      0.5
+    ]
+  },
+  "instance_id": "qera-d5-seed6105",
+  "logical_bits": 15,
+  "matched_control_seed": 6105,
+  "matched_controls": [
+    "uniform_random_bitstrings",
+    "uniform_random_valid_routes"
+  ],
+  "objective_mode": "cost",
+  "optimizer_iteration_cap": 10,
+  "optimizer_quantile": 1.0,
+  "optimizer_sha256": "105be2711590b14e1ebc264a014ffc1b50c98d6e18bc1d1e206862e2dbda94fb",
+  "optimizer_shots": 512,
+  "optimizer_trace_length": 10,
+  "phase_offset": 0.20684047238339165,
+  "phase_scale": 23.787266733036592,
+  "qaoa_depth": 1,
+  "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\circuits\\qera-d5-seed6105-p1.qprog",
+  "qprog_sha256": "464f42363ec85ffd40e67e83964d4d3ecd591bfcc2d5b90e1484c13ff739ff8a",
+  "sample_rows": 3856,
+  "samples_raw_sha256": "3c015bbee1c5659e05464e08df0f53fcef16539a1ba3d1db555182d99c4bc82f",
+  "samples_sha256": "b8f1f5916b6031388b3baf663ab154d9746a75358bffc59c73b03612d8759104",
+  "scenario_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "schema_version": "stage6a-1.0",
+  "seed": 6105,
+  "status": "PROCESSED",
+  "summary_sha256": "558f6943ce7be48d69099cdcaebef1038bb991fc6d04f53365106838f58ee04d",
+  "synthesis_manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\circuits\\qera-d5-seed6105-p1.synthesis.json",
+  "synthesis_manifest_sha256": "a24acf4461b5fce745a85b2fb9daf46449128c7c0a1658c0a1b6435e5a0770fd",
+  "synthesis_source_sha256": "fce0c56d2a28eb913caf319ba1aea7b67ea7a05307f24fda79a85fb4973deecc",
+  "synthesis_spec_sha256": "95b635291b00866a85f6b41b13bb6fad9a0e7812182b9fea169089efff3e908a"
+}

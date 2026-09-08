@@ -98,6 +98,14 @@ def snapshot_v11(implementation_root: Path) -> dict:
                     "bytes": path.stat().st_size,
                 }
             )
+    plan_path = implementation_root / "Q_ERA_IMPLEMENTATION_PLAN.md"
+    included.append(
+        {
+            "path": plan_path.name,
+            "sha256": hashlib.sha256(plan_path.read_bytes()).hexdigest(),
+            "bytes": plan_path.stat().st_size,
+        }
+    )
     return {
         "checkpoint_mode": "separate-extension-no-git-repository",
         "frozen_plan": "Q_ERA_IMPLEMENTATION_PLAN.md",
@@ -109,7 +117,7 @@ def write_audit_artifacts(stage6a_root: Path) -> None:
     output = stage6a_root / "artifacts" / "scaling" / "tables"
     output.mkdir(parents=True, exist_ok=True)
     implementation_root = stage6a_root.parent
-    (output / "v11_sha256_checkpoint.json").write_text(
+    (output / "v11_1_hotfix_sha256_checkpoint.json").write_text(
         json.dumps(snapshot_v11(implementation_root), indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )

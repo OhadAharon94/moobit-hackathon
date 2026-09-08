@@ -1,0 +1,41 @@
+{
+  "D": 5,
+  "K": 3,
+  "M": 1.0,
+  "S": 3,
+  "classiq_sdk_version": "1.29.0",
+  "count_ops": {
+    "cx": 136,
+    "h": 15,
+    "rx": 15,
+    "rz": 70
+  },
+  "created_at_utc": "2026-09-08T16:12:13.382120+00:00",
+  "depth": 79,
+  "energy_mode": "base",
+  "energy_range_mode": "exhaustive",
+  "gate_count": 236,
+  "instance_id": "qera-d5-seed6105",
+  "instance_sha256": "cbf4cc0954064d1af4fde3394e16cdf104b5bd01f1f0f20bf8a987946cd97c99",
+  "logical_bits": 15,
+  "objective_mode": "cost",
+  "phase_offset": 0.20684047238339165,
+  "phase_scale": 23.787266733036592,
+  "qaoa_depth": 1,
+  "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\circuits\\qera-d5-seed6105-p1.qprog",
+  "qprog_sha256": "464f42363ec85ffd40e67e83964d4d3ecd591bfcc2d5b90e1484c13ff739ff8a",
+  "scenario_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "schema_version": "stage6a-1.0",
+  "seed": 6105,
+  "source_sha256": "fce0c56d2a28eb913caf319ba1aea7b67ea7a05307f24fda79a85fb4973deecc",
+  "synthesis_runtime_seconds": 12.731920000049286,
+  "synthesis_spec_sha256": "95b635291b00866a85f6b41b13bb6fad9a0e7812182b9fea169089efff3e908a",
+  "synthesis_status": "SUCCESS",
+  "synthesized_qubits": 15,
+  "two_qubit_gate_count": 136,
+  "warning": null
+}

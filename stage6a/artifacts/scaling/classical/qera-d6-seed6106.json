@@ -1,0 +1,121 @@
+{
+  "D": 6,
+  "K": 3,
+  "S": 3,
+  "edges": 12,
+  "exact_assignments": [
+    [
+      2,
+      2,
+      0,
+      1,
+      1,
+      1
+    ]
+  ],
+  "exact_minimax_assignments": [
+    [
+      2,
+      2,
+      0,
+      1,
+      1,
+      1
+    ]
+  ],
+  "exact_runtime_seconds": 0.09761170001002029,
+  "exact_status": "OPTIMAL_ENUMERATION",
+  "exact_weighted_cost": 0.2586347017614709,
+  "exact_worst_case_regret": 0.17949497453358348,
+  "greedy": {
+    "assignment": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      0
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.17118837820941554,
+      0.2576966562268518,
+      0.24010815429231555
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.2747026144011029,
+    "worst_case_regret": 0.2576966562268518
+  },
+  "greedy_runtime_seconds": 0.0003595000016503036,
+  "instance_id": "qera-d6-seed6106",
+  "joint_feasible_count": 187,
+  "joint_feasible_fraction_valid": 0.25651577503429357,
+  "local_search": {
+    "assignment": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      0
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.16841041854722186,
+      0.32218871550632244,
+      0.11955305201812934
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.27341084234279467,
+    "worst_case_regret": 0.32218871550632244
+  },
+  "local_search_evaluations": 24,
+  "local_search_runtime_seconds": 0.00023770000552758574,
+  "logical_bits": 18,
+  "minimax_runtime_seconds": 0.012122300046030432,
+  "nodes": 8,
+  "random_valid_best": {
+    "assignment": [
+      2,
+      2,
+      0,
+      1,
+      1,
+      1
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.17949497453358348,
+      0.16569098972267057,
+      0.14563402433702102
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.2586347017614709,
+    "worst_case_regret": 0.17949497453358348
+  },
+  "random_valid_feasible_fraction": 0.256103515625,
+  "random_valid_shots": 4096,
+  "seed": 6106,
+  "simulated_annealing": {
+    "assignment": [
+      2,
+      2,
+      0,
+      1,
+      1,
+      1
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.17949497453358348,
+      0.16569098972267057,
+      0.14563402433702102
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.2586347017614709,
+    "worst_case_regret": 0.17949497453358348
+  },
+  "simulated_annealing_evaluations": 10000,
+  "simulated_annealing_runtime_seconds": 0.23986390000209212,
+  "valid_assignments": 729
+}

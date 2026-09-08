@@ -1,0 +1,59 @@
+{
+  "approximation_threshold": 0.01,
+  "best_sampled_regret_assignment": [
+    0,
+    1,
+    2,
+    1,
+    2
+  ],
+  "best_sampled_regret_gap": 0.0752034638162537,
+  "best_sampled_worst_case_regret": 0.2479707779214419,
+  "exact_joint_assignments": [
+    [
+      2,
+      2,
+      0,
+      1,
+      1
+    ]
+  ],
+  "exact_joint_objective": 0.24204912977759752,
+  "exact_joint_optimum_probability": 0,
+  "exact_minimax_assignments": [
+    [
+      1,
+      2,
+      0,
+      1,
+      2
+    ],
+    [
+      2,
+      2,
+      0,
+      1,
+      1
+    ]
+  ],
+  "exact_minimax_probability": 0,
+  "exact_minimax_regret": 0.1727673141051882,
+  "joint_feasible_probability": 0.001953125,
+  "near_optimal_joint_probability_gap_0_01": 0.0,
+  "observed_state_count": 3837,
+  "one_hot_probability": 0.007568359375,
+  "selected_assignment": [
+    0,
+    1,
+    2,
+    1,
+    2
+  ],
+  "selected_exact_gap": 0.035229457791511876,
+  "selected_objective": 0.2772785875691094,
+  "selected_relative_gap": 0.14554672360888812,
+  "status": "SUCCESS",
+  "theoretical_uniform_one_hot_probability": 0.007415771484375,
+  "total_shots": 4096,
+  "unrestricted_ground_probability": 0
+}

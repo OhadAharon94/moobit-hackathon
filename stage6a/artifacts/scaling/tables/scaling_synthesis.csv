@@ -1,0 +1,5 @@
+instance_id,D,logical_bits,synthesized_qubits,depth,gate_count,two_qubit_gate_count,synthesis_runtime_seconds,synthesis_status,warning,source
+qera-d4-frozen,4,12,12,65,154,84,,SUCCESS,Frozen v1.1 reference; historical runtime was not recorded.,v1.1
+qera-d5-seed6105,5,15,15,79,236,136,12.731920000049286,SUCCESS,,stage6a
+qera-d6-seed6106,6,18,18,138,294,160,7.556271300010849,SUCCESS,,stage6a
+qera-d8-seed6108,8,24,24,246,492,280,14.601822500000708,SUCCESS,"D=8 phase scaling uses guaranteed coefficient bounds, not exhaustive raw-state extrema.",stage6a

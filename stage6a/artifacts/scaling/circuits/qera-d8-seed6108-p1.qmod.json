@@ -1,0 +1,715 @@
+{
+  "back_ref": null,
+  "classical_execution_code": "",
+  "compressed_debug_info": "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",
+  "constants": [],
+  "constraints": {
+    "max_width": null,
+    "optimization_parameter": "no_opt"
+  },
+  "enums": [],
+  "execution_preferences": {
+    "amplitude_threshold": 0.0,
+    "backend_preferences": {
+      "backend_name": "simulator",
+      "backend_service_provider": "Classiq",
+      "noise_model": null,
+      "simulator_noise_spec": null,
+      "use_double_precision": false
+    },
+    "include_zero_amplitude_outputs": false,
+    "job_name": null,
+    "noise_properties": null,
+    "num_shots": null,
+    "random_seed": 2720467656,
+    "transpile_to_hardware": "decompose"
+  },
+  "functions": [
+    {
+      "back_ref": null,
+      "body": [
+        {
+          "back_ref": null,
+          "body": [
+            {
+              "back_ref": "f1c2aae0-4ff9-4aa0-bb78-79b84e581d06",
+              "function": "H",
+              "kind": "QuantumFunctionCall",
+              "positional_args": [
+                {
+                  "back_ref": null,
+                  "index": {
+                    "back_ref": null,
+                    "expr": "index",
+                    "source_ref": null
+                  },
+                  "kind": "Subscript",
+                  "source_ref": null,
+                  "value": {
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "target",
+                    "source_ref": null
+                  }
+                }
+              ],
+              "source_ref": {
+                "end_column": 52,
+                "end_line": 49,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\utility_functions.py",
+                "start_column": 36,
+                "start_line": 49
+              },
+              "uuid": "d950ac14-ea4b-4034-ae21-d6072967b2b5"
+            }
+          ],
+          "count": {
+            "back_ref": null,
+            "expr": "24",
+            "source_ref": null
+          },
+          "iter_var": "index",
+          "kind": "Repeat",
+          "source_ref": {
+            "end_column": 53,
+            "end_line": 49,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\utility_functions.py",
+            "start_column": 3,
+            "start_line": 49
+          },
+          "uuid": "53e0ee3e-67e3-439c-bdb5-7633dec34e27"
+        }
+      ],
+      "name": "hadamard_transform_expanded___0",
+      "permutation": false,
+      "positional_arg_declarations": [
+        {
+          "back_ref": null,
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "name": "target",
+          "quantum_type": {
+            "back_ref": null,
+            "element_type": {
+              "back_ref": null,
+              "kind": "qbit",
+              "source_ref": null
+            },
+            "kind": "qvec",
+            "length": {
+              "back_ref": null,
+              "expr": "24",
+              "source_ref": null
+            },
+            "source_ref": null
+          },
+          "source_ref": null,
+          "type_modifier": "mutable"
+        }
+      ],
+      "source_ref": null
+    },
+    {
+      "back_ref": null,
+      "body": [
+        {
+          "back_ref": "13058b69-8ae8-4a9e-9334-063cfff8ae77",
+          "expression": {
+            "back_ref": null,
+            "expr": "0.011825251476062951 * (routes[11] + routes[2]) + 0.012787082471707486 * (routes[12] + routes[21]) + 0.012494326018608266 * (routes[13] + routes[22]) + 0.012159793983382124 * (routes[14] + routes[23]) + 0.012869348775538109 * (routes[15] + routes[18]) + 0.012601272213588074 * (routes[16] + routes[19]) + 0.012185844979595154 * (routes[17] + routes[20]) + 0.012559959878647076 * (routes[0] + routes[6] + routes[9]) + 0.01221960649261728 * (routes[10] + routes[1] + routes[7]) + -(0.0004356268351134276 * routes[0] * routes[12] + 7.425684005940451e-05 * routes[0] * routes[14] + 0.000361369995054023 * routes[0] * routes[15] + 0.000361369995054023 * routes[0] * routes[18] + 0.02817620906198843 * routes[0] * routes[1] + 7.425684005940451e-05 * routes[0] * routes[20] + 0.00028711315499461857 * routes[0] * routes[21] + 0.028267662051339737 * routes[0] * routes[2] + 0.00042633322571231466 * routes[0] * routes[3] + 0.00042633322571231466 * routes[0] * routes[6] + 9.145298935130523e-05 * routes[0] * routes[8] + 0.0003348802363610094 * routes[0] * routes[9] + 0.028267662051339737 * routes[10] * routes[11] + 0.0002062690001650126 * routes[10] * routes[13] + 0.00028052584022441706 * routes[10] * routes[16] + 0.00028052584022441706 * routes[10] * routes[19] + 0.0002540360815314034 * routes[10] * routes[1] + 7.425684005940451e-05 * routes[10] * routes[20] + 0.0003547826802838216 * routes[10] * routes[22] + 7.425684005940451e-05 * routes[10] * routes[23] + 0.00034548907088270865 * routes[10] * routes[4] + 0.00034548907088270865 * routes[10] * routes[7] + 9.145298935130523e-05 * routes[10] * routes[8] + 0.02817620906198843 * routes[10] * routes[9] + 0.00029702736023761806 * routes[11] * routes[14] + 7.425684005940451e-05 * routes[11] * routes[16] + 7.425684005940451e-05 * routes[11] * routes[18] + 7.425684005940451e-05 * routes[11] * routes[21] + 7.425684005940451e-05 * routes[11] * routes[22] + 0.00044554104035642717 * routes[11] * routes[23] + 0.0003658119574052209 * routes[11] * routes[2] + 9.145298935130523e-05 * routes[11] * routes[4] + 9.145298935130523e-05 * routes[11] * routes[6] + 0.028267662051339737 * routes[11] * routes[9] + 0.02817620906198843 * routes[12] * routes[13] + 0.028239001802519904 * routes[12] * routes[14] + 0.000318061174615162 * routes[12] * routes[15] + 0.000318061174615162 * routes[12] * routes[18] + 6.279274053147072e-05 * routes[12] * routes[20] + 0.0002552684340836913 * routes[12] * routes[21] + 7.425684005940451e-05 * routes[12] * routes[2] + 0.000361369995054023 * routes[12] * routes[3] + 0.000361369995054023 * routes[12] * routes[6] + 7.425684005940451e-05 * routes[12] * routes[8] + 0.00028711315499461857 * routes[12] * routes[9] + 0.028239001802519904 * routes[13] * routes[14] + 0.00023721701978555602 * routes[13] * routes[16] + 6.279274053147072e-05 * routes[13] * routes[17] + 0.00023721701978555602 * routes[13] * routes[19] + 0.0003547826802838216 * routes[13] * routes[1] + 0.00017442427925408533 * routes[13] * routes[22] + 7.425684005940451e-05 * routes[13] * routes[2] + 0.00028052584022441706 * routes[13] * routes[4] + 7.425684005940451e-05 * routes[13] * routes[5] + 0.00028052584022441706 * routes[13] * routes[7] + 6.279274053147072e-05 * routes[14] * routes[15] + 6.279274053147072e-05 * routes[14] * routes[19] + 7.425684005940451e-05 * routes[14] * routes[1] + 0.00025117096212588287 * routes[14] * routes[23] + 0.00044554104035642717 * routes[14] * routes[2] + 7.425684005940451e-05 * routes[14] * routes[3] + 7.425684005940451e-05 * routes[14] * routes[7] + 0.02817620906198843 * routes[15] * routes[16] + 0.028239001802519904 * routes[15] * routes[17] + 0.0002552684340836913 * routes[15] * routes[18] + 0.000318061174615162 * routes[15] * routes[21] + 7.425684005940451e-05 * routes[15] * routes[2] + 0.0004356268351134276 * routes[15] * routes[3] + 7.425684005940451e-05 * routes[15] * routes[5] + 0.00028711315499461857 * routes[15] * routes[6] + 0.000361369995054023 * routes[15] * routes[9] + 0.028239001802519904 * routes[16] * routes[17] + 0.00017442427925408533 * routes[16] * routes[19] + 0.00028052584022441706 * routes[16] * routes[1] + 0.00023721701978555602 * routes[16] * routes[22] + 6.279274053147072e-05 * routes[16] * routes[23] + 0.0003547826802838216 * routes[16] * routes[4] + 7.425684005940451e-05 * routes[16] * routes[5] + 0.0002062690001650126 * routes[16] * routes[7] + 7.425684005940451e-05 * routes[17] * routes[1] + 0.00025117096212588287 * routes[17] * routes[20] + 6.279274053147072e-05 * routes[17] * routes[21] + 7.425684005940451e-05 * routes[17] * routes[3] + 7.425684005940451e-05 * routes[17] * routes[4] + 0.00044554104035642717 * routes[17] * routes[5] + 0.00029702736023761806 * routes[17] * routes[8] + 7.425684005940451e-05 * routes[17] * routes[9] + 0.02817620906198843 * routes[18] * routes[19] + 0.028239001802519904 * routes[18] * routes[20] + 0.000318061174615162 * routes[18] * routes[21] + 6.279274053147072e-05 * routes[18] * routes[23] + 0.00028711315499461857 * routes[18] * routes[3] + 0.0004356268351134276 * routes[18] * routes[6] + 7.425684005940451e-05 * routes[18] * routes[8] + 0.000361369995054023 * routes[18] * routes[9] + 0.00028052584022441706 * routes[19] * routes[1] + 0.028239001802519904 * routes[19] * routes[20] + 0.00023721701978555602 * routes[19] * routes[22] + 7.425684005940451e-05 * routes[19] * routes[2] + 0.0002062690001650126 * routes[19] * routes[4] + 0.0003547826802838216 * routes[19] * routes[7] + 7.425684005940451e-05 * routes[19] * routes[8] + 0.0002062690001650126 * routes[1] * routes[22] + 0.028267662051339737 * routes[1] * routes[2] + 0.00034548907088270865 * routes[1] * routes[4] + 9.145298935130523e-05 * routes[1] * routes[5] + 0.00034548907088270865 * routes[1] * routes[7] + 6.279274053147072e-05 * routes[20] * routes[22] + 0.00029702736023761806 * routes[20] * routes[5] + 7.425684005940451e-05 * routes[20] * routes[6] + 7.425684005940451e-05 * routes[20] * routes[7] + 0.00044554104035642717 * routes[20] * routes[8] + 0.02817620906198843 * routes[21] * routes[22] + 0.028239001802519904 * routes[21] * routes[23] + 0.000361369995054023 * routes[21] * routes[3] + 7.425684005940451e-05 * routes[21] * routes[5] + 0.000361369995054023 * routes[21] * routes[6] + 0.0004356268351134276 * routes[21] * routes[9] + 0.028239001802519904 * routes[22] * routes[23] + 0.00028052584022441706 * routes[22] * routes[4] + 0.00028052584022441706 * routes[22] * routes[7] + 7.425684005940451e-05 * routes[22] * routes[8] + 0.00029702736023761806 * routes[23] * routes[2] + 7.425684005940451e-05 * routes[23] * routes[4] + 7.425684005940451e-05 * routes[23] * routes[6] + 7.425684005940451e-05 * routes[23] * routes[9] + 9.145298935130523e-05 * routes[2] * routes[3] + 9.145298935130523e-05 * routes[2] * routes[7] + 0.02817620906198843 * routes[3] * routes[4] + 0.028267662051339737 * routes[3] * routes[5] + 0.0003348802363610094 * routes[3] * routes[6] + 0.00042633322571231466 * routes[3] * routes[9] + 0.028267662051339737 * routes[4] * routes[5] + 0.0002540360815314034 * routes[4] * routes[7] + 0.0003658119574052209 * routes[5] * routes[8] + 9.145298935130523e-05 * routes[5] * routes[9] + 0.02817620906198843 * routes[6] * routes[7] + 0.028267662051339737 * routes[6] * routes[8] + 0.00042633322571231466 * routes[6] * routes[9] + 0.028267662051339737 * routes[7] * routes[8] + 0.2971066391199156) + 0.012747997144545643 * routes[3] + 0.012464054938285417 * routes[4] + 0.012011721764745697 * routes[5] + 0.011698326321581418 * routes[8]",
+            "source_ref": null
+          },
+          "kind": "PhaseOperation",
+          "source_ref": {
+            "end_column": 39,
+            "end_line": 51,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\qera_scaling\\classiq_model.py",
+            "start_column": 7,
+            "start_line": 51
+          },
+          "theta": {
+            "back_ref": null,
+            "expr": "gamma",
+            "source_ref": null
+          },
+          "uuid": "32752a92-7b34-4827-addc-98bf7b6482dc"
+        }
+      ],
+      "name": "cost_layer_expanded___0",
+      "permutation": true,
+      "positional_arg_declarations": [
+        {
+          "back_ref": null,
+          "classical_type": {
+            "back_ref": null,
+            "kind": "real",
+            "source_ref": null
+          },
+          "kind": "ClassicalParameterDeclaration",
+          "name": "gamma",
+          "source_ref": null
+        },
+        {
+          "back_ref": null,
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "name": "routes",
+          "quantum_type": {
+            "back_ref": null,
+            "element_type": {
+              "back_ref": null,
+              "kind": "qbit",
+              "source_ref": null
+            },
+            "kind": "qvec",
+            "length": {
+              "back_ref": null,
+              "expr": "24",
+              "source_ref": null
+            },
+            "source_ref": null
+          },
+          "source_ref": null,
+          "type_modifier": "const"
+        }
+      ],
+      "source_ref": null
+    },
+    {
+      "back_ref": null,
+      "body": [
+        {
+          "back_ref": "e70e1b51-ee79-479e-b55b-3d53242ca7ab",
+          "function": "RX",
+          "kind": "QuantumFunctionCall",
+          "positional_args": [
+            {
+              "back_ref": null,
+              "expr": "beta_captured__mixer_layer__2",
+              "source_ref": null
+            },
+            {
+              "back_ref": null,
+              "kind": "Name",
+              "name": "qubit",
+              "source_ref": null
+            }
+          ],
+          "source_ref": {
+            "end_column": 49,
+            "end_line": 58,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\qera_scaling\\classiq_model.py",
+            "start_column": 34,
+            "start_line": 58
+          },
+          "uuid": "17cf5322-b9cc-4a20-90b8-5e01fa1732a2"
+        }
+      ],
+      "name": "gate_operand_0_lambda___0_0_expanded___0",
+      "permutation": false,
+      "positional_arg_declarations": [
+        {
+          "back_ref": null,
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "name": "qubit",
+          "quantum_type": {
+            "back_ref": null,
+            "kind": "qbit",
+            "source_ref": null
+          },
+          "source_ref": null,
+          "type_modifier": "mutable"
+        },
+        {
+          "back_ref": null,
+          "classical_type": {
+            "back_ref": null,
+            "kind": "real",
+            "source_ref": null
+          },
+          "kind": "ClassicalParameterDeclaration",
+          "name": "beta_captured__mixer_layer__2",
+          "source_ref": null
+        }
+      ],
+      "source_ref": null
+    },
+    {
+      "back_ref": null,
+      "body": [
+        {
+          "back_ref": null,
+          "body": [
+            {
+              "back_ref": "ee2cdc75-f4db-4358-bd8d-378ef32827a6",
+              "function": "gate_operand_0_lambda___0_0_expanded___0",
+              "kind": "QuantumFunctionCall",
+              "positional_args": [
+                {
+                  "back_ref": null,
+                  "index": {
+                    "back_ref": null,
+                    "expr": "index",
+                    "source_ref": null
+                  },
+                  "kind": "Subscript",
+                  "source_ref": null,
+                  "value": {
+                    "back_ref": null,
+                    "kind": "Name",
+                    "name": "target",
+                    "source_ref": null
+                  }
+                },
+                {
+                  "back_ref": null,
+                  "expr": "beta_captured__mixer_layer__2",
+                  "source_ref": null
+                }
+              ],
+              "source_ref": {
+                "end_column": 63,
+                "end_line": 29,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\utility_functions.py",
+                "start_column": 36,
+                "start_line": 29
+              },
+              "uuid": "a1d59945-c98f-434b-8f8c-efe11c4b58ab"
+            }
+          ],
+          "count": {
+            "back_ref": null,
+            "expr": "24",
+            "source_ref": null
+          },
+          "iter_var": "index",
+          "kind": "Repeat",
+          "source_ref": {
+            "end_column": 64,
+            "end_line": 29,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Lib\\site-packages\\classiq\\open_library\\functions\\utility_functions.py",
+            "start_column": 3,
+            "start_line": 29
+          },
+          "uuid": "d01d112b-132d-4f49-b88f-9af81fc52ce9"
+        }
+      ],
+      "name": "apply_to_all_expanded___0",
+      "permutation": false,
+      "positional_arg_declarations": [
+        {
+          "back_ref": null,
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "name": "target",
+          "quantum_type": {
+            "back_ref": null,
+            "element_type": {
+              "back_ref": null,
+              "kind": "qbit",
+              "source_ref": null
+            },
+            "kind": "qvec",
+            "length": {
+              "back_ref": null,
+              "expr": "24",
+              "source_ref": null
+            },
+            "source_ref": null
+          },
+          "source_ref": null,
+          "type_modifier": "mutable"
+        },
+        {
+          "back_ref": null,
+          "classical_type": {
+            "back_ref": null,
+            "kind": "real",
+            "source_ref": null
+          },
+          "kind": "ClassicalParameterDeclaration",
+          "name": "beta_captured__mixer_layer__2",
+          "source_ref": null
+        }
+      ],
+      "source_ref": null
+    },
+    {
+      "back_ref": null,
+      "body": [
+        {
+          "back_ref": "b808ba2e-6c66-4681-86ed-a6fd9d82cb5b",
+          "function": "apply_to_all_expanded___0",
+          "kind": "QuantumFunctionCall",
+          "positional_args": [
+            {
+              "back_ref": null,
+              "kind": "Name",
+              "name": "routes",
+              "source_ref": null
+            },
+            {
+              "back_ref": null,
+              "expr": "beta",
+              "source_ref": null
+            }
+          ],
+          "source_ref": {
+            "end_column": 58,
+            "end_line": 58,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\qera_scaling\\classiq_model.py",
+            "start_column": 7,
+            "start_line": 58
+          },
+          "uuid": "c733577c-7bc3-4e0a-a12a-e844514ab9fb"
+        }
+      ],
+      "name": "mixer_layer_expanded___0",
+      "permutation": false,
+      "positional_arg_declarations": [
+        {
+          "back_ref": null,
+          "classical_type": {
+            "back_ref": null,
+            "kind": "real",
+            "source_ref": null
+          },
+          "kind": "ClassicalParameterDeclaration",
+          "name": "beta",
+          "source_ref": null
+        },
+        {
+          "back_ref": null,
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "name": "routes",
+          "quantum_type": {
+            "back_ref": null,
+            "element_type": {
+              "back_ref": null,
+              "kind": "qbit",
+              "source_ref": null
+            },
+            "kind": "qvec",
+            "length": {
+              "back_ref": null,
+              "expr": "24",
+              "source_ref": null
+            },
+            "source_ref": null
+          },
+          "source_ref": null,
+          "type_modifier": "mutable"
+        }
+      ],
+      "source_ref": null
+    },
+    {
+      "back_ref": null,
+      "body": [
+        {
+          "back_ref": null,
+          "body": [
+            {
+              "back_ref": "d1aa6856-1df7-4f2f-b7ab-5b1026d174f9",
+              "function": "cost_layer_expanded___0",
+              "kind": "QuantumFunctionCall",
+              "positional_args": [
+                {
+                  "back_ref": null,
+                  "expr": "params[layer]",
+                  "source_ref": null
+                },
+                {
+                  "back_ref": null,
+                  "kind": "Name",
+                  "name": "routes",
+                  "source_ref": null
+                }
+              ],
+              "source_ref": {
+                "end_column": 48,
+                "end_line": 68,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\qera_scaling\\classiq_model.py",
+                "start_column": 15,
+                "start_line": 68
+              },
+              "uuid": "cc5e4fbf-2a76-451b-892f-754f41fda201"
+            },
+            {
+              "back_ref": "3f37bc3e-6f67-4bb9-8aed-7be2260f3a36",
+              "function": "mixer_layer_expanded___0",
+              "kind": "QuantumFunctionCall",
+              "positional_args": [
+                {
+                  "back_ref": null,
+                  "expr": "params[1 + layer]",
+                  "source_ref": null
+                },
+                {
+                  "back_ref": null,
+                  "kind": "Name",
+                  "name": "routes",
+                  "source_ref": null
+                }
+              ],
+              "source_ref": {
+                "end_column": 57,
+                "end_line": 69,
+                "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\qera_scaling\\classiq_model.py",
+                "start_column": 15,
+                "start_line": 69
+              },
+              "uuid": "d29d9391-5d01-43ba-aeb6-77deb5508805"
+            }
+          ],
+          "count": {
+            "back_ref": null,
+            "expr": "1",
+            "source_ref": null
+          },
+          "iter_var": "layer",
+          "kind": "Repeat",
+          "source_ref": {
+            "end_column": 8,
+            "end_line": 71,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\qera_scaling\\classiq_model.py",
+            "start_column": 7,
+            "start_line": 65
+          },
+          "uuid": "d58f2013-4533-40cc-b021-b8660f11eb61"
+        }
+      ],
+      "name": "qaoa_ansatz_expanded___0",
+      "permutation": false,
+      "positional_arg_declarations": [
+        {
+          "back_ref": null,
+          "classical_type": {
+            "back_ref": null,
+            "element_type": {
+              "back_ref": null,
+              "kind": "real",
+              "source_ref": null
+            },
+            "kind": "array",
+            "length": {
+              "back_ref": null,
+              "expr": "2",
+              "source_ref": null
+            },
+            "source_ref": null
+          },
+          "kind": "ClassicalParameterDeclaration",
+          "name": "params",
+          "source_ref": null
+        },
+        {
+          "back_ref": null,
+          "direction": "inout",
+          "kind": "PortDeclaration",
+          "name": "routes",
+          "quantum_type": {
+            "back_ref": null,
+            "element_type": {
+              "back_ref": null,
+              "kind": "qbit",
+              "source_ref": null
+            },
+            "kind": "qvec",
+            "length": {
+              "back_ref": null,
+              "expr": "24",
+              "source_ref": null
+            },
+            "source_ref": null
+          },
+          "source_ref": null,
+          "type_modifier": "mutable"
+        }
+      ],
+      "source_ref": null
+    },
+    {
+      "back_ref": null,
+      "body": [
+        {
+          "back_ref": null,
+          "fraction_digits": null,
+          "is_signed": null,
+          "kind": "Allocate",
+          "size": {
+            "back_ref": null,
+            "expr": "24",
+            "source_ref": null
+          },
+          "source_ref": {
+            "end_column": 23,
+            "end_line": 78,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\qera_scaling\\classiq_model.py",
+            "start_column": 7,
+            "start_line": 78
+          },
+          "target": {
+            "back_ref": null,
+            "kind": "Name",
+            "name": "routes",
+            "source_ref": null
+          },
+          "uuid": "122fa611-bc97-4e22-8ee6-ca031c31025f"
+        },
+        {
+          "back_ref": "73cdce60-b89c-4f48-b1c7-02640cec7ab9",
+          "function": "hadamard_transform_expanded___0",
+          "kind": "QuantumFunctionCall",
+          "positional_args": [
+            {
+              "back_ref": null,
+              "kind": "Name",
+              "name": "routes",
+              "source_ref": null
+            }
+          ],
+          "source_ref": {
+            "end_column": 33,
+            "end_line": 79,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\qera_scaling\\classiq_model.py",
+            "start_column": 7,
+            "start_line": 79
+          },
+          "uuid": "df6da3ea-8c1d-4b2c-9935-56dcee5719eb"
+        },
+        {
+          "back_ref": "74de6820-da38-4a6c-b096-24386599a341",
+          "function": "qaoa_ansatz_expanded___0",
+          "kind": "QuantumFunctionCall",
+          "positional_args": [
+            {
+              "back_ref": null,
+              "expr": "params",
+              "source_ref": null
+            },
+            {
+              "back_ref": null,
+              "kind": "Name",
+              "name": "routes",
+              "source_ref": null
+            }
+          ],
+          "source_ref": {
+            "end_column": 34,
+            "end_line": 80,
+            "file_name": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\qera_scaling\\classiq_model.py",
+            "start_column": 7,
+            "start_line": 80
+          },
+          "uuid": "80df513d-ad09-4dc1-a376-a06f63ba7da3"
+        }
+      ],
+      "name": "main",
+      "permutation": false,
+      "positional_arg_declarations": [
+        {
+          "back_ref": null,
+          "classical_type": {
+            "back_ref": null,
+            "element_type": {
+              "back_ref": null,
+              "kind": "real",
+              "source_ref": null
+            },
+            "kind": "array",
+            "length": {
+              "back_ref": null,
+              "expr": "2",
+              "source_ref": null
+            },
+            "source_ref": null
+          },
+          "kind": "ClassicalParameterDeclaration",
+          "name": "params",
+          "source_ref": null
+        },
+        {
+          "back_ref": null,
+          "direction": "output",
+          "kind": "PortDeclaration",
+          "name": "routes",
+          "quantum_type": {
+            "back_ref": null,
+            "element_type": {
+              "back_ref": null,
+              "kind": "qbit",
+              "source_ref": null
+            },
+            "kind": "qvec",
+            "length": {
+              "back_ref": null,
+              "expr": "24",
+              "source_ref": null
+            },
+            "source_ref": null
+          },
+          "source_ref": null,
+          "type_modifier": "mutable"
+        }
+      ],
+      "source_ref": null
+    }
+  ],
+  "functions_compilation_metadata": {},
+  "interface_version": "22",
+  "kind": "user",
+  "preferences": {
+    "backend_name": null,
+    "backend_service_provider": null,
+    "compatibility_mode": false,
+    "custom_hardware_settings": {
+      "basis_gates": [
+        "cx",
+        "y",
+        "u",
+        "sxdg",
+        "x",
+        "rx",
+        "cy",
+        "u2",
+        "s",
+        "sdg",
+        "u1",
+        "id",
+        "h",
+        "rz",
+        "z",
+        "t",
+        "sx",
+        "u3",
+        "tdg",
+        "ry",
+        "cz",
+        "p",
+        "r"
+      ],
+      "connectivity_map": null,
+      "is_symmetric_connectivity": true
+    },
+    "debug_mode": true,
+    "machine_precision": 8,
+    "optimization_level": 1,
+    "optimization_timeout_seconds": null,
+    "output_format": [
+      "qasm"
+    ],
+    "qasm3": null,
+    "random_seed": 1342371950,
+    "solovay_kitaev_max_iterations": null,
+    "standalone": false,
+    "symbolic_loops": false,
+    "timeout_seconds": 300,
+    "transpilation_option": "auto optimize"
+  },
+  "qstructs": [],
+  "source_ref": null,
+  "types": []
+}

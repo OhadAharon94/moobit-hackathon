@@ -9,6 +9,7 @@ from math import isclose
 from typing import Iterable, Mapping, Sequence
 
 from qera.config import CONGESTION_WEIGHT, ENERGY_TOLERANCE, LATENCY_WEIGHT
+from qera.validation import validated_integer
 
 from qera_scaling.evaluate import ScalingEvaluator
 from qera_scaling.model import Assignment, BitState
@@ -53,14 +54,20 @@ def assignment_from_bits(
     evaluator: ScalingEvaluator, bits: Sequence[int]
 ) -> Assignment | None:
     instance = evaluator.instance
-    if len(bits) != instance.variable_count or any(int(v) not in (0, 1) for v in bits):
+    if len(bits) != instance.variable_count:
+        raise ValueError("bit vector has the wrong width")
+    validated = tuple(
+        validated_integer(value, f"route bit {index}")
+        for index, value in enumerate(bits)
+    )
+    if any(value not in (0, 1) for value in validated):
         raise ValueError("bit vector has the wrong width or nonbinary values")
     choices = []
     for demand_index in range(instance.demand_count):
         active = [
             path_index
             for path_index in range(instance.paths_per_demand)
-            if int(bits[instance.variable_index(demand_index, path_index)]) == 1
+            if validated[instance.variable_index(demand_index, path_index)] == 1
         ]
         if len(active) != 1:
             return None
@@ -71,11 +78,17 @@ def assignment_from_bits(
 def evaluate_qubo(model: ScalingQubo, bits: Sequence[int]) -> float:
     if len(bits) != len(model.linear):
         raise ValueError("bit vector length does not match QUBO")
+    validated = tuple(
+        validated_integer(value, f"route bit {index}")
+        for index, value in enumerate(bits)
+    )
+    if any(value not in (0, 1) for value in validated):
+        raise ValueError("QUBO inputs must be binary")
     return (
         model.offset
-        + sum(value * int(bits[index]) for index, value in enumerate(model.linear))
+        + sum(value * validated[index] for index, value in enumerate(model.linear))
         + sum(
-            value * int(bits[left]) * int(bits[right])
+            value * validated[left] * validated[right]
             for (left, right), value in model.quadratic.items()
         )
     )

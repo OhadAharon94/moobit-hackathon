@@ -1,0 +1,80 @@
+{
+  "circuits": [
+    {
+      "D": 4,
+      "count_ops": {
+        "cx": 84,
+        "h": 12,
+        "rx": 12,
+        "rz": 46
+      },
+      "depth": 65,
+      "execution_scope": "simulator-executed",
+      "hardware_interpretation": "Hardware-agnostic synthesis; high two-qubit fraction makes physical-device fidelity uncertain.",
+      "instance_id": "qera-d4-frozen",
+      "manifest_sha256": "6cb0b4491b0ba82a8f7308ad5006b2fbfcc6fbcca0a339e237f773df54983eb8",
+      "qprog_sha256": "9d6b2fd05b1757a070c756c407d64a06e877030ba4397303c6bae9310bbcfd7e",
+      "total_gates": 154,
+      "two_qubit_fraction": 0.5454545454545454,
+      "two_qubit_gates": 84,
+      "width": 12
+    },
+    {
+      "D": 5,
+      "count_ops": {
+        "cx": 136,
+        "h": 15,
+        "rx": 15,
+        "rz": 70
+      },
+      "depth": 79,
+      "execution_scope": "simulator-executed",
+      "hardware_interpretation": "Hardware-agnostic synthesis; high two-qubit fraction makes physical-device fidelity uncertain.",
+      "instance_id": "qera-d5-seed6105",
+      "manifest_sha256": "a24acf4461b5fce745a85b2fb9daf46449128c7c0a1658c0a1b6435e5a0770fd",
+      "qprog_sha256": "464f42363ec85ffd40e67e83964d4d3ecd591bfcc2d5b90e1484c13ff739ff8a",
+      "total_gates": 236,
+      "two_qubit_fraction": 0.576271186440678,
+      "two_qubit_gates": 136,
+      "width": 15
+    },
+    {
+      "D": 6,
+      "count_ops": {
+        "cx": 160,
+        "h": 18,
+        "rx": 18,
+        "rz": 98
+      },
+      "depth": 138,
+      "execution_scope": "simulator-executed",
+      "hardware_interpretation": "Hardware-agnostic synthesis; high two-qubit fraction makes physical-device fidelity uncertain.",
+      "instance_id": "qera-d6-seed6106",
+      "manifest_sha256": "9606cc96d6e58c1682f7b322535156ec9334069f94b246a2ebb8a10111dce8ab",
+      "qprog_sha256": "d8724911c2010e6fb372cbf0b4d1a899227f7e9d57eba62770f81116b2f85dff",
+      "total_gates": 294,
+      "two_qubit_fraction": 0.54421768707483,
+      "two_qubit_gates": 160,
+      "width": 18
+    },
+    {
+      "D": 8,
+      "count_ops": {
+        "cx": 280,
+        "h": 24,
+        "rx": 24,
+        "rz": 164
+      },
+      "depth": 246,
+      "execution_scope": "synthesis-only",
+      "hardware_interpretation": "Hardware-agnostic synthesis; high two-qubit fraction makes physical-device fidelity uncertain.",
+      "instance_id": "qera-d8-seed6108",
+      "manifest_sha256": "a5c8d9e502db09dc772ffb712247e7777a4bdfe132039d18667b0996c0f25604",
+      "qprog_sha256": "53f362d117785b66e077b6347fec674c0f2cce4022d6fc31c3725affc10c3fe3",
+      "total_gates": 492,
+      "two_qubit_fraction": 0.5691056910569106,
+      "two_qubit_gates": 280,
+      "width": 24
+    }
+  ]
+}

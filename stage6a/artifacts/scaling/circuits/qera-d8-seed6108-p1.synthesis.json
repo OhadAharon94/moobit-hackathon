@@ -1,0 +1,41 @@
+{
+  "D": 8,
+  "K": 3,
+  "M": 1.0,
+  "S": 3,
+  "classiq_sdk_version": "1.29.0",
+  "count_ops": {
+    "cx": 280,
+    "h": 24,
+    "rx": 24,
+    "rz": 164
+  },
+  "created_at_utc": "2026-09-08T16:13:26.947098+00:00",
+  "depth": 246,
+  "energy_mode": "base",
+  "energy_range_mode": "coefficient-bounds",
+  "gate_count": 492,
+  "instance_id": "qera-d8-seed6108",
+  "instance_sha256": "b2b08f91a40b65f3a0656beab81635af2e44692e4c8e3ec8c78d664fec32dde5",
+  "logical_bits": 24,
+  "objective_mode": "cost",
+  "phase_offset": -13.972982068405514,
+  "phase_scale": 70.98186969013274,
+  "qaoa_depth": 1,
+  "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\circuits\\qera-d8-seed6108-p1.qprog",
+  "qprog_sha256": "53f362d117785b66e077b6347fec674c0f2cce4022d6fc31c3725affc10c3fe3",
+  "scenario_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "schema_version": "stage6a-1.0",
+  "seed": 6108,
+  "source_sha256": "fce0c56d2a28eb913caf319ba1aea7b67ea7a05307f24fda79a85fb4973deecc",
+  "synthesis_runtime_seconds": 14.601822500000708,
+  "synthesis_spec_sha256": "bead7acb1274faffb43818fd8c6795d62bf51e2e6509327089d221cd10e7a859",
+  "synthesis_status": "SUCCESS",
+  "synthesized_qubits": 24,
+  "two_qubit_gate_count": 280,
+  "warning": "D=8 phase scaling uses guaranteed coefficient bounds, not exhaustive raw-state extrema."
+}

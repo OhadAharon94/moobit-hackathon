@@ -1,0 +1,115 @@
+{
+  "D": 4,
+  "K": 3,
+  "S": 3,
+  "edges": 12,
+  "exact_assignments": [
+    [
+      1,
+      0,
+      2,
+      2
+    ]
+  ],
+  "exact_minimax_assignments": [
+    [
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      2
+    ]
+  ],
+  "exact_runtime_seconds": 0.01065419998485595,
+  "exact_status": "OPTIMAL_ENUMERATION",
+  "exact_weighted_cost": 0.24514054470174573,
+  "exact_worst_case_regret": 0.12322936529555982,
+  "greedy": {
+    "assignment": [
+      1,
+      1,
+      2,
+      0
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.1589825660582949,
+      0.2958005298503888,
+      0.18623162678406635
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.29848533116890474,
+    "worst_case_regret": 0.2958005298503888
+  },
+  "greedy_runtime_seconds": 0.00018759997328743339,
+  "instance_id": "qera-d4-frozen",
+  "joint_feasible_count": 39,
+  "joint_feasible_fraction_valid": 0.48148148148148145,
+  "local_search": {
+    "assignment": [
+      2,
+      1,
+      2,
+      0
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.03888586216289861,
+      0.11002095676911952,
+      0.33808137470709426
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.2623656721800377,
+    "worst_case_regret": 0.33808137470709426
+  },
+  "local_search_evaluations": 16,
+  "local_search_runtime_seconds": 0.0001373999984934926,
+  "logical_bits": 12,
+  "minimax_runtime_seconds": 0.001347700017504394,
+  "nodes": 8,
+  "random_valid_best": {
+    "assignment": [
+      1,
+      0,
+      2,
+      2
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.03888586216289861,
+      0.0,
+      0.33808137470709426
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.24514054470174573,
+    "worst_case_regret": 0.33808137470709426
+  },
+  "random_valid_feasible_fraction": 0.4892578125,
+  "random_valid_shots": 4096,
+  "seed": 1701,
+  "simulated_annealing": {
+    "assignment": [
+      1,
+      0,
+      2,
+      2
+    ],
+    "joint_feasible": true,
+    "scenario_regrets": [
+      0.03888586216289861,
+      0.0,
+      0.33808137470709426
+    ],
+    "total_overflow": 0.0,
+    "weighted_cost": 0.24514054470174573,
+    "worst_case_regret": 0.33808137470709426
+  },
+  "simulated_annealing_evaluations": 10000,
+  "simulated_annealing_runtime_seconds": 0.19675940001616254,
+  "valid_assignments": 81
+}

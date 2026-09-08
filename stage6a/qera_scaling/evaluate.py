@@ -10,6 +10,7 @@ from time import perf_counter
 from typing import Iterable, Sequence
 
 from qera.config import CAPACITY_TOLERANCE, CONGESTION_WEIGHT, LATENCY_WEIGHT
+from qera.validation import validated_integer
 
 from qera_scaling.model import Assignment, Edge, ScalingInstance, ScalingScenario
 
@@ -72,7 +73,10 @@ class ScalingEvaluator:
     def validate_assignment(self, assignment: Sequence[int]) -> Assignment:
         if len(assignment) != self.instance.demand_count:
             raise ValueError("assignment has the wrong demand count")
-        result = tuple(int(value) for value in assignment)
+        result = tuple(
+            validated_integer(value, f"path index {index}")
+            for index, value in enumerate(assignment)
+        )
         if any(
             value < 0 or value >= self.instance.paths_per_demand for value in result
         ):
