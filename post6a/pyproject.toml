@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "holy-qow-post6a"
+version = "0.1.0"
+description = "Holy QOW post-Stage-6A evidence analysis, authorized Steps 0-2"
+requires-python = ">=3.12,<3.14"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["holy_qow_post6a*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

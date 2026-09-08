@@ -1,0 +1,15 @@
+{
+  "evaluator": "qera_scaling.evaluate.ScalingEvaluator using the frozen D=4 fixture",
+  "normalization": "per-held-out-scenario over all 81 structurally valid routes",
+  "outputs": {
+    "heldout_route_results_sha256": "3021938567b8b70907ba3df28a47332a2a3bd6f3e5233d59c492bdb589a0c7d9",
+    "heldout_route_summary_sha256": "b64fb4fd4b406572c4d174a7c4a5b7b83ac3ccbe38086a4e96abbc15b693de1c"
+  },
+  "regret_reference": "per-held-out-scenario feasible optimum and feasible maximum",
+  "route_manifest_sha256": "2c2d0110f2d513acb1d6634ef4206888ee039e98868a351add21e933e74b5afa",
+  "route_training_or_tuning_after_freeze": false,
+  "scenario_manifest_sha256": "18553369a4756445939fca41681f405f391c08829d186cd450599602ad03b214",
+  "schema_version": "post6a-steps0-2-v1",
+  "status": "COMPLETE",
+  "step": 1
+}

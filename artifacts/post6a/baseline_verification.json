@@ -1,0 +1,75 @@
+{
+  "discrepancies": [],
+  "float_tolerance": {
+    "absolute": 1e-12,
+    "relative": 1e-10
+  },
+  "gate": "0A_artifact_consistency",
+  "runs": [
+    {
+      "D": 4,
+      "decoded_shots": 4096,
+      "field_checks": {
+        "best_sampled_worst_case_regret": "NOT_RECORDED",
+        "exact_joint_objective": true,
+        "joint_feasible_probability": true,
+        "near_optimal_joint_probability_gap_0_01": true,
+        "one_hot_probability": true,
+        "selected_exact_gap": true,
+        "status": true,
+        "total_shots": true
+      },
+      "manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\runs\\uniform_cost_p1_smoke\\manifest.json",
+      "manifest_sha256": "20dfa970021fcccd4f7629c1b7aaaad181718508354e1425fd5b89c225445f4f",
+      "raw_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\runs\\uniform_cost_p1_smoke\\samples_raw.csv",
+      "raw_sha256": "575481de681784d71b56d1f849f790d920979f27043bb242e1f90abb91d8e345",
+      "recorded_shots": 4096,
+      "recorded_summary_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\runs\\uniform_cost_p1_smoke\\summary.json",
+      "recorded_summary_sha256": "6484e242dcc7ea970ae36f341f5259b3102327c954204f69818b69910b964e13"
+    },
+    {
+      "D": 5,
+      "decoded_shots": 4096,
+      "field_checks": {
+        "best_sampled_worst_case_regret": true,
+        "exact_joint_objective": true,
+        "joint_feasible_probability": true,
+        "near_optimal_joint_probability_gap_0_01": true,
+        "one_hot_probability": true,
+        "selected_exact_gap": true,
+        "status": true,
+        "total_shots": true
+      },
+      "manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d5-seed6105-p1-uniform-cost\\manifest.json",
+      "manifest_sha256": "81ac1b4732db7101bc44b2492c104352ba1acd9392f538a725181f981c842b33",
+      "raw_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d5-seed6105-p1-uniform-cost\\samples_raw.csv",
+      "raw_sha256": "3c015bbee1c5659e05464e08df0f53fcef16539a1ba3d1db555182d99c4bc82f",
+      "recorded_shots": 4096,
+      "recorded_summary_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d5-seed6105-p1-uniform-cost\\summary.json",
+      "recorded_summary_sha256": "558f6943ce7be48d69099cdcaebef1038bb991fc6d04f53365106838f58ee04d"
+    },
+    {
+      "D": 6,
+      "decoded_shots": 4096,
+      "field_checks": {
+        "best_sampled_worst_case_regret": true,
+        "exact_joint_objective": true,
+        "joint_feasible_probability": true,
+        "near_optimal_joint_probability_gap_0_01": true,
+        "one_hot_probability": true,
+        "selected_exact_gap": true,
+        "status": true,
+        "total_shots": true
+      },
+      "manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d6-seed6106-p1-uniform-cost\\manifest.json",
+      "manifest_sha256": "6bccf3d9d8e46886ed7a19df800ba850d11108d1402381443fbd31dbfe951c33",
+      "raw_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d6-seed6106-p1-uniform-cost\\samples_raw.csv",
+      "raw_sha256": "528daf9ff76c2f45763f46a41e9c522ed32f32d05bbf7b8275853c60b6345a26",
+      "recorded_shots": 4096,
+      "recorded_summary_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d6-seed6106-p1-uniform-cost\\summary.json",
+      "recorded_summary_sha256": "b4cc02a73592e0dbc016e8b3b7e5c8352630e2aaa64e5bb9148d1bc463652119"
+    }
+  ],
+  "schema_version": "post6a-steps0-2-v1",
+  "status": "PASS"
+}

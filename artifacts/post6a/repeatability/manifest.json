@@ -1,0 +1,158 @@
+{
+  "circuit_resources": {
+    "depth": 138,
+    "gates": 294,
+    "qubits": 18,
+    "two_qubit_gates": 160
+  },
+  "configuration_gate_sha256": "aa23cbc8ddf9f80a59f66af789f7657c2bdf7b2f9a9c96c5585009aeb17956c5",
+  "finite_shot_uncertainty": "per-seed Wilson score intervals, 95%",
+  "frozen_configuration": {
+    "backend": "simulator",
+    "energy_mode": "base",
+    "final_shots": 4096,
+    "initial_parameters": {
+      "params": [
+        0.5,
+        0.5
+      ]
+    },
+    "objective_mode": "cost",
+    "optimizer_iteration_cap": 10,
+    "optimizer_quantile": 1.0,
+    "optimizer_shots": 512,
+    "qaoa_depth": 1,
+    "scenario_weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  "inputs": [
+    {
+      "best_parameters": {
+        "params": [
+          -1.9074447608359553,
+          1.0326642267208819
+        ]
+      },
+      "best_reported_optimizer_cost": 0.2042041015625,
+      "execution_runtime_seconds": 16.973741699999664,
+      "manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d6-seed6106-p1-uniform-cost\\manifest.json",
+      "manifest_sha256": "6bccf3d9d8e46886ed7a19df800ba850d11108d1402381443fbd31dbfe951c33",
+      "optimizer_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d6-seed6106-p1-uniform-cost\\optimizer.json",
+      "optimizer_seed": 6106,
+      "optimizer_sha256": "3270c2122e88db9a22213eaf386cbc0c5ec32568efb72b36162832c78c794a25",
+      "optimizer_trace_length": 10,
+      "raw_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d6-seed6106-p1-uniform-cost\\samples_raw.csv",
+      "raw_sha256": "528daf9ff76c2f45763f46a41e9c522ed32f32d05bbf7b8275853c60b6345a26",
+      "status": "PROCESSED",
+      "warning": null
+    },
+    {
+      "best_parameters": {
+        "params": [
+          -3.2578287927812597,
+          1.16563857465244
+        ]
+      },
+      "best_reported_optimizer_cost": 0.1811390625,
+      "execution_runtime_seconds": 17.617843299987726,
+      "manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6201\\manifest.json",
+      "manifest_sha256": "5b3e0600267bd7e1e7a35b087950518b1fc1e5f54f11998631d5ce1499c09ddb",
+      "optimizer_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6201\\optimizer.json",
+      "optimizer_seed": 6201,
+      "optimizer_sha256": "13573e149c7ef5c5cf37d1635c282ce1ad651d4cd6138cd28b0dd7b443dc652e",
+      "optimizer_trace_length": 10,
+      "raw_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6201\\samples_raw.csv",
+      "raw_sha256": "43512214f30a2be82b45917229126b940691e47161e9b8d14916e52070846144",
+      "status": "RAW_SAMPLE_SAVED",
+      "warning": null
+    },
+    {
+      "best_parameters": {
+        "params": [
+          -0.47827782469514135,
+          0.292701910983862
+        ]
+      },
+      "best_reported_optimizer_cost": 0.22617187500000002,
+      "execution_runtime_seconds": 10.787270099972375,
+      "manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6202\\manifest.json",
+      "manifest_sha256": "687273d11cc284a08961a448a6d18971c85262bc7c84e5045558df08e3318e7e",
+      "optimizer_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6202\\optimizer.json",
+      "optimizer_seed": 6202,
+      "optimizer_sha256": "aaa5d7ea7ae27b5735d3c13ee4a90576630833ebc5cdb2978d91461abc346bed",
+      "optimizer_trace_length": 10,
+      "raw_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6202\\samples_raw.csv",
+      "raw_sha256": "f24ccc77b6692f0394c6a7254aa4b65fb2da0d11c9b3bb93a670a47f70cff7ef",
+      "status": "RAW_SAMPLE_SAVED",
+      "warning": null
+    },
+    {
+      "best_parameters": {
+        "params": [
+          -4.074596765524108,
+          0.8149473956922827
+        ]
+      },
+      "best_reported_optimizer_cost": 0.15995292968750002,
+      "execution_runtime_seconds": 21.34466279996559,
+      "manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6203\\manifest.json",
+      "manifest_sha256": "531549274804a70f3866377f7d657e70d1dbf62b0ec09825f685f0f06070ec38",
+      "optimizer_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6203\\optimizer.json",
+      "optimizer_seed": 6203,
+      "optimizer_sha256": "025082b13dfcb8c2326b695a82e802c5024aded1e352c60b5e3e47bcedf1ed5a",
+      "optimizer_trace_length": 10,
+      "raw_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6203\\samples_raw.csv",
+      "raw_sha256": "58fda71a8ff438a1752cb7ad63d03dabc0f125a79525c45416b4ebebfdf79ecc",
+      "status": "RAW_SAMPLE_SAVED",
+      "warning": null
+    },
+    {
+      "best_parameters": {
+        "params": [
+          -1.3654828297358808,
+          0.7234054319154488
+        ]
+      },
+      "best_reported_optimizer_cost": 0.2133046875,
+      "execution_runtime_seconds": 21.97549089998938,
+      "manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6204\\manifest.json",
+      "manifest_sha256": "7b4d11fb4b8d4af36bffc56f0c6d74a2283fdc2978b168eae277fd52b81ff508",
+      "optimizer_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6204\\optimizer.json",
+      "optimizer_seed": 6204,
+      "optimizer_sha256": "8ec7ddaacd58713199b44ee9e8400724047616fa07c832e35f869678b2ed29d5",
+      "optimizer_trace_length": 10,
+      "raw_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6204\\samples_raw.csv",
+      "raw_sha256": "14af165d86c8da7db07096b81beadcf2d2c888292d7aa862de847e2ee8930ecf",
+      "status": "RAW_SAMPLE_SAVED",
+      "warning": null
+    }
+  ],
+  "matched_valid_batches_per_seed": 1000,
+  "near_optimal_absolute_gap_threshold": 0.01,
+  "new_quantum_jobs": 4,
+  "optimizer_seed_count": 5,
+  "optimizer_seed_uncertainty": "mean/sample SD/median/IQR/range over five seed-level point estimates; not pooled across shots",
+  "optimizer_seeds": [
+    6106,
+    6201,
+    6202,
+    6203,
+    6204
+  ],
+  "original_stage6a_seed_reused": 6106,
+  "outputs": {
+    "control_comparison": "b7488ef763d22924652c1247182a7ee50abf0d0e22c0c9a49a592fdf2fe776ca",
+    "control_comparison_summary": "dd088f2a68b1bb7e0059ea11b265005ac823e2de9760e7c8c37baaac97b17166",
+    "matched_valid_control": "f368e18c777ebadb8a30346c12db453cf637650de0caa242df44e91451d72d81",
+    "matched_valid_summary": "b021d6afe182abf099a58b5068b13b88528246c68602d40076823cdf2bd18922",
+    "optimizer_traces": "80e4502df79cf04b3e5a9b50898059d5513049e50b780c6dca7559544b0bb6a3",
+    "repeatability": "c8b160b0a3a4aa88e0aec3762b06b85edbcc55c2ffeea766bd39ffd2421278ff",
+    "seed_level_summary": "9f692fe5d355d5e54b5f7e42b6f06776fc347166d49b10521a8a52cac2242d99"
+  },
+  "schema_version": "post6a-steps0-2-v1",
+  "status": "COMPLETE",
+  "step": 2
+}

@@ -1,0 +1,66 @@
+{
+  "routes": [
+    {
+      "assignment": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "route_id": "nominal_only",
+      "source": "deterministic first representative of the frozen nominal optimum tie"
+    },
+    {
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "route_id": "static_uniform_multiscenario",
+      "source": "frozen exact static uniform multi-scenario optimum"
+    },
+    {
+      "assignment": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "route_id": "exact_adaptive",
+      "source": "frozen exact-inner adaptive cost trajectory final route"
+    },
+    {
+      "assignment": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "route_id": "qaoa_adaptive",
+      "source": "completed MVP saved-QAOA adaptive run best route"
+    },
+    {
+      "assignment": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "route_id": "exact_pure_minimax",
+      "source": "deterministic first representative of the frozen minimax tie"
+    }
+  ],
+  "schema_version": "post6a-steps0-2-v1",
+  "selection_policy": "all route identities fixed from pre-held-out artifacts",
+  "source_artifacts": [
+    {
+      "path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\tables\\exact_truth.json",
+      "sha256": "e3081c2930b96429e0a346a4e1cf951b9800170626720a1289fb4844fe28e3d9"
+    },
+    {
+      "path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\runs\\adaptive_cost\\summary.json",
+      "sha256": "f75700f5a52b64a4db6a8b62936bc6a3b840e2c79c236abb8c9e9043a4546187"
+    }
+  ]
+}

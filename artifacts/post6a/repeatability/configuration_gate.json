@@ -1,0 +1,51 @@
+{
+  "expected_configuration": {
+    "backend": "simulator",
+    "energy_mode": "base",
+    "final_shots": 4096,
+    "initial_parameters": {
+      "params": [
+        0.5,
+        0.5
+      ]
+    },
+    "objective_mode": "cost",
+    "optimizer_iteration_cap": 10,
+    "optimizer_quantile": 1.0,
+    "optimizer_shots": 512,
+    "qaoa_depth": 1,
+    "scenario_weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  "frozen_inputs": {
+    "original_manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d6-seed6106-p1-uniform-cost\\manifest.json",
+    "original_manifest_sha256": "6bccf3d9d8e46886ed7a19df800ba850d11108d1402381443fbd31dbfe951c33",
+    "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\circuits\\qera-d6-seed6106-p1.qprog",
+    "qprog_sha256": "d8724911c2010e6fb372cbf0b4d1a899227f7e9d57eba62770f81116b2f85dff",
+    "synthesis_manifest_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\circuits\\qera-d6-seed6106-p1.synthesis.json",
+    "synthesis_manifest_sha256": "9606cc96d6e58c1682f7b322535156ec9334069f94b246a2ebb8a10111dce8ab",
+    "synthesis_spec_sha256": "a3600d263bdcfe5732c84d5c7d0810c21235e2052a6c43e3abd695a1bdb15776"
+  },
+  "gate": "2A_configuration",
+  "mismatches": {},
+  "new_optimizer_seeds": [
+    6201,
+    6202,
+    6203,
+    6204
+  ],
+  "principle": "all settings equal frozen Stage 6A D=6 except optimizer seed",
+  "repeat_optimizer_seeds": [
+    6106,
+    6201,
+    6202,
+    6203,
+    6204
+  ],
+  "schema_version": "post6a-steps0-2-v1",
+  "status": "PASS",
+  "step": 2
+}

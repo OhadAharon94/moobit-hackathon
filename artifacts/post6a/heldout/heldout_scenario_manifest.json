@@ -1,0 +1,387 @@
+{
+  "full_link_removal_used": false,
+  "scenario_count": 24,
+  "scenarios": [
+    {
+      "capacity_multipliers": {},
+      "category": "demand",
+      "demand_multipliers": [
+        1.1,
+        1.1,
+        1.1,
+        1.1
+      ],
+      "description": "All demands +10%",
+      "feasible_assignment_count": 63,
+      "latency_multipliers": {},
+      "scenario_id": "demand-all-10"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "demand",
+      "demand_multipliers": [
+        1.2,
+        1.2,
+        1.2,
+        1.2
+      ],
+      "description": "All demands +20%",
+      "feasible_assignment_count": 63,
+      "latency_multipliers": {},
+      "scenario_id": "demand-all-20"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "demand",
+      "demand_multipliers": [
+        1.3,
+        1.3,
+        1.3,
+        1.3
+      ],
+      "description": "All demands +30%",
+      "feasible_assignment_count": 46,
+      "latency_multipliers": {},
+      "scenario_id": "demand-all-30"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "demand",
+      "demand_multipliers": [
+        1.2,
+        1.2,
+        1.0,
+        1.0
+      ],
+      "description": "S0-origin demands +20%",
+      "feasible_assignment_count": 63,
+      "latency_multipliers": {},
+      "scenario_id": "demand-s0-20"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "demand",
+      "demand_multipliers": [
+        1.3,
+        1.3,
+        1.0,
+        1.0
+      ],
+      "description": "S0-origin demands +30%",
+      "feasible_assignment_count": 63,
+      "latency_multipliers": {},
+      "scenario_id": "demand-s0-30"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "demand",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.3,
+        1.3
+      ],
+      "description": "S1-origin demands +30%",
+      "feasible_assignment_count": 63,
+      "latency_multipliers": {},
+      "scenario_id": "demand-s1-30"
+    },
+    {
+      "capacity_multipliers": {
+        "U->M1": 0.9
+      },
+      "category": "capacity",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "U-M1 capacity -10%",
+      "feasible_assignment_count": 71,
+      "latency_multipliers": {},
+      "scenario_id": "capacity-um1-10"
+    },
+    {
+      "capacity_multipliers": {
+        "U->M1": 0.8
+      },
+      "category": "capacity",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "U-M1 capacity -20%",
+      "feasible_assignment_count": 71,
+      "latency_multipliers": {},
+      "scenario_id": "capacity-um1-20"
+    },
+    {
+      "capacity_multipliers": {
+        "U->M1": 0.7
+      },
+      "category": "capacity",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "U-M1 capacity -30%",
+      "feasible_assignment_count": 71,
+      "latency_multipliers": {},
+      "scenario_id": "capacity-um1-30"
+    },
+    {
+      "capacity_multipliers": {
+        "U->M1": 0.6
+      },
+      "category": "capacity",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "U-M1 capacity -40%",
+      "feasible_assignment_count": 47,
+      "latency_multipliers": {},
+      "scenario_id": "capacity-um1-40"
+    },
+    {
+      "capacity_multipliers": {
+        "L->M2": 0.8
+      },
+      "category": "capacity",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "L-M2 capacity -20%",
+      "feasible_assignment_count": 71,
+      "latency_multipliers": {},
+      "scenario_id": "capacity-lm2-20"
+    },
+    {
+      "capacity_multipliers": {
+        "L->M2": 0.6
+      },
+      "category": "capacity",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "L-M2 capacity -40%",
+      "feasible_assignment_count": 47,
+      "latency_multipliers": {},
+      "scenario_id": "capacity-lm2-40"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "latency",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "U-M1 latency +10%",
+      "feasible_assignment_count": 79,
+      "latency_multipliers": {
+        "U->M1": 1.1
+      },
+      "scenario_id": "latency-um1-10"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "latency",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "U-M1 latency +25%",
+      "feasible_assignment_count": 79,
+      "latency_multipliers": {
+        "U->M1": 1.25
+      },
+      "scenario_id": "latency-um1-25"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "latency",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "U-M1 latency +50%",
+      "feasible_assignment_count": 79,
+      "latency_multipliers": {
+        "U->M1": 1.5
+      },
+      "scenario_id": "latency-um1-50"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "latency",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "L-M2 latency +25%",
+      "feasible_assignment_count": 79,
+      "latency_multipliers": {
+        "L->M2": 1.25
+      },
+      "scenario_id": "latency-lm2-25"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "latency",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "L-M2 latency +50%",
+      "feasible_assignment_count": 79,
+      "latency_multipliers": {
+        "L->M2": 1.5
+      },
+      "scenario_id": "latency-lm2-50"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "latency",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "description": "U-M2 latency +50%",
+      "feasible_assignment_count": 79,
+      "latency_multipliers": {
+        "U->M2": 1.5
+      },
+      "scenario_id": "latency-um2-50"
+    },
+    {
+      "capacity_multipliers": {
+        "U->M1": 0.8
+      },
+      "category": "combined",
+      "demand_multipliers": [
+        1.2,
+        1.2,
+        1.2,
+        1.2
+      ],
+      "description": "All demands +20%; U-M1 capacity -20%",
+      "feasible_assignment_count": 63,
+      "latency_multipliers": {},
+      "scenario_id": "combined-all20-um1cap20"
+    },
+    {
+      "capacity_multipliers": {
+        "U->M1": 0.7
+      },
+      "category": "combined",
+      "demand_multipliers": [
+        1.3,
+        1.3,
+        1.0,
+        1.0
+      ],
+      "description": "S0 demands +30%; U-M1 capacity -30%",
+      "feasible_assignment_count": 43,
+      "latency_multipliers": {},
+      "scenario_id": "combined-s030-um1cap30"
+    },
+    {
+      "capacity_multipliers": {
+        "L->M2": 0.7
+      },
+      "category": "combined",
+      "demand_multipliers": [
+        1.0,
+        1.0,
+        1.3,
+        1.3
+      ],
+      "description": "S1 demands +30%; L-M2 capacity -30%",
+      "feasible_assignment_count": 43,
+      "latency_multipliers": {},
+      "scenario_id": "combined-s130-lm2cap30"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "combined",
+      "demand_multipliers": [
+        1.1,
+        1.1,
+        1.1,
+        1.1
+      ],
+      "description": "All demands +10%; U-M1 latency +50%",
+      "feasible_assignment_count": 63,
+      "latency_multipliers": {
+        "U->M1": 1.5
+      },
+      "scenario_id": "combined-all10-um1lat50"
+    },
+    {
+      "capacity_multipliers": {},
+      "category": "combined",
+      "demand_multipliers": [
+        1.2,
+        1.2,
+        1.0,
+        1.0
+      ],
+      "description": "S0 demands +20%; L-M2 latency +25%",
+      "feasible_assignment_count": 63,
+      "latency_multipliers": {
+        "L->M2": 1.25
+      },
+      "scenario_id": "combined-s020-lm2lat25"
+    },
+    {
+      "capacity_multipliers": {
+        "U->M1": 0.8
+      },
+      "category": "combined",
+      "demand_multipliers": [
+        1.2,
+        1.2,
+        1.2,
+        1.2
+      ],
+      "description": "All demands +20%; U-M1 capacity -20%; L-M2 latency +25%",
+      "feasible_assignment_count": 63,
+      "latency_multipliers": {
+        "L->M2": 1.25
+      },
+      "scenario_id": "combined-all20-um1cap20-lm2lat25"
+    }
+  ],
+  "schema_version": "post6a-steps0-2-v1",
+  "status": "FROZEN_BEFORE_ROUTE_COMPARISON",
+  "training_scenarios_excluded": [
+    "nominal",
+    "surge",
+    "degradation"
+  ]
+}

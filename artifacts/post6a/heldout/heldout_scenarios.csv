@@ -1,0 +1,25 @@
+scenario_id,category,description,demand_multipliers,capacity_multipliers,latency_multipliers,feasible_assignment_count
+demand-all-10,demand,All demands +10%,"[1.1, 1.1, 1.1, 1.1]",{},{},63
+demand-all-20,demand,All demands +20%,"[1.2, 1.2, 1.2, 1.2]",{},{},63
+demand-all-30,demand,All demands +30%,"[1.3, 1.3, 1.3, 1.3]",{},{},46
+demand-s0-20,demand,S0-origin demands +20%,"[1.2, 1.2, 1.0, 1.0]",{},{},63
+demand-s0-30,demand,S0-origin demands +30%,"[1.3, 1.3, 1.0, 1.0]",{},{},63
+demand-s1-30,demand,S1-origin demands +30%,"[1.0, 1.0, 1.3, 1.3]",{},{},63
+capacity-um1-10,capacity,U-M1 capacity -10%,"[1.0, 1.0, 1.0, 1.0]","{""U->M1"": 0.9}",{},71
+capacity-um1-20,capacity,U-M1 capacity -20%,"[1.0, 1.0, 1.0, 1.0]","{""U->M1"": 0.8}",{},71
+capacity-um1-30,capacity,U-M1 capacity -30%,"[1.0, 1.0, 1.0, 1.0]","{""U->M1"": 0.7}",{},71
+capacity-um1-40,capacity,U-M1 capacity -40%,"[1.0, 1.0, 1.0, 1.0]","{""U->M1"": 0.6}",{},47
+capacity-lm2-20,capacity,L-M2 capacity -20%,"[1.0, 1.0, 1.0, 1.0]","{""L->M2"": 0.8}",{},71
+capacity-lm2-40,capacity,L-M2 capacity -40%,"[1.0, 1.0, 1.0, 1.0]","{""L->M2"": 0.6}",{},47
+latency-um1-10,latency,U-M1 latency +10%,"[1.0, 1.0, 1.0, 1.0]",{},"{""U->M1"": 1.1}",79
+latency-um1-25,latency,U-M1 latency +25%,"[1.0, 1.0, 1.0, 1.0]",{},"{""U->M1"": 1.25}",79
+latency-um1-50,latency,U-M1 latency +50%,"[1.0, 1.0, 1.0, 1.0]",{},"{""U->M1"": 1.5}",79
+latency-lm2-25,latency,L-M2 latency +25%,"[1.0, 1.0, 1.0, 1.0]",{},"{""L->M2"": 1.25}",79
+latency-lm2-50,latency,L-M2 latency +50%,"[1.0, 1.0, 1.0, 1.0]",{},"{""L->M2"": 1.5}",79
+latency-um2-50,latency,U-M2 latency +50%,"[1.0, 1.0, 1.0, 1.0]",{},"{""U->M2"": 1.5}",79
+combined-all20-um1cap20,combined,All demands +20%; U-M1 capacity -20%,"[1.2, 1.2, 1.2, 1.2]","{""U->M1"": 0.8}",{},63
+combined-s030-um1cap30,combined,S0 demands +30%; U-M1 capacity -30%,"[1.3, 1.3, 1.0, 1.0]","{""U->M1"": 0.7}",{},43
+combined-s130-lm2cap30,combined,S1 demands +30%; L-M2 capacity -30%,"[1.0, 1.0, 1.3, 1.3]","{""L->M2"": 0.7}",{},43
+combined-all10-um1lat50,combined,All demands +10%; U-M1 latency +50%,"[1.1, 1.1, 1.1, 1.1]",{},"{""U->M1"": 1.5}",63
+combined-s020-lm2lat25,combined,S0 demands +20%; L-M2 latency +25%,"[1.2, 1.2, 1.0, 1.0]",{},"{""L->M2"": 1.25}",63
+combined-all20-um1cap20-lm2lat25,combined,All demands +20%; U-M1 capacity -20%; L-M2 latency +25%,"[1.2, 1.2, 1.2, 1.2]","{""U->M1"": 0.8}","{""L->M2"": 1.25}",63

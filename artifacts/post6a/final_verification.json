@@ -1,0 +1,33 @@
+{
+  "schema_version": "post6a-steps0-2-v1",
+  "status": "COMPLETE",
+  "authorization_boundary": {
+    "completed_steps": [0, 1, 2],
+    "step3_started": false,
+    "new_quantum_encodings": 0,
+    "new_syntheses": 0,
+    "new_d6_qaoa_execution_jobs": 4
+  },
+  "tests": {
+    "frozen_v1_1": "62 passed",
+    "frozen_stage6a": "31 passed",
+    "post6a": "9 passed"
+  },
+  "gates": {
+    "0A_artifact_consistency": "PASS",
+    "0B_matched_valid_fairness": "PASS",
+    "1A_heldout_freeze": "PASS",
+    "1B_evaluator_reuse": "PASS",
+    "2A_configuration_reproduction": "PASS",
+    "2B_no_seed_selection": "PASS"
+  },
+  "notebook": {
+    "path": "notebooks/holy_qow_post6a_steps_0_2.ipynb",
+    "top_to_bottom_execution": "PASS",
+    "executed_cell_count": 21,
+    "execution_errors": 0,
+    "validation_copy": "artifacts/post6a/notebook_validation.ipynb"
+  },
+  "frozen_tracked_files_modified": false,
+  "recommendation": "NO-GO"
+}
