@@ -2,6 +2,7 @@ import json
 
 import pytest
 
+from scripts.process_scaling_qaoa import _resolve_recorded_path
 from qera_scaling.evaluate import ScalingEvaluator
 from qera_scaling.instances import generate_instance
 from qera_scaling.provenance import (
@@ -41,3 +42,17 @@ def test_scaling_manifest_binds_program_and_objective(tmp_path) -> None:
         validate_scaling_circuit_manifest(
             qprog, path, spec, instance.instance_id, weights
         )
+
+
+def test_recorded_artifact_paths_are_portable(tmp_path) -> None:
+    repository_root = tmp_path / "checkout"
+    artifact = repository_root / "stage6a" / "circuit.qprog"
+    artifact.parent.mkdir(parents=True)
+    artifact.write_text("program", encoding="utf-8")
+
+    assert _resolve_recorded_path(
+        "stage6a/circuit.qprog", repository_root, tmp_path / "fallback"
+    ) == artifact
+    assert _resolve_recorded_path(
+        r"C:\old-checkout\stage6a\circuit.qprog", repository_root, artifact
+    ) == artifact

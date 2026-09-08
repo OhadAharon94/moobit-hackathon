@@ -9,9 +9,14 @@ package and its run artifacts.
 From the workspace root in PowerShell:
 
 ```powershell
-& '.\.venv-classiq\Scripts\python.exe' -m pip install -e '.\implementation[dev]'
-& '.\.venv-classiq\Scripts\python.exe' -m pytest '.\implementation\tests'
+py -3.12 -m venv .venv-classiq
+& '.\.venv-classiq\Scripts\python.exe' -m pip install --upgrade pip
+& '.\.venv-classiq\Scripts\python.exe' -m pip install -e '.[dev]'
+& '.\.venv-classiq\Scripts\python.exe' -m pytest 'tests'
 ```
+
+On macOS or Linux, replace the interpreter path with
+`.venv-classiq/bin/python`.
 
 Classiq authentication is interactive and separate from installation:
 
@@ -21,4 +26,3 @@ Classiq authentication is interactive and separate from installation:
 
 Run records and generated figures go under `artifacts/`; source modules never
 depend on a live Classiq login to load saved results.
-

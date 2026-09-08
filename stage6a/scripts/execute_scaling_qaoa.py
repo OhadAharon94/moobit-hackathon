@@ -36,6 +36,15 @@ def _payload_sha256(payload: dict) -> str:
     return hashlib.sha256(encoded).hexdigest()
 
 
+def _recorded_path(path: Path, repository_root: Path) -> str:
+    """Prefer a portable repository-relative path for committed artifacts."""
+
+    try:
+        return path.relative_to(repository_root).as_posix()
+    except ValueError:
+        return str(path)
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--D", type=int, choices=(5, 6), required=True)
@@ -111,10 +120,12 @@ def main() -> None:
         "phase_offset": spec.phase_offset,
         "phase_scale": spec.phase_scale,
         "energy_range_mode": spec.range_mode,
-        "qprog_path": str(qprog_path),
+        "qprog_path": _recorded_path(qprog_path, implementation_root),
         "qprog_sha256": circuit_manifest["qprog_sha256"],
         "synthesis_spec_sha256": circuit_manifest["synthesis_spec_sha256"],
-        "synthesis_manifest_path": str(synthesis_manifest_path),
+        "synthesis_manifest_path": _recorded_path(
+            synthesis_manifest_path, implementation_root
+        ),
         "synthesis_manifest_sha256": sha256_file(synthesis_manifest_path),
         "synthesis_source_sha256": circuit_manifest["source_sha256"],
         "execution_source_sha256": source_sha256(implementation_root, stage6a_root),
@@ -168,7 +179,7 @@ def main() -> None:
         json.dumps(trace_payload, indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )
     samples_path = run_dir / "samples_raw.csv"
-    samples.to_csv(samples_path, index=False)
+    samples.to_csv(samples_path, index=False, lineterminator="\n")
     manifest = {
         **base_manifest,
         "status": "RAW_SAMPLE_SAVED",
