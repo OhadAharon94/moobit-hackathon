@@ -1,0 +1,6 @@
+"""Q-ERA routing experiment package."""
+
+from qera.config import SCHEMA_VERSION
+
+__all__ = ["SCHEMA_VERSION"]
+

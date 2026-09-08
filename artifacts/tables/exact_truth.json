@@ -1,0 +1,246 @@
+{
+  "adaptive_cost": [
+    {
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "iteration": 0,
+      "objective_value": 0.24514054470174573,
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "worst_regret": 0.33808137470709426
+    },
+    {
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "iteration": 1,
+      "objective_value": 0.24789865466820132,
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "weights": [
+        0.30205696680203536,
+        0.29053666135818085,
+        0.40740637183978373
+      ],
+      "worst_regret": 0.33808137470709426
+    },
+    {
+      "assignment": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "iteration": 2,
+      "objective_value": 0.24953051997060868,
+      "regrets": [
+        0.12322936529555982,
+        0.10893773945762117,
+        0.11244053113683199
+      ],
+      "weights": [
+        0.2670679799800788,
+        0.24708477795741124,
+        0.48584724206251
+      ],
+      "worst_regret": 0.12322936529555982
+    }
+  ],
+  "adaptive_regret": [
+    {
+      "assignment": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "iteration": 0,
+      "objective_value": 0.11486921196333766,
+      "regrets": [
+        0.12322936529555982,
+        0.10893773945762117,
+        0.11244053113683199
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "worst_regret": 0.12322936529555982
+    },
+    {
+      "assignment": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "iteration": 1,
+      "objective_value": 0.11490626284339492,
+      "regrets": [
+        0.12322936529555982,
+        0.10893773945762117,
+        0.11244053113683199
+      ],
+      "weights": [
+        0.33612550874821967,
+        0.33135589270930227,
+        0.332518598542478
+      ],
+      "worst_regret": 0.12322936529555982
+    },
+    {
+      "assignment": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "iteration": 2,
+      "objective_value": 0.11494343208502472,
+      "regrets": [
+        0.12322936529555982,
+        0.10893773945762117,
+        0.11244053113683199
+      ],
+      "weights": [
+        0.338928494944387,
+        0.3293779593793667,
+        0.33169354567624637
+      ],
+      "worst_regret": 0.12322936529555982
+    }
+  ],
+  "assignment_count": 81,
+  "implementation_findings": [
+    "The frozen plan lists one minimax representative; exhaustive enumeration finds a symmetric two-way tie."
+  ],
+  "joint_feasible_count": 39,
+  "plan_version": "1.1",
+  "pure_minimax_regret": {
+    "assignments": [
+      [
+        0,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        1,
+        2
+      ]
+    ],
+    "value": 0.12322936529555982
+  },
+  "scenarios": {
+    "degradation": {
+      "feasible_count": 47,
+      "optimum_assignments": [
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "optimum_cost": 0.19409837088820922
+    },
+    "nominal": {
+      "feasible_count": 79,
+      "optimum_assignments": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "optimum_cost": 0.23101158301158303
+    },
+    "surge": {
+      "feasible_count": 63,
+      "optimum_assignments": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "optimum_cost": 0.21837837837837842
+    }
+  },
+  "schema_version": "1.0",
+  "uniform_joint_cost": {
+    "assignments": [
+      [
+        1,
+        0,
+        2,
+        2
+      ]
+    ],
+    "value": 0.24514054470174573
+  },
+  "uniform_joint_regret": {
+    "assignments": [
+      [
+        0,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        1,
+        2
+      ]
+    ],
+    "value": 0.11486921196333766
+  }
+}

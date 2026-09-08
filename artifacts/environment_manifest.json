@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "plan_version": "1.1",
+  "recorded_at": "2026-09-08",
+  "interpreter": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq\\Scripts\\python.exe",
+  "python_version": "3.12.10",
+  "environment": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\.venv-classiq",
+  "packages": {
+    "classiq": "1.29.0",
+    "matplotlib": "3.11.1",
+    "networkx": "3.6.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "pytest": "8.4.2",
+    "setuptools": "80.9.0"
+  },
+  "credentials_hint": "not_found",
+  "definitive_auth_test": "pending",
+  "backend": null
+}

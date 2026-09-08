@@ -1,0 +1,293 @@
+{
+  "implementation_findings": [
+    "The uniform-cost unrestricted ground set is a symmetric two-way capacity-infeasible tie; the frozen plan names one representative."
+  ],
+  "plan_version": "1.1",
+  "runs": [
+    {
+      "Lambda": 1.0,
+      "M": 1.0,
+      "aligned_ground_assignments": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "aligned_phase_offset": 0.24514054470174562,
+      "aligned_phase_scale": 20.67682487432954,
+      "all_aligned_ground_states_joint_feasible": true,
+      "base_ground_assignments": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "base_phase_offset": 0.23388915610648003,
+      "base_phase_scale": 19.688076262924806,
+      "capacity_gap": 0.9887486114047344,
+      "invalid_ground_gap": 0.6545070306118339,
+      "iteration": 0,
+      "maximum_ising_error": 3.552713678800501e-15,
+      "maximum_valid_qubo_error": 4.440892098500626e-16,
+      "objective_mode": "cost",
+      "qubo_pair_count": 34,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "Lambda": 1.0,
+      "M": 1.0,
+      "aligned_ground_assignments": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "aligned_phase_offset": 0.24789865466820116,
+      "aligned_phase_scale": 20.538130204298273,
+      "all_aligned_ground_states_joint_feasible": true,
+      "base_ground_assignments": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "base_phase_offset": 0.23392502757755246,
+      "base_phase_scale": 19.552103831388923,
+      "capacity_gap": 0.9860263729093512,
+      "invalid_ground_gap": 0.6680796082626423,
+      "iteration": 1,
+      "maximum_ising_error": 3.552713678800501e-15,
+      "maximum_valid_qubo_error": 4.440892098500626e-16,
+      "objective_mode": "cost",
+      "qubo_pair_count": 34,
+      "weights": [
+        0.30205696680203536,
+        0.29053666135818085,
+        0.40740637183978373
+      ]
+    },
+    {
+      "Lambda": 1.0,
+      "M": 1.0,
+      "aligned_ground_assignments": [
+        [
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ]
+      ],
+      "aligned_phase_offset": 0.2495305199706084,
+      "aligned_phase_scale": 20.39254027095899,
+      "all_aligned_ground_states_joint_feasible": true,
+      "base_ground_assignments": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "base_phase_offset": 0.2339726635212854,
+      "base_phase_scale": 19.408098127408312,
+      "capacity_gap": 0.9844421435506769,
+      "invalid_ground_gap": 0.6808872933509712,
+      "iteration": 2,
+      "maximum_ising_error": 3.552713678800501e-15,
+      "maximum_valid_qubo_error": 4.440892098500626e-16,
+      "objective_mode": "cost",
+      "qubo_pair_count": 34,
+      "weights": [
+        0.2670679799800788,
+        0.24708477795741124,
+        0.48584724206251
+      ]
+    },
+    {
+      "Lambda": 1.0,
+      "M": 1.0,
+      "aligned_ground_assignments": [
+        [
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ]
+      ],
+      "aligned_phase_offset": 0.11486921196333724,
+      "aligned_phase_scale": 26.90848823388948,
+      "all_aligned_ground_states_joint_feasible": true,
+      "base_ground_assignments": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "base_phase_offset": 0.07388209899530934,
+      "base_phase_scale": 25.949475346857508,
+      "capacity_gap": 0.9590128870319721,
+      "invalid_ground_gap": 0.06471356251322863,
+      "iteration": 0,
+      "maximum_ising_error": 3.552713678800501e-15,
+      "maximum_valid_qubo_error": 6.661338147750939e-16,
+      "objective_mode": "regret",
+      "qubo_pair_count": 34,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "Lambda": 1.0,
+      "M": 1.0,
+      "aligned_ground_assignments": [
+        [
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ]
+      ],
+      "aligned_phase_offset": 0.11490626284339456,
+      "aligned_phase_scale": 26.90750295810365,
+      "all_aligned_ground_states_joint_feasible": true,
+      "base_ground_assignments": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "base_phase_offset": 0.07365745782517585,
+      "base_phase_scale": 25.94875176312187,
+      "capacity_gap": 0.9587511949817813,
+      "invalid_ground_gap": 0.06533182077717836,
+      "iteration": 1,
+      "maximum_ising_error": 3.552713678800501e-15,
+      "maximum_valid_qubo_error": 5.551115123125783e-16,
+      "objective_mode": "regret",
+      "qubo_pair_count": 34,
+      "weights": [
+        0.33612550874821967,
+        0.33135589270930227,
+        0.332518598542478
+      ]
+    },
+    {
+      "Lambda": 1.0,
+      "M": 1.0,
+      "aligned_ground_assignments": [
+        [
+          1,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ]
+      ],
+      "aligned_phase_offset": 0.11494343208502442,
+      "aligned_phase_scale": 26.906498053875204,
+      "all_aligned_ground_states_joint_feasible": true,
+      "base_ground_assignments": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "base_phase_offset": 0.07343090200295077,
+      "base_phase_scale": 25.948010583957277,
+      "capacity_gap": 0.9584874699179262,
+      "invalid_ground_gap": 0.0659538440190982,
+      "iteration": 2,
+      "maximum_ising_error": 3.552713678800501e-15,
+      "maximum_valid_qubo_error": 4.718447854656915e-16,
+      "objective_mode": "regret",
+      "qubo_pair_count": 34,
+      "weights": [
+        0.338928494944387,
+        0.3293779593793667,
+        0.33169354567624637
+      ]
+    }
+  ],
+  "schema_version": "1.0",
+  "states_checked_per_run": 4096,
+  "valid_assignments_checked_per_run": 81
+}
