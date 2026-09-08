@@ -1,0 +1,30 @@
+{
+  "next_name": "adaptive_cost_t1",
+  "next_phase_scale": 19.552103831388923,
+  "previous_parameters": [
+    -2.7021108684228183,
+    1.150118918825299
+  ],
+  "previous_phase_scale": 19.688076262924806,
+  "previous_run": "uniform_cost_p1_smoke",
+  "regrets": [
+    0.03888586216289861,
+    0.0,
+    0.33808137470709426
+  ],
+  "selected_assignment": [
+    1,
+    0,
+    2,
+    2
+  ],
+  "warm_start_parameters": [
+    -2.6834491881168114,
+    1.150118918825299
+  ],
+  "weights": [
+    0.30205696680203536,
+    0.29053666135818085,
+    0.40740637183978373
+  ]
+}

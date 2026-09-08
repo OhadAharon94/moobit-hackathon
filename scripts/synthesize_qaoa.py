@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 from typing import Any
@@ -14,6 +15,14 @@ from qera.evaluate import Evaluator
 from qera.qaoa_model import build_qaoa_main
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--objective-mode", choices=("cost", "regret"), default="cost")
+    parser.add_argument("--weights", type=float, nargs=3, default=INITIAL_SCENARIO_WEIGHTS)
+    parser.add_argument("--artifact-name", default=None)
+    return parser.parse_args()
+
+
 def _metrics_payload(metrics: Any) -> dict[str, Any]:
     count_ops = getattr(metrics, "count_ops", None)
     return {
@@ -24,25 +33,30 @@ def _metrics_payload(metrics: Any) -> dict[str, Any]:
 
 
 def main() -> None:
+    args = parse_args()
+    weights = tuple(args.weights)
+    if any(weight < 0 for weight in weights) or abs(sum(weights) - 1.0) > 1e-8:
+        raise ValueError("scenario weights must be nonnegative and sum to one")
     implementation_root = Path(__file__).resolve().parents[1]
     circuit_dir = implementation_root / "artifacts" / "circuits"
     circuit_dir.mkdir(parents=True, exist_ok=True)
 
     spec = build_energy_spec(
-        Evaluator(), INITIAL_SCENARIO_WEIGHTS, "cost", energy_mode="base"
+        Evaluator(), weights, args.objective_mode, energy_mode="base"
     )
     main_model = build_qaoa_main(spec, depth=1)
     qprog = synthesize(main_model)
-    qprog_path = circuit_dir / "uniform_cost_p1.qprog"
-    qprog_path.write_text(str(qprog), encoding="utf-8")
+    stem = args.artifact_name or f"uniform_{args.objective_mode}_p1"
+    qprog_path = circuit_dir / f"{stem}.qprog"
+    qprog_path.write_text(qprog.model_dump_json(indent=2), encoding="utf-8")
 
     metrics = get_transpiled_circuit_metrics(qprog)
     manifest = {
         "schema_version": SCHEMA_VERSION,
         "plan_version": PLAN_VERSION,
-        "objective_mode": "cost",
+        "objective_mode": args.objective_mode,
         "energy_mode": "base",
-        "scenario_weights": INITIAL_SCENARIO_WEIGHTS,
+        "scenario_weights": weights,
         "qaoa_depth": 1,
         "M": spec.qubo.one_hot_penalty,
         "phase_offset": spec.phase_offset,
@@ -50,7 +64,7 @@ def main() -> None:
         "qprog_path": str(qprog_path.resolve()),
         "metrics": _metrics_payload(metrics),
     }
-    manifest_path = circuit_dir / "uniform_cost_p1.synthesis.json"
+    manifest_path = circuit_dir / f"{stem}.synthesis.json"
     manifest_path.write_text(
         json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )

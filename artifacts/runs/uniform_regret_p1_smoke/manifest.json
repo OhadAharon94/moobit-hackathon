@@ -1,0 +1,36 @@
+{
+  "M": 1.0,
+  "backend": "simulator",
+  "best_cost": 0.2346416015625,
+  "best_parameters": {
+    "params": [
+      -0.308743418630651,
+      0.2152655997692678
+    ]
+  },
+  "energy_mode": "base",
+  "final_shots": 4096,
+  "initial_parameters": {
+    "params": [
+      0.5,
+      0.5
+    ]
+  },
+  "objective_mode": "regret",
+  "optimizer_iteration_cap": 10,
+  "optimizer_shots": 512,
+  "optimizer_trace_length": 10,
+  "phase_offset": 0.07388209899530934,
+  "phase_scale": 25.949475346857508,
+  "plan_version": "1.1",
+  "sample_rows": 2573,
+  "scenario_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "schema_version": "1.0",
+  "seed": 1701,
+  "status": "SUCCESS",
+  "summary_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\runs\\uniform_regret_p1_smoke\\summary.json"
+}

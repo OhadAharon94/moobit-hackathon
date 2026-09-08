@@ -1,0 +1,27 @@
+{
+  "exact_joint_assignments": [
+    [
+      1,
+      0,
+      2,
+      2
+    ]
+  ],
+  "exact_joint_objective": 0.24514054470174573,
+  "joint_feasible_probability": 0.0234375,
+  "joint_optimum_probability": 0.00048828125,
+  "near_optimal_joint_probability_gap_0_01": 0.00048828125,
+  "observed_state_count": 2296,
+  "one_hot_probability": 0.05224609375,
+  "selected_assignment": [
+    1,
+    0,
+    2,
+    2
+  ],
+  "selected_exact_gap": 0.0,
+  "selected_objective": 0.24514054470174573,
+  "status": "SUCCESS",
+  "total_shots": 4096,
+  "unrestricted_ground_probability": 0.001953125
+}

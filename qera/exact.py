@@ -14,7 +14,7 @@ from qera.config import (
 )
 from qera.evaluate import Evaluator, all_assignments
 from qera.instance import SCENARIOS
-from qera.types import Assignment
+from qera.types import Assignment, SolveRequest, SolveResult, SolveStatus
 
 
 @dataclass(frozen=True)
@@ -122,3 +122,24 @@ def exact_adaptive_run(
         if iteration + 1 < solves:
             weights = update_weights(weights, regrets)
     return tuple(records)
+
+
+class ExactInnerSolver:
+    """Adapter that makes exhaustive joint-feasible search satisfy SolverProtocol."""
+
+    def __init__(self, evaluator: Evaluator) -> None:
+        self.evaluator = evaluator
+
+    def solve(self, request: SolveRequest) -> SolveResult:
+        objective, optima = weighted_optima(
+            self.evaluator,
+            request.scenario_weights,
+            request.objective_mode,
+            joint_feasible=True,
+        )
+        return SolveResult(
+            status=SolveStatus.SUCCESS,
+            assignment=optima[0],
+            objective_value=objective,
+            metadata={"all_tied_optima": optima, "solver": "exact"},
+        )

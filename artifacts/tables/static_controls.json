@@ -1,0 +1,181 @@
+{
+  "controls": {
+    "exact_joint_uniform_cost": {
+      "assignments": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "value": 0.24514054470174573
+    },
+    "exact_joint_uniform_regret": {
+      "assignments": [
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2
+        ]
+      ],
+      "value": 0.11486921196333766
+    },
+    "exact_pure_minimax_regret": {
+      "assignments": [
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2
+        ]
+      ],
+      "value": 0.12322936529555982
+    },
+    "exact_unrestricted_uniform_cost": {
+      "assignments": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "value": 0.23388915610648003
+    },
+    "exact_unrestricted_uniform_regret": {
+      "assignments": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "value": 0.07388209899530995
+    },
+    "load_aware_greedy_all_training_scenarios": {
+      "assignment": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "joint_feasible": true,
+      "maximum_utilization": 1.0,
+      "scenario_costs": {
+        "degradation": 0.23502434304974731,
+        "nominal": 0.3031196911196912,
+        "surge": 0.35731195933727566
+      },
+      "scenario_regrets": {
+        "degradation": 0.18623162678406635,
+        "nominal": 0.1589825660582949,
+        "surge": 0.2958005298503888
+      },
+      "total_overflow": 0.0
+    },
+    "shortest_path": {
+      "assignment": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "joint_feasible": false,
+      "maximum_utilization": 4.0,
+      "scenario_costs": {
+        "degradation": 0.6,
+        "nominal": 0.6,
+        "surge": 0.6
+      },
+      "scenario_regrets": {
+        "degradation": 1.847035432791308,
+        "nominal": 0.8135385453554886,
+        "surge": 0.8125024713171134
+      },
+      "total_overflow": 12.0
+    }
+  },
+  "random_controls": {
+    "uniform_random_bitstrings": {
+      "exact_joint_assignments": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "exact_joint_objective": 0.24514054470174573,
+      "joint_feasible_probability": 0.010498046875,
+      "joint_optimum_probability": 0,
+      "near_optimal_joint_probability_gap_0_01": 0.0,
+      "observed_state_count": 2541,
+      "one_hot_probability": 0.02197265625,
+      "selected_assignment": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "selected_exact_gap": 0.012900803153967688,
+      "selected_objective": 0.2580413478557134,
+      "status": "SUCCESS",
+      "total_shots": 4096,
+      "unrestricted_ground_probability": 0.000244140625
+    },
+    "uniform_random_valid_routes": {
+      "exact_joint_assignments": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "exact_joint_objective": 0.24514054470174573,
+      "joint_feasible_probability": 0.47265625,
+      "joint_optimum_probability": 0.013427734375,
+      "near_optimal_joint_probability_gap_0_01": 0.013427734375,
+      "observed_state_count": 81,
+      "one_hot_probability": 1.0,
+      "selected_assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "selected_exact_gap": 0.0,
+      "selected_objective": 0.24514054470174573,
+      "status": "SUCCESS",
+      "total_shots": 4096,
+      "unrestricted_ground_probability": 0.025146484375
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "M": 1.0,
+  "energy_mode": "base",
+  "metrics": {
+    "count_ops": {
+      "cx": 84,
+      "h": 12,
+      "rx": 12,
+      "rz": 46
+    },
+    "depth": 65,
+    "width": 12
+  },
+  "objective_mode": "regret",
+  "phase_offset": 0.07388209899530934,
+  "phase_scale": 25.949475346857508,
+  "plan_version": "1.1",
+  "qaoa_depth": 1,
+  "qprog_path": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\circuits\\uniform_regret_p1.qprog",
+  "scenario_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "schema_version": "1.0"
+}
