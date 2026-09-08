@@ -1,0 +1,39 @@
+{
+  "collapse_vs_final_mean_regret": {
+    "pearson": 0.4050598477136611,
+    "spearman": 0.20263178383151262
+  },
+  "collapse_vs_final_survival": {
+    "pearson": -0.40206580072569714,
+    "spearman": -0.443142272099897
+  },
+  "collapse_vs_final_worst_regret": {
+    "pearson": 0.4020658007256973,
+    "spearman": 0.443142272099897
+  },
+  "population": "all predeclared eta>0,T>1 runs",
+  "raw_N_eff_warning": "N_eff scales with S; collapse_fraction=1-N_eff/S is the primary measure.",
+  "run_count": 152,
+  "within_S_collapse_vs_final_worst_regret": {
+    "12": {
+      "pearson": 0.5174721849138092,
+      "run_count": 38,
+      "spearman": 0.2624156348499258
+    },
+    "3": {
+      "pearson": 0.8843308049959474,
+      "run_count": 38,
+      "spearman": 0.7860896418975093
+    },
+    "5": {
+      "pearson": 0.7764400395272182,
+      "run_count": 38,
+      "spearman": 0.3870437842582967
+    },
+    "8": {
+      "pearson": 0.7184194024955346,
+      "run_count": 38,
+      "spearman": 0.365521339133434
+    }
+  }
+}

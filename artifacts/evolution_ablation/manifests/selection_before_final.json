@@ -1,0 +1,20 @@
+{
+  "final_test_consulted_for_selection": false,
+  "original_s3_static_assignment": "[1,0,2,2]",
+  "original_s3_static_run_id": "B4-focused-s3-eta0-t3-rho0",
+  "schema_version": "holy-qow-evolution-selection-v1",
+  "selected_adaptive_assignment": "[0,2,1,2]",
+  "selected_adaptive_run_id": "B6-eta-edge-s8-eta0p1-t1-rho0",
+  "selected_static_uniform_assignment": "[0,2,1,2]",
+  "selected_static_uniform_run_id": "B6-time-edge-s8-eta0-t1-rho0",
+  "selection_rule": [
+    "maximize validation survival rate",
+    "minimize validation maximum overflow",
+    "minimize validation worst-case regret",
+    "minimize validation mean regret",
+    "minimize frozen nominal cost",
+    "lexicographic configuration parameters for deterministic ties"
+  ],
+  "status": "FROZEN_BEFORE_FINAL_TEST_EVALUATION",
+  "validation_summary_sha256": "d7f119bdfd075c53b8b03da137b9bc9d0a70132e82283e00e7aca40f465299ed"
+}

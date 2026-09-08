@@ -1,0 +1,19 @@
+{
+  "eligibility": "eta > 0 and T > 1",
+  "final_test_columns_used": false,
+  "posthoc_change_to_predeclared_grid": false,
+  "reason": "The predeclared eta>0 filter admitted T=1 edge cases, but T=1 applies no weight update. This supplement identifies the best policy with at least one adaptive update.",
+  "schema_version": "holy-qow-evolution-adaptive-eligibility-v1",
+  "selected_genuinely_adaptive_assignment": "[0,2,1,2]",
+  "selected_genuinely_adaptive_run_id": "B6-eta-edge-s8-eta0p1-t2-rho0",
+  "selection_rule": [
+    "maximize validation survival rate",
+    "minimize validation maximum overflow",
+    "minimize validation worst-case regret",
+    "minimize validation mean regret",
+    "minimize frozen nominal cost",
+    "lexicographic configuration parameters for deterministic ties"
+  ],
+  "status": "VALIDATION_ONLY_SUPPLEMENT",
+  "validation_summary_sha256": "d7f119bdfd075c53b8b03da137b9bc9d0a70132e82283e00e7aca40f465299ed"
+}

@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "clipping_exact": true,
+    "deterministic_reproduction": true,
+    "eta_zero_no_change": true,
+    "eta_zero_rho_zero_no_change": true,
+    "larger_regret_larger_pre_mixing_boost": true,
+    "manual_diversity_formula": true,
+    "manual_pre_mixing_formula": true,
+    "normalized": true,
+    "positive": true,
+    "rho_exact_contraction": true
+  },
+  "probe": {
+    "clipped_regrets": [
+      0.0,
+      0.1,
+      0.7,
+      1.0
+    ],
+    "eta": 0.5,
+    "mixed_l1_from_uniform": 0.41650399793019055,
+    "mixed_weights": [
+      0.11624560301692279,
+      0.17550239801798193,
+      0.2913059233626729,
+      0.4169460756024223
+    ],
+    "pre_mixing_l1_from_uniform": 0.5553386639069208,
+    "pre_mixing_weights": [
+      0.07166080402256371,
+      0.1506698640239759,
+      0.3050745644835639,
+      0.4725947674698964
+    ],
+    "regrets": [
+      -0.2,
+      0.1,
+      0.7,
+      1.8
+    ],
+    "rho": 0.25,
+    "weights": [
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ]
+  },
+  "status": "PASS"
+}

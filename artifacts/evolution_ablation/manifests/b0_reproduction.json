@@ -1,0 +1,220 @@
+{
+  "checks": {
+    "frozen_qera_length": true,
+    "frozen_route_t0": true,
+    "frozen_route_t1": true,
+    "frozen_route_t2": true,
+    "frozen_weights_t0": true,
+    "frozen_weights_t1": true,
+    "frozen_weights_t2": true,
+    "heldout_maximum_overflow": true,
+    "heldout_maximum_weighted_latency": true,
+    "heldout_mean_cost": true,
+    "heldout_mean_maximum_utilization": true,
+    "heldout_mean_overflow": true,
+    "heldout_mean_regret": true,
+    "heldout_mean_weighted_latency": true,
+    "heldout_median_cost": true,
+    "heldout_median_regret": true,
+    "heldout_nominal_cost": true,
+    "heldout_scenario_count": true,
+    "heldout_survival_rate": true,
+    "heldout_violations": true,
+    "heldout_worst_maximum_utilization": true,
+    "heldout_worst_regret": true,
+    "new_engine_length": true,
+    "new_objective_t0": true,
+    "new_objective_t1": true,
+    "new_objective_t2": true,
+    "new_regrets_t0": true,
+    "new_regrets_t1": true,
+    "new_regrets_t2": true,
+    "new_route_t0": true,
+    "new_route_t1": true,
+    "new_route_t2": true,
+    "new_weights_t0": true,
+    "new_weights_t1": true,
+    "new_weights_t2": true
+  },
+  "expected_trajectory": [
+    {
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "iteration": 0,
+      "objective_value": 0.24514054470174573,
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "worst_regret": 0.33808137470709426
+    },
+    {
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "iteration": 1,
+      "objective_value": 0.24789865466820132,
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "weights": [
+        0.30205696680203536,
+        0.29053666135818085,
+        0.40740637183978373
+      ],
+      "worst_regret": 0.33808137470709426
+    },
+    {
+      "assignment": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "iteration": 2,
+      "objective_value": 0.24953051997060868,
+      "regrets": [
+        0.12322936529555982,
+        0.10893773945762117,
+        0.11244053113683199
+      ],
+      "weights": [
+        0.2670679799800788,
+        0.24708477795741124,
+        0.48584724206251
+      ],
+      "worst_regret": 0.12322936529555982
+    }
+  ],
+  "heldout_metrics": {
+    "maximum_overflow": 0.40000000000000036,
+    "maximum_weighted_latency": 40.300000000000004,
+    "mean_cost": 0.2789466409555786,
+    "mean_maximum_utilization": 0.7585978835978836,
+    "mean_overflow": 0.03333333333333336,
+    "mean_regret": 0.14699017224752253,
+    "mean_weighted_latency": 33.91166666666667,
+    "median_cost": 0.28158120476226334,
+    "median_regret": 0.11848369945844597,
+    "nominal_cost": 0.28690347490347495,
+    "nominal_feasible": true,
+    "scenario_count": 24,
+    "survival_rate": 0.9166666666666666,
+    "violating_scenarios": 2,
+    "worst_maximum_utilization": 1.1111111111111112,
+    "worst_regret": 0.4783343109778619
+  },
+  "reproduced_trajectory": [
+    {
+      "all_tied_optima": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "iteration": 0,
+      "objective_value": 0.24514054470174573,
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "all_tied_optima": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "iteration": 1,
+      "objective_value": 0.24789865466820132,
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "weights": [
+        0.30205696680203536,
+        0.29053666135818085,
+        0.40740637183978373
+      ]
+    },
+    {
+      "all_tied_optima": [
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          2
+        ]
+      ],
+      "assignment": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "iteration": 2,
+      "objective_value": 0.24953051997060868,
+      "regrets": [
+        0.12322936529555982,
+        0.10893773945762117,
+        0.11244053113683199
+      ],
+      "weights": [
+        0.2670679799800788,
+        0.24708477795741124,
+        0.48584724206251
+      ]
+    }
+  ],
+  "schema_version": "holy-qow-evolution-b0-v1",
+  "source_hashes": {
+    "exact_truth.json": "e3081c2930b96429e0a346a4e1cf951b9800170626720a1289fb4844fe28e3d9",
+    "heldout_route_summary.csv": "b64fb4fd4b406572c4d174a7c4a5b7b83ac3ccbe38086a4e96abbc15b693de1c"
+  },
+  "status": "PASS"
+}

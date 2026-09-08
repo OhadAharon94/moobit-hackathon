@@ -1,0 +1,44 @@
+{
+  "all_exact_best_response_checks_pass": true,
+  "classical_only": true,
+  "configuration_count": 192,
+  "figure_count": 6,
+  "hashes": {
+    "experiment_grid": "ad3e96d0ac4b95e6cac74b17ce305d1c17c40c2bc784b17c75c9e49fa61e6a95",
+    "figures": {
+      "01_survival_vs_eta.png": "11c501080c25268305536f95b045deaf94c70f3e73ef8bc22a0ead478ca2b57a",
+      "02_worst_regret_vs_eta.png": "b8e71f515c9ce9abe4505c125ca060e29e1fb29d95eeb6b2a3687cb1c639e73f",
+      "03_effective_environments_vs_generalization.png": "9f494eb7ca68b23e521990974f31f71618d2658ce4ce39f9a40b32c8bbc37169",
+      "04_training_S_vs_survival.png": "31195aeed8dd2be87bee66dcfd581dbb03241560623c569e6bc29f1531db41fb",
+      "05_eta_rho_heatmap.png": "64bceb4d49dba5b79962c246480d339f34a98f4ffed97a4efc8023d813588910",
+      "06_weight_trajectory_examples.png": "2ef3c905456c644dfc1fcedf2be8d59a571ae91b562f08afa1dbf0b4f14492c0"
+    },
+    "grid": "0a3a9be6e71a8e2404ae8069c65e6ca4a83a45f753bd6f46abe0e677c2c4a22c",
+    "report": "22fe086152bca66b1f401c599446253bc02f50d8fc8a5758e7088a5e47cfd93a",
+    "scenario_manifest": "f32a3d38ab74f2b17433df9fb5c26e84b49de105473381ee54063b9fb5cbfe1c",
+    "selection_before_final": "e4b5236bb9378764fc8dd17dadba562a7dade2578e1d62cc47c9d66d790236f6",
+    "weight_trajectories": "ce87cdeea833a0af06d48aca9c05cf34468aeadc19049dd4afd5e425cf9a7e1c"
+  },
+  "quantum_jobs_executed": 0,
+  "raw_run_count": 192,
+  "schema_version": "holy-qow-evolution-final-verification-v1",
+  "status": "PASS",
+  "tests": {
+    "evolution_ablation": {
+      "passed": 10,
+      "status": "PASS"
+    },
+    "frozen_v1_1": {
+      "passed": 62,
+      "status": "PASS"
+    },
+    "post6a": {
+      "passed": 9,
+      "status": "PASS"
+    },
+    "stage6a": {
+      "passed": 31,
+      "status": "PASS"
+    }
+  }
+}
