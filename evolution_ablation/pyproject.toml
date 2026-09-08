@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "holy-qow-evolution-ablation"
+version = "0.1.0"
+description = "Classical-only Holy QOW evolution and generalization ablations"
+requires-python = ">=3.12,<3.14"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["holy_qow_evolution*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

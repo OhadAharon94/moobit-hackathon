@@ -1,0 +1,57 @@
+{
+  "all_exact_best_response_checks_pass": true,
+  "configuration_count": 192,
+  "distinct_final_routes": [
+    "[0,1,1,2]",
+    "[0,2,1,2]",
+    "[1,0,2,2]",
+    "[2,1,0,1]"
+  ],
+  "genuine_adaptive_beats_selected_static_on_final": false,
+  "original_adaptive": {
+    "N_eff": 2.854057386780633,
+    "effective_fraction": 0.951352462260211,
+    "final_survival": 0.9166666666666666,
+    "final_worst_regret": 0.4783343109778619,
+    "maximum_weight": 0.48584724206251,
+    "route": "[0,1,1,2]"
+  },
+  "original_static": {
+    "final_survival": 1.0,
+    "final_worst_regret": 0.3163114558213304,
+    "route": "[1,0,2,2]"
+  },
+  "output_hashes": {
+    "adaptive_eligibility_supplement": "cb239af966676c61b600429a993096992b61521a0d85b201ba8045b89aa26112",
+    "correlations": "32afc0fd668f4262fe5404bab06db3d2ae8a0085a899f62f4c87bc0453a7aa48",
+    "factor_summary": "c9837726576c58958e92fc9655b4fb18620f08b91791bc03f6a9c188d85d84cd",
+    "policy_comparison": "b6a90cdfb786639b3f0d3b93cc65e72d103000f25004d2492d5e69d98c60e083",
+    "rho_pairwise": "9b0e5bc3e50aca58647fb034d9d18250001c1487869fa12a366b1039267f9a02",
+    "route_catalog": "b4cf6028c65a0f60599df5c7d602f0ae8108836a6fb29bf5a59e381ffe88d29a"
+  },
+  "rho_pairwise": {
+    "comparisons": 72,
+    "final_worst_regret_improved": 7,
+    "final_worst_regret_worsened": 0,
+    "route_changes": 7,
+    "validation_worst_regret_improved": 7,
+    "validation_worst_regret_worsened": 0
+  },
+  "schema_version": "holy-qow-evolution-diagnostics-v1",
+  "validation_selected_genuine_adaptive": {
+    "final_survival": 1.0,
+    "final_worst_regret": 0.3163114558213304,
+    "route": "[0,2,1,2]",
+    "run_id": "B6-eta-edge-s8-eta0p1-t2-rho0",
+    "validation_survival": 1.0,
+    "validation_worst_regret": 0.1588192674881542
+  },
+  "validation_selected_static": {
+    "final_survival": 1.0,
+    "final_worst_regret": 0.3163114558213304,
+    "route": "[0,2,1,2]",
+    "run_id": "B6-time-edge-s8-eta0-t1-rho0",
+    "validation_survival": 1.0,
+    "validation_worst_regret": 0.1588192674881542
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "T": 2,
+  "eta": 1.0,
+  "final_assignment": [
+    1,
+    0,
+    2,
+    2
+  ],
+  "final_weights": [
+    0.30205696680203536,
+    0.29053666135818085,
+    0.40740637183978373
+  ],
+  "objective": "weighted normalized cost",
+  "rho": 0.0,
+  "run_id": "B6-time-edge-s3-eta1-t2-rho0",
+  "scenario_ids": [
+    "train-original-nominal",
+    "train-original-surge-s0-50",
+    "train-original-degradation-um1"
+  ],
+  "schema_version": "holy-qow-evolution-run-v1",
+  "solver": "exact exhaustive classical best response",
+  "steps": [
+    {
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "clipped_regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "effective_environments": 2.9999999999999996,
+      "entropy": 1.0986122886681096,
+      "iteration": 0,
+      "next_weights": [
+        0.30205696680203536,
+        0.29053666135818085,
+        0.40740637183978373
+      ],
+      "objective_value": 0.24514054470174573,
+      "pre_mixing_weights": [
+        0.30205696680203536,
+        0.29053666135818085,
+        0.40740637183978373
+      ],
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "tied_optima": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "clipped_regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "effective_environments": 2.964010523694207,
+      "entropy": 1.0865432579316558,
+      "iteration": 1,
+      "next_weights": null,
+      "objective_value": 0.24789865466820132,
+      "pre_mixing_weights": null,
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "tied_optima": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "weights": [
+        0.30205696680203536,
+        0.29053666135818085,
+        0.40740637183978373
+      ]
+    }
+  ]
+}

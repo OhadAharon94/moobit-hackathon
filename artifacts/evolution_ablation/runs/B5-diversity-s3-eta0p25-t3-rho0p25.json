@@ -1,0 +1,154 @@
+{
+  "T": 3,
+  "eta": 0.25,
+  "final_assignment": [
+    1,
+    0,
+    2,
+    2
+  ],
+  "final_weights": [
+    0.3234663514899832,
+    0.31942744409153534,
+    0.3571062044184815
+  ],
+  "objective": "weighted normalized cost",
+  "rho": 0.25,
+  "run_id": "B5-diversity-s3-eta0p25-t3-rho0p25",
+  "scenario_ids": [
+    "train-original-nominal",
+    "train-original-surge-s0-50",
+    "train-original-degradation-um1"
+  ],
+  "schema_version": "holy-qow-evolution-run-v1",
+  "solver": "exact exhaustive classical best response",
+  "steps": [
+    {
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "clipped_regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "effective_environments": 2.9999999999999996,
+      "entropy": 1.0986122886681096,
+      "iteration": 0,
+      "next_weights": [
+        0.32779282026143075,
+        0.3254278299944755,
+        0.34677934974409375
+      ],
+      "objective_value": 0.24514054470174573,
+      "pre_mixing_weights": [
+        0.32594598257079654,
+        0.32279266221485625,
+        0.35126135521434726
+      ],
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "tied_optima": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "clipped_regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "effective_environments": 2.998774998979273,
+      "entropy": 1.098203871603638,
+      "iteration": 1,
+      "next_weights": [
+        0.3234663514899832,
+        0.31942744409153534,
+        0.3571062044184815
+      ],
+      "objective_value": 0.24564535090552556,
+      "pre_mixing_weights": [
+        0.32017735754219984,
+        0.31479214767760266,
+        0.3650304947801976
+      ],
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "tied_optima": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "weights": [
+        0.32779282026143075,
+        0.3254278299944755,
+        0.34677934974409375
+      ]
+    },
+    {
+      "assignment": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "clipped_regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "effective_environments": 2.996192599088221,
+      "entropy": 1.0973423489987082,
+      "iteration": 2,
+      "next_weights": null,
+      "objective_value": 0.24603089785164206,
+      "pre_mixing_weights": null,
+      "regrets": [
+        0.03888586216289861,
+        0.0,
+        0.33808137470709426
+      ],
+      "tied_optima": [
+        [
+          1,
+          0,
+          2,
+          2
+        ]
+      ],
+      "weights": [
+        0.3234663514899832,
+        0.31942744409153534,
+        0.3571062044184815
+      ]
+    }
+  ]
+}
