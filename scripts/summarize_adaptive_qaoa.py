@@ -6,6 +6,7 @@ from pathlib import Path
 
 from qera.adaptive import run_adaptive
 from qera.classiq_solver import SavedQuantumInnerSolver
+from qera.decision_trace import write_decision_trace
 from qera.evaluate import Evaluator
 from qera.records import write_json
 
@@ -29,6 +30,12 @@ def main() -> None:
             "steps": adaptive.steps,
             "source_runs": run_names,
         },
+    )
+    trace_root = implementation_root / "artifacts" / "tables"
+    write_decision_trace(
+        output,
+        trace_root / "holy_qow_adaptive_decision_trace.csv",
+        trace_root / "holy_qow_adaptive_decision_trace.md",
     )
     print(output)
     print(f"status={adaptive.status}")
