@@ -1,0 +1,3 @@
+# Evidence hashes must be identical on Windows, macOS, and Linux.
+*.csv text eol=lf
+

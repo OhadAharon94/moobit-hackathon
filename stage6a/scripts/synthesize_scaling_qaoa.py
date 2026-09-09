@@ -128,7 +128,7 @@ def main() -> None:
                 if spec.range_mode != "exhaustive"
                 else None
             ),
-            "qprog_path": str(qprog_path.resolve()),
+            "qprog_path": qprog_path.relative_to(implementation_root).as_posix(),
             "qprog_sha256": sha256_file(qprog_path),
             **_metrics(get_transpiled_circuit_metrics(qprog)),
         }

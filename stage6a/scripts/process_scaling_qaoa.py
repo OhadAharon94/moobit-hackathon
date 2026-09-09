@@ -24,6 +24,17 @@ from qera_scaling.qubo import build_energy_spec
 WEIGHTS = (1.0 / 3.0,) * 3
 
 
+def _resolve_recorded_path(
+    recorded: str, repository_root: Path, checkout_fallback: Path
+) -> Path:
+    """Resolve new relative manifests and relocate legacy absolute manifests."""
+
+    candidate = Path(recorded)
+    if not candidate.is_absolute():
+        candidate = repository_root / candidate
+    return candidate if candidate.is_file() else checkout_fallback
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--D", type=int, choices=(5, 6), required=True)
@@ -49,8 +60,19 @@ def main() -> None:
         raise ValueError("run manifest instance mismatch")
     if manifest["samples_raw_sha256"] != sha256_file(raw_path):
         raise ValueError("raw sample hash does not match the run manifest")
-    qprog_path = Path(manifest["qprog_path"])
-    synthesis_manifest_path = Path(manifest["synthesis_manifest_path"])
+    # Older evidence manifests contain creator-machine absolute paths; relocate
+    # those paths to the equivalent immutable pair in the current checkout.
+    circuit_dir = stage6a_root / "artifacts" / "scaling" / "circuits"
+    qprog_path = _resolve_recorded_path(
+        manifest["qprog_path"],
+        stage6a_root.parent,
+        circuit_dir / f"{stem}.qprog",
+    )
+    synthesis_manifest_path = _resolve_recorded_path(
+        manifest["synthesis_manifest_path"],
+        stage6a_root.parent,
+        circuit_dir / f"{stem}.synthesis.json",
+    )
     validate_scaling_circuit_manifest(
         qprog_path,
         synthesis_manifest_path,
@@ -83,8 +105,12 @@ def main() -> None:
         else:
             output_dir = run_dir / "controls" / method
             output_dir.mkdir(parents=True, exist_ok=True)
-            frame.to_csv(output_dir / "samples_raw.csv", index=False)
-        processed.to_csv(output_dir / "samples.csv", index=False)
+            frame.to_csv(
+                output_dir / "samples_raw.csv", index=False, lineterminator="\n"
+            )
+        processed.to_csv(
+            output_dir / "samples.csv", index=False, lineterminator="\n"
+        )
         (output_dir / "summary.json").write_text(
             json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8"
         )
