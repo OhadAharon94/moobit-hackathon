@@ -52,6 +52,65 @@ def test_weak_classical_result_invokes_quantum_execution() -> None:
     assert quantum.calls == 1
 
 
+def test_worse_quantum_result_cannot_replace_valid_classical_result() -> None:
+    classical_result = SolveResult(SolveStatus.SUCCESS, (0, 1, 1, 2), 0.25)
+    classical = StubSolver(classical_result)
+    quantum = StubSolver(SolveResult(SolveStatus.SUCCESS, (1, 0, 2, 2), 0.24))
+    solver = SelectiveHybridSolver(
+        Evaluator(), classical, quantum, EscalationPolicy(0.0)
+    )
+
+    result = solver.solve(REQUEST)
+
+    assert result.assignment == classical_result.assignment
+    assert result.metadata["decision_source"] == "classical_fallback"
+    assert result.metadata["quantum_invoked"] is True
+    assert classical_result.metadata == {}
+
+
+def test_failed_quantum_result_falls_back_to_valid_classical_result() -> None:
+    classical = StubSolver(SolveResult(SolveStatus.SUCCESS, (0, 1, 1, 2), 0.25))
+    quantum = StubSolver(SolveResult(SolveStatus.EXECUTION_FAILED, None, None))
+    solver = SelectiveHybridSolver(
+        Evaluator(), classical, quantum, EscalationPolicy(0.0)
+    )
+
+    result = solver.solve(REQUEST)
+
+    assert result.assignment == (0, 1, 1, 2)
+    assert result.status == SolveStatus.SUCCESS
+    assert result.metadata["decision_source"] == "classical_fallback"
+    assert result.metadata["quantum_status"] == SolveStatus.EXECUTION_FAILED
+
+
+def test_infeasible_quantum_result_falls_back_to_valid_classical_result() -> None:
+    classical = StubSolver(SolveResult(SolveStatus.SUCCESS, (0, 1, 1, 2), 0.25))
+    quantum = StubSolver(SolveResult(SolveStatus.SUCCESS, (0, 0, 0, 0), 0.10))
+    solver = SelectiveHybridSolver(
+        Evaluator(), classical, quantum, EscalationPolicy(0.0)
+    )
+
+    result = solver.solve(REQUEST)
+
+    assert result.assignment == (0, 1, 1, 2)
+    assert result.metadata["decision_source"] == "classical_fallback"
+    assert result.metadata["quantum_worst_regret"] is None
+
+
+def test_equal_quality_quantum_result_does_not_displace_classical_result() -> None:
+    classical_result = SolveResult(SolveStatus.SUCCESS, (0, 1, 1, 2), 0.25)
+    classical = StubSolver(classical_result)
+    quantum = StubSolver(SolveResult(SolveStatus.SUCCESS, (0, 1, 1, 2), 0.25))
+    solver = SelectiveHybridSolver(
+        Evaluator(), classical, quantum, EscalationPolicy(0.0)
+    )
+
+    result = solver.solve(REQUEST)
+
+    assert result.assignment == classical_result.assignment
+    assert result.metadata["decision_source"] == "classical_fallback"
+
+
 @pytest.mark.parametrize("threshold", [-0.01, 1.01])
 def test_escalation_threshold_is_bounded(threshold: float) -> None:
     with pytest.raises(ValueError, match="between 0 and 1"):

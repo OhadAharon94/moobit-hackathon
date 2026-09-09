@@ -7,7 +7,7 @@ package and its run artifacts.
 
 ## Environment
 
-From the workspace root in PowerShell:
+From the repository root in PowerShell:
 
 ```powershell
 py -3.12 -m venv .venv-classiq
@@ -16,8 +16,14 @@ py -3.12 -m venv .venv-classiq
 & '.\.venv-classiq\Scripts\python.exe' -m pytest 'tests'
 ```
 
-On macOS or Linux, replace the interpreter path with
-`.venv-classiq/bin/python`.
+From the repository root on macOS or Linux:
+
+```bash
+python3.12 -m venv .venv-classiq
+./.venv-classiq/bin/python -m pip install --upgrade pip
+./.venv-classiq/bin/python -m pip install -e '.[dev]'
+./.venv-classiq/bin/python -m pytest tests
+```
 
 Classiq authentication is interactive and separate from installation:
 
@@ -30,14 +36,17 @@ depend on a live Classiq login to load saved results.
 
 ## Operational scope
 
-Holy Qow is designed for network planning and incident response after congestion,
-link failures, or material demand changes. It is not a packet-level real-time
-routing engine. Quantum execution is used selectively when a classical first-pass
-solution does not meet the configured quality or resilience threshold.
+Holy Qow is designed for network-planning experiments and incident-response
+decision support after congestion or material demand changes. It is not a
+packet-level real-time routing engine. The experimental orchestration wrapper can
+invoke a quantum candidate when a classical first pass misses a configured
+resilience threshold, but keeps the valid classical candidate unless the quantum
+candidate is valid and scores better under the frozen comparison rule.
 
-For production-sized networks, the intended architecture isolates the affected
-region, freezes unaffected routes, optimizes the smaller subproblem, and validates
-the result against the complete topology before an SDN update.
+Regional decomposition and SDN integration are proposed future architecture, not
+features demonstrated by this repository. The current evidence favors static
+multi-environment classical routing; selective quantum escalation has not shown a
+route-quality advantage and is disabled unless explicitly configured by a caller.
 
 - [Operating model](HOLY_QOW_OPERATING_MODEL.md)
 - [Adaptive decision trace](artifacts/tables/holy_qow_adaptive_decision_trace.md)

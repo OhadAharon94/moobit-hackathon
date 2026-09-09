@@ -89,7 +89,7 @@ def write_decision_trace(
     lines = [
         "# Holy Qow adaptive decision trace",
         "",
-        "Every recommendation is recoverable from saved inputs, scenario weights, "
+        "Every saved step is recoverable from inputs, scenario weights, "
         "quantum samples, feasibility checks, and deterministic tie-breaking.",
         "",
         "| Step | Scenario weights (nominal / surge / degradation) | Selected route | Worst regret | Decision explanation |",
@@ -104,11 +104,24 @@ def write_decision_trace(
             f"{row['worst_regret']:.3f} | {row['update_explanation']} |"
         )
     initial = rows[0]["worst_regret"]
-    final = rows[-1]["worst_regret"]
+    best = min(row["worst_regret"] for row in rows)
+    if initial > 0.0:
+        comparison = (
+            f"Across the three frozen training scenarios, the best observed "
+            f"worst-case regret changed from **{initial:.3f}** at the first step "
+            f"to **{best:.3f}** ({100.0 * (initial - best) / initial:.1f}% lower)."
+        )
+    else:
+        comparison = (
+            "Across the three frozen training scenarios, the initial and best "
+            "observed worst-case regrets were both **0.000**."
+        )
     lines += [
         "",
-        f"The best observed worst-case regret improved from **{initial:.3f}** to "
-        f"**{final:.3f}** ({100.0 * (initial - final) / initial:.1f}% reduction).",
+        comparison,
+        "This is an in-training trace, not a held-out robustness result; the "
+        "adaptive route did not beat static uniform multi-environment training "
+        "on the frozen 24-scenario held-out set.",
         "",
     ]
     markdown_path.write_text("\n".join(lines), encoding="utf-8")
