@@ -1,0 +1,86 @@
+{
+  "schema_version": "holy-qow-presentation-figures-v1",
+  "audit_status": "PASS",
+  "figure_count": 6,
+  "presentation_number_count": 77,
+  "presentation_numbers_sha256": "0ecbb917db86b67b985683bfea8dcc89182fec07bb3e99f1a7f1a68977200adb",
+  "figures": {
+    "01_heldout_survival.png": {
+      "sha256": "a16a0b0fa9dbfd45f72cb01dd65c28f4c0fc588ffb2c9b543d142efac6ee0206",
+      "pixel_dimensions": [
+        2400,
+        1350
+      ],
+      "sources": [
+        "artifacts/post6a/heldout/heldout_route_results.csv",
+        "artifacts/post6a/heldout/heldout_route_summary.csv",
+        "artifacts/post6a/heldout/evaluation_manifest.json"
+      ]
+    },
+    "02_quantum_scaling.png": {
+      "sha256": "db6e63e50c9c022264b214b8469ca129848ef8efdaa74088e51bcd52d5401bd8",
+      "pixel_dimensions": [
+        2400,
+        1350
+      ],
+      "sources": [
+        "stage6a/artifacts/scaling/tables/scaling_manifest.csv",
+        "artifacts/circuits/uniform_cost_p1.synthesis.json",
+        "stage6a/artifacts/scaling/circuits/qera-d5-seed6105-p1.synthesis.json",
+        "stage6a/artifacts/scaling/circuits/qera-d6-seed6106-p1.synthesis.json",
+        "stage6a/artifacts/scaling/circuits/qera-d8-seed6108-p1.synthesis.json"
+      ]
+    },
+    "03_d6_qaoa_vs_random_bits.png": {
+      "sha256": "a0c304e30d032fd97ad3d97d675c7bb9eb4599b6b5050c3bda42582479bac786",
+      "pixel_dimensions": [
+        2400,
+        1350
+      ],
+      "sources": [
+        "artifacts/post6a/repeatability/d6_repeatability.csv",
+        "artifacts/post6a/repeatability/d6_control_comparison.csv",
+        "artifacts/post6a/repeatability/d6_control_comparison_summary.json",
+        "artifacts/post6a/repeatability/manifest.json"
+      ]
+    },
+    "backup_01_evolution_ablation.png": {
+      "sha256": "2002ba220a4d0f3f884576df664465634769cc72c26975fa5a5941dc5545d757",
+      "pixel_dimensions": [
+        2400,
+        1350
+      ],
+      "sources": [
+        "artifacts/evolution_ablation/tables/evolution_factor_summary.csv",
+        "artifacts/evolution_ablation/tables/evolution_policy_comparison.csv",
+        "artifacts/evolution_ablation/tables/evolution_diagnostics.json"
+      ]
+    },
+    "backup_02_constraint_mixer.png": {
+      "sha256": "5bb6747738484a76b7372cce11a495e552b3aa51ea14a0caa4dd0adab99da6a8",
+      "pixel_dimensions": [
+        2400,
+        1350
+      ],
+      "sources": [
+        "artifacts/runs/uniform_cost_p1_smoke/summary.json",
+        "artifacts/runs/uniform_cost_p1_smoke/samples_raw.csv",
+        "artifacts/stage6b/d4/d4_correctness_gates.json",
+        "artifacts/stage6b/tables/circuit_resource_comparison.csv",
+        "artifacts/stage6b/tables/circuit_resource_analysis.json"
+      ]
+    },
+    "backup_03_verification.png": {
+      "sha256": "df67ffbe814dac3bae03ec48f024fadec009d2605ed478fb235024d5a2c7f331",
+      "pixel_dimensions": [
+        2400,
+        1350
+      ],
+      "sources": [
+        "artifacts/tables/encoding_proof.json",
+        "artifacts/stage6b/regression/final_verification.json",
+        "artifacts/evolution_ablation/final_verification.json"
+      ]
+    }
+  }
+}

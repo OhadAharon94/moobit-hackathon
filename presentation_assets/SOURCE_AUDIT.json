@@ -1,0 +1,1228 @@
+{
+  "schema_version": "holy-qow-presentation-audit-v1",
+  "offline_only": true,
+  "classiq_jobs_run": 0,
+  "check_count": 172,
+  "passed": 172,
+  "failed": 0,
+  "status": "PASS",
+  "checks": [
+    {
+      "check_id": "heldout-results-hash",
+      "status": "PASS",
+      "actual": "3021938567b8b70907ba3df28a47332a2a3bd6f3e5233d59c492bdb589a0c7d9",
+      "expected": "3021938567b8b70907ba3df28a47332a2a3bd6f3e5233d59c492bdb589a0c7d9",
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-summary-hash",
+      "status": "PASS",
+      "actual": "b64fb4fd4b406572c4d174a7c4a5b7b83ac3ccbe38086a4e96abbc15b693de1c",
+      "expected": "b64fb4fd4b406572c4d174a7c4a5b7b83ac3ccbe38086a4e96abbc15b693de1c",
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_summary.csv"
+    },
+    {
+      "check_id": "heldout-route-manifest-hash",
+      "status": "PASS",
+      "actual": "2c2d0110f2d513acb1d6634ef4206888ee039e98868a351add21e933e74b5afa",
+      "expected": "2c2d0110f2d513acb1d6634ef4206888ee039e98868a351add21e933e74b5afa",
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_manifest.json"
+    },
+    {
+      "check_id": "heldout-scenario-manifest-hash",
+      "status": "PASS",
+      "actual": "18553369a4756445939fca41681f405f391c08829d186cd450599602ad03b214",
+      "expected": "18553369a4756445939fca41681f405f391c08829d186cd450599602ad03b214",
+      "source_artifact": "artifacts/post6a/heldout/heldout_scenario_manifest.json"
+    },
+    {
+      "check_id": "heldout-scenario-count",
+      "status": "PASS",
+      "actual": 24,
+      "expected": 24,
+      "source_artifact": "artifacts/post6a/heldout/heldout_scenario_manifest.json"
+    },
+    {
+      "check_id": "heldout-nominal_only-scenario_count",
+      "status": "PASS",
+      "actual": 24,
+      "expected": 24,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-nominal_only-survival_rate",
+      "status": "PASS",
+      "actual": 0.8333333333333334,
+      "expected": 0.8333333333333334,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-nominal_only-violating_scenarios",
+      "status": "PASS",
+      "actual": 4,
+      "expected": 4,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-nominal_only-worst_case_regret",
+      "status": "PASS",
+      "actual": 0.2346998631297662,
+      "expected": 0.2346998631297662,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-nominal_only-maximum_overflow",
+      "status": "PASS",
+      "actual": 0.4000000000000003,
+      "expected": 0.4000000000000003,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-static_uniform_multiscenario-scenario_count",
+      "status": "PASS",
+      "actual": 24,
+      "expected": 24,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-static_uniform_multiscenario-survival_rate",
+      "status": "PASS",
+      "actual": 1.0,
+      "expected": 1.0,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-static_uniform_multiscenario-violating_scenarios",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-static_uniform_multiscenario-worst_case_regret",
+      "status": "PASS",
+      "actual": 0.3163114558213304,
+      "expected": 0.3163114558213304,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-static_uniform_multiscenario-maximum_overflow",
+      "status": "PASS",
+      "actual": 0.0,
+      "expected": 0.0,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-exact_adaptive-scenario_count",
+      "status": "PASS",
+      "actual": 24,
+      "expected": 24,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-exact_adaptive-survival_rate",
+      "status": "PASS",
+      "actual": 0.9166666666666666,
+      "expected": 0.9166666666666666,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-exact_adaptive-violating_scenarios",
+      "status": "PASS",
+      "actual": 2,
+      "expected": 2,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-exact_adaptive-worst_case_regret",
+      "status": "PASS",
+      "actual": 0.4783343109778619,
+      "expected": 0.4783343109778619,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "heldout-exact_adaptive-maximum_overflow",
+      "status": "PASS",
+      "actual": 0.4000000000000003,
+      "expected": 0.4000000000000003,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_results.csv"
+    },
+    {
+      "check_id": "handoff-nominal_only-survival",
+      "status": "PASS",
+      "actual": 0.8333333333333334,
+      "expected": 0.8333333333333334,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_summary.csv"
+    },
+    {
+      "check_id": "handoff-nominal_only-violations",
+      "status": "PASS",
+      "actual": 4,
+      "expected": 4,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_summary.csv"
+    },
+    {
+      "check_id": "handoff-static_uniform_multiscenario-survival",
+      "status": "PASS",
+      "actual": 1.0,
+      "expected": 1.0,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_summary.csv"
+    },
+    {
+      "check_id": "handoff-static_uniform_multiscenario-violations",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_summary.csv"
+    },
+    {
+      "check_id": "handoff-exact_adaptive-survival",
+      "status": "PASS",
+      "actual": 0.9166666666666666,
+      "expected": 0.9166666666666666,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_summary.csv"
+    },
+    {
+      "check_id": "handoff-exact_adaptive-violations",
+      "status": "PASS",
+      "actual": 2,
+      "expected": 2,
+      "source_artifact": "artifacts/post6a/heldout/heldout_route_summary.csv"
+    },
+    {
+      "check_id": "scaling-D4-synthesis-hash",
+      "status": "PASS",
+      "actual": "6cb0b4491b0ba82a8f7308ad5006b2fbfcc6fbcca0a339e237f773df54983eb8",
+      "expected": "6cb0b4491b0ba82a8f7308ad5006b2fbfcc6fbcca0a339e237f773df54983eb8",
+      "source_artifact": "artifacts/circuits/uniform_cost_p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D4-qprog-hash",
+      "status": "PASS",
+      "actual": "9d6b2fd05b1757a070c756c407d64a06e877030ba4397303c6bae9310bbcfd7e",
+      "expected": "9d6b2fd05b1757a070c756c407d64a06e877030ba4397303c6bae9310bbcfd7e",
+      "source_artifact": "artifacts/circuits/uniform_cost_p1.qprog"
+    },
+    {
+      "check_id": "scaling-D4-width",
+      "status": "PASS",
+      "actual": 12,
+      "expected": 12,
+      "source_artifact": "artifacts/circuits/uniform_cost_p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D4-depth",
+      "status": "PASS",
+      "actual": 65,
+      "expected": 65,
+      "source_artifact": "artifacts/circuits/uniform_cost_p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D4-twoq",
+      "status": "PASS",
+      "actual": 84,
+      "expected": 84,
+      "source_artifact": "artifacts/circuits/uniform_cost_p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D4-status",
+      "status": "PASS",
+      "actual": "COMPLETE",
+      "expected": "COMPLETE",
+      "source_artifact": "stage6a/artifacts/scaling/tables/scaling_manifest.csv"
+    },
+    {
+      "check_id": "scaling-D5-synthesis-hash",
+      "status": "PASS",
+      "actual": "a24acf4461b5fce745a85b2fb9daf46449128c7c0a1658c0a1b6435e5a0770fd",
+      "expected": "a24acf4461b5fce745a85b2fb9daf46449128c7c0a1658c0a1b6435e5a0770fd",
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d5-seed6105-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D5-qprog-hash",
+      "status": "PASS",
+      "actual": "464f42363ec85ffd40e67e83964d4d3ecd591bfcc2d5b90e1484c13ff739ff8a",
+      "expected": "464f42363ec85ffd40e67e83964d4d3ecd591bfcc2d5b90e1484c13ff739ff8a",
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d5-seed6105-p1.qprog"
+    },
+    {
+      "check_id": "scaling-D5-width",
+      "status": "PASS",
+      "actual": 15,
+      "expected": 15,
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d5-seed6105-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D5-depth",
+      "status": "PASS",
+      "actual": 79,
+      "expected": 79,
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d5-seed6105-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D5-twoq",
+      "status": "PASS",
+      "actual": 136,
+      "expected": 136,
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d5-seed6105-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D5-status",
+      "status": "PASS",
+      "actual": "COMPLETE",
+      "expected": "COMPLETE",
+      "source_artifact": "stage6a/artifacts/scaling/tables/scaling_manifest.csv"
+    },
+    {
+      "check_id": "scaling-D6-synthesis-hash",
+      "status": "PASS",
+      "actual": "9606cc96d6e58c1682f7b322535156ec9334069f94b246a2ebb8a10111dce8ab",
+      "expected": "9606cc96d6e58c1682f7b322535156ec9334069f94b246a2ebb8a10111dce8ab",
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d6-seed6106-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D6-qprog-hash",
+      "status": "PASS",
+      "actual": "d8724911c2010e6fb372cbf0b4d1a899227f7e9d57eba62770f81116b2f85dff",
+      "expected": "d8724911c2010e6fb372cbf0b4d1a899227f7e9d57eba62770f81116b2f85dff",
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d6-seed6106-p1.qprog"
+    },
+    {
+      "check_id": "scaling-D6-width",
+      "status": "PASS",
+      "actual": 18,
+      "expected": 18,
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d6-seed6106-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D6-depth",
+      "status": "PASS",
+      "actual": 138,
+      "expected": 138,
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d6-seed6106-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D6-twoq",
+      "status": "PASS",
+      "actual": 160,
+      "expected": 160,
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d6-seed6106-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D6-status",
+      "status": "PASS",
+      "actual": "COMPLETE",
+      "expected": "COMPLETE",
+      "source_artifact": "stage6a/artifacts/scaling/tables/scaling_manifest.csv"
+    },
+    {
+      "check_id": "scaling-D8-synthesis-hash",
+      "status": "PASS",
+      "actual": "a5c8d9e502db09dc772ffb712247e7777a4bdfe132039d18667b0996c0f25604",
+      "expected": "a5c8d9e502db09dc772ffb712247e7777a4bdfe132039d18667b0996c0f25604",
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d8-seed6108-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D8-qprog-hash",
+      "status": "PASS",
+      "actual": "53f362d117785b66e077b6347fec674c0f2cce4022d6fc31c3725affc10c3fe3",
+      "expected": "53f362d117785b66e077b6347fec674c0f2cce4022d6fc31c3725affc10c3fe3",
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d8-seed6108-p1.qprog"
+    },
+    {
+      "check_id": "scaling-D8-width",
+      "status": "PASS",
+      "actual": 24,
+      "expected": 24,
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d8-seed6108-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D8-depth",
+      "status": "PASS",
+      "actual": 246,
+      "expected": 246,
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d8-seed6108-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D8-twoq",
+      "status": "PASS",
+      "actual": 280,
+      "expected": 280,
+      "source_artifact": "stage6a/artifacts/scaling/circuits/qera-d8-seed6108-p1.synthesis.json"
+    },
+    {
+      "check_id": "scaling-D8-status",
+      "status": "PASS",
+      "actual": "SYNTHESIS_ONLY",
+      "expected": "SYNTHESIS_ONLY",
+      "source_artifact": "stage6a/artifacts/scaling/tables/scaling_manifest.csv"
+    },
+    {
+      "check_id": "scaling-D8-no-qaoa-summary",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "stage6a/artifacts/scaling/tables/scaling_manifest.csv"
+    },
+    {
+      "check_id": "repeatability-table-hash",
+      "status": "PASS",
+      "actual": "c8b160b0a3a4aa88e0aec3762b06b85edbcc55c2ffeea766bd39ffd2421278ff",
+      "expected": "c8b160b0a3a4aa88e0aec3762b06b85edbcc55c2ffeea766bd39ffd2421278ff",
+      "source_artifact": "artifacts/post6a/repeatability/d6_repeatability.csv"
+    },
+    {
+      "check_id": "repeatability-control-hash",
+      "status": "PASS",
+      "actual": "b7488ef763d22924652c1247182a7ee50abf0d0e22c0c9a49a592fdf2fe776ca",
+      "expected": "b7488ef763d22924652c1247182a7ee50abf0d0e22c0c9a49a592fdf2fe776ca",
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "repeatability-control-summary-hash",
+      "status": "PASS",
+      "actual": "dd088f2a68b1bb7e0059ea11b265005ac823e2de9760e7c8c37baaac97b17166",
+      "expected": "dd088f2a68b1bb7e0059ea11b265005ac823e2de9760e7c8c37baaac97b17166",
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison_summary.json"
+    },
+    {
+      "check_id": "repeatability-seed-summary-hash",
+      "status": "PASS",
+      "actual": "9f692fe5d355d5e54b5f7e42b6f06776fc347166d49b10521a8a52cac2242d99",
+      "expected": "9f692fe5d355d5e54b5f7e42b6f06776fc347166d49b10521a8a52cac2242d99",
+      "source_artifact": "artifacts/post6a/repeatability/d6_seed_level_summary.csv"
+    },
+    {
+      "check_id": "qaoa-seed-6106-raw-hash",
+      "status": "PASS",
+      "actual": "528daf9ff76c2f45763f46a41e9c522ed32f32d05bbf7b8275853c60b6345a26",
+      "expected": "528daf9ff76c2f45763f46a41e9c522ed32f32d05bbf7b8275853c60b6345a26",
+      "source_artifact": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\stage6a\\artifacts\\scaling\\qaoa\\qera-d6-seed6106-p1-uniform-cost\\samples_raw.csv"
+    },
+    {
+      "check_id": "qaoa-seed-6201-raw-hash",
+      "status": "PASS",
+      "actual": "43512214f30a2be82b45917229126b940691e47161e9b8d14916e52070846144",
+      "expected": "43512214f30a2be82b45917229126b940691e47161e9b8d14916e52070846144",
+      "source_artifact": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6201\\samples_raw.csv"
+    },
+    {
+      "check_id": "qaoa-seed-6202-raw-hash",
+      "status": "PASS",
+      "actual": "f24ccc77b6692f0394c6a7254aa4b65fb2da0d11c9b3bb93a670a47f70cff7ef",
+      "expected": "f24ccc77b6692f0394c6a7254aa4b65fb2da0d11c9b3bb93a670a47f70cff7ef",
+      "source_artifact": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6202\\samples_raw.csv"
+    },
+    {
+      "check_id": "qaoa-seed-6203-raw-hash",
+      "status": "PASS",
+      "actual": "58fda71a8ff438a1752cb7ad63d03dabc0f125a79525c45416b4ebebfdf79ecc",
+      "expected": "58fda71a8ff438a1752cb7ad63d03dabc0f125a79525c45416b4ebebfdf79ecc",
+      "source_artifact": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6203\\samples_raw.csv"
+    },
+    {
+      "check_id": "qaoa-seed-6204-raw-hash",
+      "status": "PASS",
+      "actual": "14af165d86c8da7db07096b81beadcf2d2c888292d7aa862de847e2ee8930ecf",
+      "expected": "14af165d86c8da7db07096b81beadcf2d2c888292d7aa862de847e2ee8930ecf",
+      "source_artifact": "C:\\Users\\ohada\\Documents\\QUBIT Hackathon\\implementation\\artifacts\\post6a\\repeatability\\runs\\seed-6204\\samples_raw.csv"
+    },
+    {
+      "check_id": "repeatability-seed-order",
+      "status": "PASS",
+      "actual": [
+        6106,
+        6201,
+        6202,
+        6203,
+        6204
+      ],
+      "expected": [
+        6106,
+        6201,
+        6202,
+        6203,
+        6204
+      ],
+      "source_artifact": "artifacts/post6a/repeatability/manifest.json"
+    },
+    {
+      "check_id": "D6-6106-qaoa-shots",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6106/samples.csv"
+    },
+    {
+      "check_id": "D6-6106-qaoa-onehot-count",
+      "status": "PASS",
+      "actual": 25,
+      "expected": 25,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6106/samples.csv"
+    },
+    {
+      "check_id": "D6-6106-qaoa-feasible-count",
+      "status": "PASS",
+      "actual": 8,
+      "expected": 8,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6106/samples.csv"
+    },
+    {
+      "check_id": "D6-6106-qaoa-gap-from-samples",
+      "status": "PASS",
+      "actual": 0.00835706680634729,
+      "expected": 0.0083570668063473,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6106/samples.csv"
+    },
+    {
+      "check_id": "D6-6106-qaoa-regret-from-samples",
+      "status": "PASS",
+      "actual": 0.1988286326818207,
+      "expected": 0.1988286326818207,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6106/samples.csv"
+    },
+    {
+      "check_id": "D6-6106-qaoa-gap-summary",
+      "status": "PASS",
+      "actual": 0.008357066806347346,
+      "expected": 0.0083570668063473,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6106/summary.json"
+    },
+    {
+      "check_id": "D6-6106-qaoa-regret-summary",
+      "status": "PASS",
+      "actual": 0.19882863268182072,
+      "expected": 0.1988286326818207,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6106/summary.json"
+    },
+    {
+      "check_id": "D6-6106-random-shots",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6106/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6106-random-onehot-count",
+      "status": "PASS",
+      "actual": 11,
+      "expected": 11,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6106/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6106-random-feasible-count",
+      "status": "PASS",
+      "actual": 3,
+      "expected": 3,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6106/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6106-random-gap-from-samples",
+      "status": "PASS",
+      "actual": 0.012433141005121495,
+      "expected": 0.0124331410051215,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6106/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6106-random-regret-from-samples",
+      "status": "PASS",
+      "actual": 0.2334551876707208,
+      "expected": 0.2334551876707208,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6106/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6106-random-gap-summary",
+      "status": "PASS",
+      "actual": 0.01243314100512155,
+      "expected": 0.0124331410051215,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6106/uniform_random_bitstrings/summary.json"
+    },
+    {
+      "check_id": "D6-6106-random-regret-summary",
+      "status": "PASS",
+      "actual": 0.2334551876707208,
+      "expected": 0.2334551876707208,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6106/uniform_random_bitstrings/summary.json"
+    },
+    {
+      "check_id": "D6-6106-objective-direction",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6106-regret-direction",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6106-gap-delta",
+      "status": "PASS",
+      "actual": -0.004076074198774201,
+      "expected": -0.0040760741987742,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6106-regret-delta",
+      "status": "PASS",
+      "actual": -0.034626554988900105,
+      "expected": -0.0346265549889,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6201-qaoa-shots",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6201/samples.csv"
+    },
+    {
+      "check_id": "D6-6201-qaoa-onehot-count",
+      "status": "PASS",
+      "actual": 48,
+      "expected": 48,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6201/samples.csv"
+    },
+    {
+      "check_id": "D6-6201-qaoa-feasible-count",
+      "status": "PASS",
+      "actual": 11,
+      "expected": 11,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6201/samples.csv"
+    },
+    {
+      "check_id": "D6-6201-qaoa-gap-from-samples",
+      "status": "PASS",
+      "actual": 0.002161729383506783,
+      "expected": 0.0021617293835068,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6201/samples.csv"
+    },
+    {
+      "check_id": "D6-6201-qaoa-regret-from-samples",
+      "status": "PASS",
+      "actual": 0.1840550424162231,
+      "expected": 0.1840550424162231,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6201/samples.csv"
+    },
+    {
+      "check_id": "D6-6201-qaoa-gap-summary",
+      "status": "PASS",
+      "actual": 0.0021617293835068385,
+      "expected": 0.0021617293835068,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6201/summary.json"
+    },
+    {
+      "check_id": "D6-6201-qaoa-regret-summary",
+      "status": "PASS",
+      "actual": 0.18405504241622317,
+      "expected": 0.1840550424162231,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6201/summary.json"
+    },
+    {
+      "check_id": "D6-6201-random-shots",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6201/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6201-random-onehot-count",
+      "status": "PASS",
+      "actual": 8,
+      "expected": 8,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6201/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6201-random-feasible-count",
+      "status": "PASS",
+      "actual": 4,
+      "expected": 4,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6201/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6201-random-gap-from-samples",
+      "status": "PASS",
+      "actual": 0.05590584856483549,
+      "expected": 0.0559058485648355,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6201/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6201-random-regret-from-samples",
+      "status": "PASS",
+      "actual": 0.4253232350353104,
+      "expected": 0.4253232350353104,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6201/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6201-random-gap-summary",
+      "status": "PASS",
+      "actual": 0.05590584856483555,
+      "expected": 0.0559058485648355,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6201/uniform_random_bitstrings/summary.json"
+    },
+    {
+      "check_id": "D6-6201-random-regret-summary",
+      "status": "PASS",
+      "actual": 0.4253232350353104,
+      "expected": 0.4253232350353104,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6201/uniform_random_bitstrings/summary.json"
+    },
+    {
+      "check_id": "D6-6201-objective-direction",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6201-regret-direction",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6201-gap-delta",
+      "status": "PASS",
+      "actual": -0.0537441191813287,
+      "expected": -0.0537441191813287,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6201-regret-delta",
+      "status": "PASS",
+      "actual": -0.24126819261908727,
+      "expected": -0.2412681926190872,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6202-qaoa-shots",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6202/samples.csv"
+    },
+    {
+      "check_id": "D6-6202-qaoa-onehot-count",
+      "status": "PASS",
+      "actual": 5,
+      "expected": 5,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6202/samples.csv"
+    },
+    {
+      "check_id": "D6-6202-qaoa-feasible-count",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6202/samples.csv"
+    },
+    {
+      "check_id": "D6-6202-qaoa-gap-from-samples",
+      "status": "PASS",
+      "actual": 0.048627212316421586,
+      "expected": 0.0486272123164215,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6202/samples.csv"
+    },
+    {
+      "check_id": "D6-6202-qaoa-regret-from-samples",
+      "status": "PASS",
+      "actual": 0.3634906760559625,
+      "expected": 0.3634906760559625,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6202/samples.csv"
+    },
+    {
+      "check_id": "D6-6202-qaoa-gap-summary",
+      "status": "PASS",
+      "actual": 0.048627212316421586,
+      "expected": 0.0486272123164215,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6202/summary.json"
+    },
+    {
+      "check_id": "D6-6202-qaoa-regret-summary",
+      "status": "PASS",
+      "actual": 0.3634906760559625,
+      "expected": 0.3634906760559625,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6202/summary.json"
+    },
+    {
+      "check_id": "D6-6202-random-shots",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6202/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6202-random-onehot-count",
+      "status": "PASS",
+      "actual": 14,
+      "expected": 14,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6202/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6202-random-feasible-count",
+      "status": "PASS",
+      "actual": 2,
+      "expected": 2,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6202/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6202-random-gap-from-samples",
+      "status": "PASS",
+      "actual": 0.13923019803446507,
+      "expected": 0.139230198034465,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6202/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6202-random-regret-from-samples",
+      "status": "PASS",
+      "actual": 0.7190304970673163,
+      "expected": 0.7190304970673163,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6202/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6202-random-gap-summary",
+      "status": "PASS",
+      "actual": 0.13923019803446507,
+      "expected": 0.139230198034465,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6202/uniform_random_bitstrings/summary.json"
+    },
+    {
+      "check_id": "D6-6202-random-regret-summary",
+      "status": "PASS",
+      "actual": 0.7190304970673163,
+      "expected": 0.7190304970673163,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6202/uniform_random_bitstrings/summary.json"
+    },
+    {
+      "check_id": "D6-6202-objective-direction",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6202-regret-direction",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6202-gap-delta",
+      "status": "PASS",
+      "actual": -0.09060298571804351,
+      "expected": -0.0906029857180434,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6202-regret-delta",
+      "status": "PASS",
+      "actual": -0.35553982101135373,
+      "expected": -0.3555398210113537,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6203-qaoa-shots",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6203/samples.csv"
+    },
+    {
+      "check_id": "D6-6203-qaoa-onehot-count",
+      "status": "PASS",
+      "actual": 63,
+      "expected": 63,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6203/samples.csv"
+    },
+    {
+      "check_id": "D6-6203-qaoa-feasible-count",
+      "status": "PASS",
+      "actual": 14,
+      "expected": 14,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6203/samples.csv"
+    },
+    {
+      "check_id": "D6-6203-qaoa-gap-from-samples",
+      "status": "PASS",
+      "actual": 0.0035156258400871887,
+      "expected": 0.0035156258400871,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6203/samples.csv"
+    },
+    {
+      "check_id": "D6-6203-qaoa-regret-from-samples",
+      "status": "PASS",
+      "actual": 0.1955564940132416,
+      "expected": 0.1955564940132416,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6203/samples.csv"
+    },
+    {
+      "check_id": "D6-6203-qaoa-gap-summary",
+      "status": "PASS",
+      "actual": 0.0035156258400871887,
+      "expected": 0.0035156258400871,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6203/summary.json"
+    },
+    {
+      "check_id": "D6-6203-qaoa-regret-summary",
+      "status": "PASS",
+      "actual": 0.19555649401324163,
+      "expected": 0.1955564940132416,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6203/summary.json"
+    },
+    {
+      "check_id": "D6-6203-random-shots",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6203/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6203-random-onehot-count",
+      "status": "PASS",
+      "actual": 8,
+      "expected": 8,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6203/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6203-random-feasible-count",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6203/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6203-random-gap-from-samples",
+      "status": "PASS",
+      "actual": 0.0574767241123712,
+      "expected": 0.0574767241123712,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6203/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6203-random-regret-from-samples",
+      "status": "PASS",
+      "actual": 0.4765242044465499,
+      "expected": 0.4765242044465499,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6203/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6203-random-gap-summary",
+      "status": "PASS",
+      "actual": 0.0574767241123712,
+      "expected": 0.0574767241123712,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6203/uniform_random_bitstrings/summary.json"
+    },
+    {
+      "check_id": "D6-6203-random-regret-summary",
+      "status": "PASS",
+      "actual": 0.47652420444654997,
+      "expected": 0.4765242044465499,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6203/uniform_random_bitstrings/summary.json"
+    },
+    {
+      "check_id": "D6-6203-objective-direction",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6203-regret-direction",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6203-gap-delta",
+      "status": "PASS",
+      "actual": -0.053961098272284104,
+      "expected": -0.053961098272284,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6203-regret-delta",
+      "status": "PASS",
+      "actual": -0.2809677104333083,
+      "expected": -0.2809677104333083,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6204-qaoa-shots",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6204/samples.csv"
+    },
+    {
+      "check_id": "D6-6204-qaoa-onehot-count",
+      "status": "PASS",
+      "actual": 18,
+      "expected": 18,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6204/samples.csv"
+    },
+    {
+      "check_id": "D6-6204-qaoa-feasible-count",
+      "status": "PASS",
+      "actual": 6,
+      "expected": 6,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6204/samples.csv"
+    },
+    {
+      "check_id": "D6-6204-qaoa-gap-from-samples",
+      "status": "PASS",
+      "actual": 0.03600513389894461,
+      "expected": 0.0360051338989446,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6204/samples.csv"
+    },
+    {
+      "check_id": "D6-6204-qaoa-regret-from-samples",
+      "status": "PASS",
+      "actual": 0.3111777341223883,
+      "expected": 0.3111777341223883,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6204/samples.csv"
+    },
+    {
+      "check_id": "D6-6204-qaoa-gap-summary",
+      "status": "PASS",
+      "actual": 0.03600513389894466,
+      "expected": 0.0360051338989446,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6204/summary.json"
+    },
+    {
+      "check_id": "D6-6204-qaoa-regret-summary",
+      "status": "PASS",
+      "actual": 0.31117773412238836,
+      "expected": 0.3111777341223883,
+      "source_artifact": "artifacts/post6a/repeatability/processed/seed-6204/summary.json"
+    },
+    {
+      "check_id": "D6-6204-random-shots",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6204/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6204-random-onehot-count",
+      "status": "PASS",
+      "actual": 8,
+      "expected": 8,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6204/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6204-random-feasible-count",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6204/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6204-random-gap-from-samples",
+      "status": "PASS",
+      "actual": 0.042162024611108406,
+      "expected": 0.0421620246111084,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6204/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6204-random-regret-from-samples",
+      "status": "PASS",
+      "actual": 0.4386513641454554,
+      "expected": 0.4386513641454554,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6204/uniform_random_bitstrings/samples.csv"
+    },
+    {
+      "check_id": "D6-6204-random-gap-summary",
+      "status": "PASS",
+      "actual": 0.04216202461110846,
+      "expected": 0.0421620246111084,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6204/uniform_random_bitstrings/summary.json"
+    },
+    {
+      "check_id": "D6-6204-random-regret-summary",
+      "status": "PASS",
+      "actual": 0.43865136414545547,
+      "expected": 0.4386513641454554,
+      "source_artifact": "artifacts/post6a/repeatability/controls/seed-6204/uniform_random_bitstrings/summary.json"
+    },
+    {
+      "check_id": "D6-6204-objective-direction",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6204-regret-direction",
+      "status": "PASS",
+      "actual": true,
+      "expected": true,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6204-gap-delta",
+      "status": "PASS",
+      "actual": -0.006156890712163798,
+      "expected": -0.0061568907121637,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-6204-regret-delta",
+      "status": "PASS",
+      "actual": -0.1274736300230671,
+      "expected": -0.1274736300230671,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison.csv"
+    },
+    {
+      "check_id": "D6-five-of-five-objective-wins",
+      "status": "PASS",
+      "actual": 5,
+      "expected": 5,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison_summary.json"
+    },
+    {
+      "check_id": "D6-five-of-five-regret-wins",
+      "status": "PASS",
+      "actual": 5,
+      "expected": 5,
+      "source_artifact": "artifacts/post6a/repeatability/d6_control_comparison_summary.json"
+    },
+    {
+      "check_id": "evolution-factor-hash",
+      "status": "PASS",
+      "actual": "c9837726576c58958e92fc9655b4fb18620f08b91791bc03f6a9c188d85d84cd",
+      "expected": "c9837726576c58958e92fc9655b4fb18620f08b91791bc03f6a9c188d85d84cd",
+      "source_artifact": "artifacts/evolution_ablation/tables/evolution_factor_summary.csv"
+    },
+    {
+      "check_id": "evolution-policy-hash",
+      "status": "PASS",
+      "actual": "b6a90cdfb786639b3f0d3b93cc65e72d103000f25004d2492d5e69d98c60e083",
+      "expected": "b6a90cdfb786639b3f0d3b93cc65e72d103000f25004d2492d5e69d98c60e083",
+      "source_artifact": "artifacts/evolution_ablation/tables/evolution_policy_comparison.csv"
+    },
+    {
+      "check_id": "evolution-original-static-survival",
+      "status": "PASS",
+      "actual": 1.0,
+      "expected": 1.0,
+      "source_artifact": "artifacts/evolution_ablation/tables/evolution_policy_comparison.csv"
+    },
+    {
+      "check_id": "evolution-original-adaptive-survival",
+      "status": "PASS",
+      "actual": 0.9166666666666666,
+      "expected": 0.9166666666666666,
+      "source_artifact": "artifacts/evolution_ablation/tables/evolution_policy_comparison.csv"
+    },
+    {
+      "check_id": "evolution-S-ge-5-survival",
+      "status": "PASS",
+      "actual": 1.0,
+      "expected": 1.0,
+      "source_artifact": "artifacts/evolution_ablation/tables/evolution_factor_summary.csv"
+    },
+    {
+      "check_id": "evolution-rho-0.5-survival",
+      "status": "PASS",
+      "actual": 1.0,
+      "expected": 1.0,
+      "source_artifact": "artifacts/evolution_ablation/tables/evolution_factor_summary.csv"
+    },
+    {
+      "check_id": "evolution-adaptive-does-not-beat-static",
+      "status": "PASS",
+      "actual": false,
+      "expected": false,
+      "source_artifact": "artifacts/evolution_ablation/tables/evolution_diagnostics.json"
+    },
+    {
+      "check_id": "x-mixer-onehot-from-raw",
+      "status": "PASS",
+      "actual": 0.05224609375,
+      "expected": 0.05224609375,
+      "source_artifact": "artifacts/runs/uniform_cost_p1_smoke/samples_raw.csv"
+    },
+    {
+      "check_id": "x-mixer-onehot-handoff",
+      "status": "PASS",
+      "actual": 0.05224609375,
+      "expected": 0.05224609375,
+      "source_artifact": "artifacts/runs/uniform_cost_p1_smoke/summary.json"
+    },
+    {
+      "check_id": "xy-mixer-onehot",
+      "status": "PASS",
+      "actual": 1.0,
+      "expected": 1.0,
+      "source_artifact": "artifacts/stage6b/d4/d4_correctness_gates.json"
+    },
+    {
+      "check_id": "constraint-resource-table-hash",
+      "status": "PASS",
+      "actual": "c360c2ac713447e5000814507eb733b299ea2f1b37b9401a31ba4969e286dae9",
+      "expected": "c360c2ac713447e5000814507eb733b299ea2f1b37b9401a31ba4969e286dae9",
+      "source_artifact": "artifacts/stage6b/tables/circuit_resource_comparison.csv"
+    },
+    {
+      "check_id": "transverse_x_frozen-depth",
+      "status": "PASS",
+      "actual": 65,
+      "expected": 65,
+      "source_artifact": "artifacts/stage6b/tables/circuit_resource_comparison.csv"
+    },
+    {
+      "check_id": "transverse_x_frozen-twoq",
+      "status": "PASS",
+      "actual": 84,
+      "expected": 84,
+      "source_artifact": "artifacts/stage6b/tables/circuit_resource_comparison.csv"
+    },
+    {
+      "check_id": "constraint_preserving_xy-depth",
+      "status": "PASS",
+      "actual": 101,
+      "expected": 101,
+      "source_artifact": "artifacts/stage6b/tables/circuit_resource_comparison.csv"
+    },
+    {
+      "check_id": "constraint_preserving_xy-twoq",
+      "status": "PASS",
+      "actual": 164,
+      "expected": 164,
+      "source_artifact": "artifacts/stage6b/tables/circuit_resource_comparison.csv"
+    },
+    {
+      "check_id": "exact-valid-assignments",
+      "status": "PASS",
+      "actual": 81,
+      "expected": 81,
+      "source_artifact": "artifacts/tables/encoding_proof.json"
+    },
+    {
+      "check_id": "qubo-ising-bitstates",
+      "status": "PASS",
+      "actual": 4096,
+      "expected": 4096,
+      "source_artifact": "artifacts/tables/encoding_proof.json"
+    },
+    {
+      "check_id": "integrated-test-count",
+      "status": "PASS",
+      "actual": 132,
+      "expected": 132,
+      "source_artifact": "artifacts/stage6b/regression/final_verification.json; artifacts/evolution_ablation/final_verification.json"
+    },
+    {
+      "check_id": "integrated-test-failures",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0,
+      "source_artifact": "artifacts/stage6b/regression/final_verification.json; artifacts/evolution_ablation/final_verification.json"
+    }
+  ],
+  "discrepancies": []
+}
